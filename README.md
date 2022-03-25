@@ -1,2 +1,4 @@
-# DataScienceWebsite.github.io
-A static educational website (frontend) related to Data Science.
+
+# Project Information
+
+Project Website : https://aniketsinha2002.github.io/DataScienceWebsite.github.io/
