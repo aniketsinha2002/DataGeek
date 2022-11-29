@@ -12,6 +12,7 @@ This webpage is still under construction. I'm making this project open source so
 **Developer** : Aniket Sinha
 
 ## What's in it for you? 🤔
+
 - Meet fellow coders, build a team.
 - Get your questions answered and help others by answering theirs.
 - Share your creative ideas about improving this community.
