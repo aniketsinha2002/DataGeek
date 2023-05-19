@@ -789,6 +789,7 @@
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
+    overflow: hidden;
   }
   
   .faq h4 {
@@ -807,7 +808,17 @@
   }
   
   .faq.open p {
+    animation-name: faqOpen;
+    animation-duration: 1s;
     display: block;
+  }
+  @keyframes faqOpen {
+    from {
+      height: 0;
+    }
+    to {
+      height: 165px
+    }
   }
   
   
