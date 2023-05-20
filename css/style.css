@@ -123,14 +123,19 @@
     border-top: 1px solid;
     border-right: 1px solid;
     font-weight: 500;
-    transition: var(--transition);
+    transition: .5s;
     
   }
   
   .btn:hover {
     background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
   }
   
   .btn-primary {
@@ -139,7 +144,6 @@
     border-radius: 30px;
     transition: all ease 0.5s;    
   	box-shadow: 0 0 20px 9px hsla(0, 4%, 5%, 0.19);
-
     border: 1px solid;
     border-top: 3px solid;
     border-right: 3px solid;
@@ -179,10 +183,6 @@
   .button a span:hover:before{
     width: 100%;
   }
-
-
-
-
 
   .imgg img{
     position: relative;
@@ -473,6 +473,9 @@
     letter-spacing: normal;
   }
   
+  .landingpg{
+    height: 760px;
+  }
 
   .grad1 .pge1{
 
@@ -632,6 +635,7 @@
 /* ==================== MEDIA QUERIES (TABLETS) ================= */
 @media screen and (max-width: 600px) {
   .achievements__cards {
+    display:block;
     grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
   }
@@ -647,6 +651,9 @@
 
   .team__member p {
     margin-bottom: 1.5rem;
+  }
+  .achievement__card{
+    margin:2.5rem 0;
   }
 }
   /* =================== CATEGORIES ===================== */
@@ -780,7 +787,12 @@
     font-size: 0.9rem;
     font-weight: 500;
   }
-  
+  .course_heading{
+    height:4rem;
+  }
+  .course_description{
+    height:12rem;
+  }
   /* =================== FAQs ===================== */
   .faqs {
     background: var(--color-bg1);
@@ -861,6 +873,35 @@
   
   footer ul li a:hover {
     text-decoration: underline;
+  }
+  
+  /* footer contact us section email  */
+.footer__4{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__4 h4{
+  align-self: center;
+}
+.footer__4 input{
+  height: 2rem;
+  width: 100%;
+  background: var(--color-bg2);
+  color :#000;
+  padding-left: 1rem;
+  /* box-shadow: ; */
+  border-color: #0077B5;
+  box-shadow: 0 0 30px 0.1px hsla(0, 4%, 5%, 0.19);
+}
+  .footer__4 textarea{
+  color :#000;
+  padding-left: 1rem;
+  background: var(--color-bg2);
+  box-shadow: 0 0 30px 0.1px hsla(0, 4%, 5%, 0.19);
+}
+  .footer__4 .btn{
+    padding: .5rem 1rem;  
   }
   
   .footer__socials {
@@ -1022,7 +1063,6 @@
     .container {
       width: var(--container-width-sm);
     }
-  
     /* ====================== NAVBAR ===================== */
     .nav__menu {
       right: 3%;
@@ -1087,3 +1127,53 @@
       
     }
   }
+
+  /* ====================== START OF SCROLL-TO-TOP BUTTON===================== */    
+
+  #progress {
+    background-color: #0077B5;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
+
+/* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
+
+   @media screen and (min-width: 576px) and (max-width: 767px){
+       /* ====================== POPULAR COURSES ===================== */
+      .course_heading{
+          height: 1.5rem;
+      }
+      .course_description{
+          height:7rem;
+      }
+  }
+    @media screen and (min-width: 768px) and (max-width: 992px){
+      /* ====================== POPULAR COURSES ===================== */
+      .course_heading{
+          height: 3rem;
+      }
+      .course_description{
+          height:10rem;
+      }
+  }
+
