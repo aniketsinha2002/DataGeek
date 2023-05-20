@@ -73,8 +73,7 @@ navLinks.forEach((link) => {
     })
 })
 
-// ********************** Start of Scroll-to-Top button****************************
-
+// Start of Scroll-to-Top Button
 
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
@@ -102,5 +101,3 @@ let calcScrollValue = () => {
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
 
-
-// **********************End of Scroll-to-Top button****************************

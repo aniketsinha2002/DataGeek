@@ -1117,3 +1117,22 @@
   }
 
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
+
+/* ====================== SCROLL BAR ===================== */
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(7, 31, 48);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #09a0f1);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent, #ff00ff);
+}
