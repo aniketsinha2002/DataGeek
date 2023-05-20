@@ -39,13 +39,15 @@
         <div class="container nav__container grad">
          
 
-            <a href="index.html"><h4>DATA SCIENCE</h4></a>
+            <a><h4>DATA SCIENCE</h4></a>
             <ul class="nav__menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Doubts">Doubts</a></li>
                 <li><a class="btn" href="./Form/logsig.html">Sign Up</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -236,12 +238,6 @@
 
       <!--====================== END OF COURSES =====================-->
 
-      
-
-
-
-
-
 
 
 
@@ -355,7 +351,30 @@
           </div>
       </section>
       <!--====================== END OF FAQs =====================-->
+<!--=================Start of Doubts Section======================-->
 
+<section class="faqs" id="faq">
+    <h2 class="headingh2">Have Doubts?</h2>
+    <div class="container Doubts__container">
+        <article class="doubt">
+            <div class="question__answer">
+                <h4>Please enter your doubt</h4><br>
+                <p>
+                        <div class="container123">
+                            <form action="" id="loginForm">
+                              <!-- <input type="text" id="username" class="form-control" placeholder="Enter your Username...">
+                              <input type="password" id="password" class="form-control" placeholder="Enter your Password..."> -->
+                              <textarea name="myTextBox" placeholder="Enter Text" cols="50" rows="5" style="background-color:#FCF5D8;color:#AD8C08;border:3px solid #AD8C08;">
+                            </textarea>
+                              <button type="submit">Submit</button>
+                            </form>
+                          </div>
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
 
 
 
@@ -424,8 +443,15 @@
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       <script src="./main.js"></script>
 
-
+      <script>  
+        function myButton()
+        {
+            pas=document.getElementById("").submit()  
+        }
+    </script>  
+    
       <script>
+        
           // slides for testimonials section
           var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
