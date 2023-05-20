@@ -8,6 +8,16 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    /* enable smooth scrolling - issue18 */
+    scroll-behavior: smooth;
+  }
+
+  /* =========== MEDIA QUERIES (ACCESSIBILITY) =============*/
+  /* disables smooth scrolling for accessibility - issue18*/
+  @media ( prefers-reduced-motion) {
+    * {
+      scroll-behavior: auto;
+    }
   }
   
   :root {
