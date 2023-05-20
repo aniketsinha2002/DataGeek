@@ -44,8 +44,9 @@ const courses=[
 
 
 //courses div in index.html
-var courseDiv=document.querySelector(".courses__container")
 
+var courseDiv=document.querySelector(".courses__container")
+courseDiv.innerHTML=""
 courses.map((course)=>{
 
     courseDiv.innerHTML+=`
