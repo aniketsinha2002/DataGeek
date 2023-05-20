@@ -1,4 +1,4 @@
-faqData = [
+const faqData = [
   {
       ques: "How do I know the right courses for me?",
       ans: "Throughout the course, you can expect access to support resources such as discussion forums, where you can ask questions and interact with instructors and fellow students. Additionally, there may be scheduled office hours or mentoring sessions to provide further guidance and clarification."
