@@ -473,6 +473,9 @@
     letter-spacing: normal;
   }
   
+  .landingpg{
+    height: 760px;
+  }
 
   .grad1 .pge1{
 
@@ -784,7 +787,12 @@
     font-size: 0.9rem;
     font-weight: 500;
   }
-  
+  .course_heading{
+    height:4rem;
+  }
+  .course_description{
+    height:12rem;
+  }
   /* =================== FAQs ===================== */
   .faqs {
     background: var(--color-bg1);
@@ -1055,7 +1063,6 @@
     .container {
       width: var(--container-width-sm);
     }
-  
     /* ====================== NAVBAR ===================== */
     .nav__menu {
       right: 3%;
@@ -1119,4 +1126,22 @@
       justify-content: center;
       
     }
+  }
+   @media screen and (min-width: 576px) and (max-width: 767px){
+       /* ====================== POPULAR COURSES ===================== */
+      .course_heading{
+          height: 1.5rem;
+      }
+      .course_description{
+          height:7rem;
+      }
+  }
+    @media screen and (min-width: 768px) and (max-width: 992px){
+      /* ====================== POPULAR COURSES ===================== */
+      .course_heading{
+          height: 3rem;
+      }
+      .course_description{
+          height:10rem;
+      }
   }
