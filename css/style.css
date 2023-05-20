@@ -397,8 +397,8 @@
   }
 
   .logo {
-    max-height: 2;
-    max-width: 2;
+    max-height: 2rem;
+    max-width: 2rem;
     
    
   }
@@ -748,7 +748,7 @@
     border-top: 2px solid;
     border-right: 2px solid;
     border-color: #0077B5;
-    border-image:auto;
+    /* border-image:auto; */
 
    
   }
