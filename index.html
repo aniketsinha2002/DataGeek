@@ -18,9 +18,6 @@
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
-    <!-- FONT AWESOME ICONS  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- GOOGLE FONTS (MONTSERRAT) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +36,9 @@
 <body>
     <nav>
         
-        <div class="container nav__container grad">
+        <div class="container nav__container grad" id="grad-0">
          
-
+            
             <a href="index.html"><h4>DATA SCIENCE</h4></a>
             <ul class="nav__menu">
                 <li><a href="#home">Home</a></li>
@@ -50,12 +47,20 @@
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a class="btn" href="./Form/logsig.html">Sign Up</a></li>
+                
             </ul>
+            
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
     <!--========================== END OF NAVBAR ============================-->
+    <div class="toggle-btn">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle-label">
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
 
 
 
@@ -378,7 +383,7 @@
           </div>
   
           <div class="footer__3">
-            <h4>Privacy</h4>
+            <h4>Primacy</h4>
             <ul class="privacy">
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms and conditions</a></li>
@@ -390,32 +395,20 @@
             <h4>Contact Us</h4>
             <div>
               <p>+91 0000000000</p>
-              <p><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+              <p>abc@gmail.com</p>
             </div>
             <ul class="footer__socials">
               <li>
-
-                <a href="https://www.facebook.com/"><i class="uil uil-facebook-f"></i></a>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/"><i class="uil uil-instagram-alt"></i></a>
+                <a href="#"><i class="uil uil-instagram-alt"></i></a>
               </li>
               <li>
-                <a href="https://www.twitter.com/"><i class="uil uil-twitter"></i></a>
+                <a href="#"><i class="uil uil-twitter"></i></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/"><i class="uil uil-linkedin-alt"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-
+                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
               </li>
             </ul>
           </div>
