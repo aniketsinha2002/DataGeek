@@ -32,6 +32,16 @@
     <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- email js  -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  //enter your public key here
+  emailjs.init("O8X9yIvWLHHcB3a7o");
+})();
+</script>
 
 
 
@@ -403,6 +413,21 @@
             <p>
               Launch Your Career in Data Science. A ten-course introduction to data science, developed and taught by leading professors.
             </p>
+            <ul class="footer__socials">
+              <li>
+             <a href="https://www.facebook.com/"><i class="uil uil-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"><i class="uil uil-instagram-alt"></i></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/"><i class="uil uil-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/"><i class="uil uil-linkedin-alt"></i></a>
+              </li>
+             
+            </ul>
           </div>
   
           <div class="footer__2">
@@ -424,30 +449,17 @@
               <li><a href="#">Refund Policy</a></li>
             </ul>
           </div>
-  
-          <div class="footer__4">
-            <h4>Contact Us</h4>
-            <div>
-              <p>+91 0000000000</p>
-              <p><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
-            </div>
-            <ul class="footer__socials">
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-
-              </li>
-            </ul>
+            <form id="form" >
+              <div class="footer__4">
+                <h4>contact us</h4>
+                <input id="email" type="email" placeholder="enter your email id"  required/>
+                <textarea id="msg" name="message" placeholder="type your message here"  cols='30' rows='4'  required ></textarea>
+                <button type="submit" class="btn btn-primary">submit</button>
+                <p id="Einfo"> </p>
+              </div>
+              </form>
+           
           </div>
-        </div>
         <div class="footer__copyright">
             <small>Copyright &copy; Aniket Sinha</small>
         </div>
