@@ -49,3 +49,28 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav)
+
+
+// **********************Adjust scroll height****************************
+const navLinks = document.querySelectorAll(".nav__link");
+navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        // prevent default
+        e.preventDefault()
+
+        // select each link element by id
+        const id = e.currentTarget.getAttribute("href").slice(1)
+        let section = document.getElementById(id)
+
+        // calculate heights
+        const navHeight = document.querySelector("nav").getBoundingClientRect().height;
+        let scrollPosition = section.offsetTop - navHeight;
+
+        // scroll to height
+        window.scrollTo({
+            left: 0,
+            top: scrollPosition
+        })
+    })
+})
+
