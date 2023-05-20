@@ -111,3 +111,46 @@ navLinks.forEach((link) => {
         })
     })
 })
+
+//footer contact us 
+
+const form = document.getElementById('form');
+const Einfo=document.getElementById('Einfo');
+
+if(localStorage.getItem('count')==null)
+localStorage.setItem('count',0);
+
+form.addEventListener('submit',(e)=>{
+    Einfo.style.color="red"
+    Einfo.innerText="please wait message sending"
+    e.preventDefault();
+    var count=localStorage.getItem('count');
+    if(count=='4'){
+    alert("please wait 5m you already send 3 mail")
+      let m=new Date().getMinutes();
+      let time= localStorage.getItem('time')
+       if( 5+m==time){   
+        count=0;
+        localStorage.setItem('count',count);
+      localStorage.setItem('time',m);
+       }
+    Einfo.innerText=" "
+}
+    else{
+    emailjs.sendForm('service_0ou379h', 'template_zzjya8j', form)
+    .then((result) => {
+        Einfo.innerText=" " 
+      alert("your message send successfully")
+      count++;
+      let m=new Date().getMinutes();
+      localStorage.setItem('count',count);
+      localStorage.setItem('time',m);
+    },(error) => {
+        Einfo.innerText="error please try few minute later" 
+        console.log(error);
+    });
+    form.reset(); 
+    }
+
+});
+
