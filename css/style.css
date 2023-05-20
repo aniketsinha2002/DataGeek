@@ -66,6 +66,7 @@
   }
   
   section {
+    scroll-margin-top:100px;
     padding: 4rem 0;
     
   }
