@@ -66,6 +66,7 @@
   }
   
   section {
+    scroll-margin-top:100px;
     padding: 4rem 0;
     
   }
@@ -472,9 +473,6 @@
     letter-spacing: normal;
   }
   
-  .landingpg{
-    height: 760px;
-  }
 
   .grad1 .pge1{
 
@@ -529,7 +527,7 @@
 .achievement{
   padding-top: 5rem;
   height: auto;
-  
+  text-shadow: 0 0 5px black;
 }
 
 
@@ -572,13 +570,15 @@
   border-right: 2px solid;
   border-color: #0077B5;
   box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
-
+  font-weight: bold;
 }
 
 .achievement__card:hover {
-  background: var(--color-bg2);
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-  
+
+  background-color: var(--color-bg2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .achievement__icon {
@@ -735,6 +735,7 @@
   .headingh2{
     font-weight: 600;
     font-size: 50px;
+    text-shadow: 0 0 5px black;
   }
 
   .courses__container {
@@ -759,24 +760,25 @@
     border-right: 2px solid;
     border-color: #0077B5;
     /* border-image:auto; */
-
-   
   }
   
   .course:hover {
-    background: var(--color-bg2);
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    background-color: var(--color-bg2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   }
   
   .course__info {
-    padding: 2rem;
-    
-    
+    padding: 2rem; 
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
   }
   
   .course__info p {
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
+    font-weight: 500;
   }
   
   /* =================== FAQs ===================== */
