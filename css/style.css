@@ -215,7 +215,7 @@
   .grad4{
     
     background: radial-gradient(500px, #2f85f58c, transparent 50%);   
-    
+    scroll-margin-top:2rem;
   }
 
 
@@ -729,7 +729,8 @@
   /* =================== POPULAR COURSES ===================== */
   
   .courses {
-    margin-top:2rem;  
+    margin-top:2rem; 
+    scroll-margin-top:2rem; 
   }
   
   .headingh2{
@@ -783,6 +784,7 @@
   .faqs {
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    scroll-margin-top:2rem;
   }
   
   .faqs__container {
