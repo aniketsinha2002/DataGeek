@@ -61,12 +61,12 @@
   }
   
   .container {
-    width: var(--container-width-lg);
+    width: 88%;
     margin: 0 auto;
   }
   
   section {
-    scroll-margin-top:100px;
+    scroll-margin-top:89px;
     padding: 4rem 0;
     
   }
