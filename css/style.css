@@ -380,7 +380,7 @@
   nav {
     background: transparent;
     width: 100vw;
-    height: 5rem;
+    height: 8rem;
     position: fixed;
     top: 0;
     z-index: 11;
@@ -389,7 +389,7 @@
   
   /* change navbar styles on scroll using javascript */
   .window-scroll {
-    background: #071F30;
+    background: #081f2f;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
   
@@ -402,7 +402,7 @@
   .nav__container a h4 {
     height: 100%;
     display: flex;
-    padding-right: 22rem;
+    padding-right: 21rem;
     align-items: center;
   }
 
@@ -414,7 +414,8 @@
   }
   
   nav button {
-    display: none;
+    /* display: none; */
+    display: block;
     
   }
   
@@ -428,6 +429,7 @@
   .nav__menu a {
     font-size: 0.9rem;
     transition: var(--transition);
+    font-weight: bold;
     
   }
   
@@ -435,12 +437,16 @@
     color: #00bf8e;
   }*/
 
-  .nav__menu a:hover{
+  /* .nav__menu a:hover{
      
    
     color: #ff3c78;
   
    
+    } */
+
+    .nav__menu a:hover{
+      color: rgb(39, 39, 201);
     }
     
 
@@ -457,10 +463,12 @@
     border-radius: 30px;
     background-color: transparent;
     transition: var(--transition);
+    font-weight: bold;
   }
   .nav__menu a.btn:hover {
     background: transparent;
-    color: var(--color-white);
+    /* color: var(--color-white); */
+       color: red;
     border-color: var(--color-white);
 
     
