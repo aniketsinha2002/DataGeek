@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DataTech</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+
+
+    <!-- BOOTSTRAP 4.7 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- TAILWIND CSS -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- GOOGLE FONTS (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- CSS FILE LINK -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+</head>
+
+<body>
+    <nav>
+
+        <div class="container nav__container grad">
+
+
+            <a href="index.html">
+                <h4>DATA SCIENCE</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#index.html">About</a></li>
+                <li><a href="#index.html">Courses</a></li>
+                <li><a href="#index.html">Faq</a></li>
+                <li><a href="#index.html">Contact</a></li>
+                <li><a class="btn" href="./Form/logsig.html">Sign Up</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!--========================== END OF NAVBAR ============================-->
+
+    <section class="faqs" id="faq">
+        <h2 class="headingh9">Privacy Policy</h2>
+        <h2 class="headingh4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam eius reprehenderit. Quaerat quas sunt repellat reiciendis dolore blanditiis nostrum voluptas quos corporis quasi, ab voluptates, fugit tempora suscipit eos!</h2>
+
+
+
+        <h2 class="headingh9">Terms and conditions</h2>
+        <h2 class="headingh4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam eius reprehenderit. Quaerat quas sunt repellat reiciendis dolore blanditiis nostrum voluptas quos corporis quasi, ab voluptates, fugit tempora suscipit eos!</h2>
+
+
+
+        <h2 class="headingh9">Refund Policy</h2>
+        <h2 class="headingh4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam eius reprehenderit. Quaerat quas sunt repellat reiciendis dolore blanditiis nostrum voluptas quos corporis quasi, ab voluptates, fugit tempora suscipit eos!</h2>
+
+    </section>
+
+    <div class="footer__4">
+        <h4>Contact Us</h4>
+        <div>
+            <p>+91 0000000000</p>
+            <p>abc@gmail.com</p>
+        </div>
+        <ul class="footer__socials">
+            <li>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; Aniket Sinha</small>
+    </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+
+    <script>
+        // slides for testimonials section
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
