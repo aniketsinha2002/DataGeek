@@ -123,14 +123,19 @@
     border-top: 1px solid;
     border-right: 1px solid;
     font-weight: 500;
-    transition: var(--transition);
+    transition: .5s;
     
   }
   
   .btn:hover {
     background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
   }
   
   .btn-primary {
@@ -139,7 +144,6 @@
     border-radius: 30px;
     transition: all ease 0.5s;    
   	box-shadow: 0 0 20px 9px hsla(0, 4%, 5%, 0.19);
-
     border: 1px solid;
     border-top: 3px solid;
     border-right: 3px solid;
@@ -179,10 +183,6 @@
   .button a span:hover:before{
     width: 100%;
   }
-
-
-
-
 
   .imgg img{
     position: relative;
