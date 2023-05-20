@@ -632,6 +632,7 @@
 /* ==================== MEDIA QUERIES (TABLETS) ================= */
 @media screen and (max-width: 600px) {
   .achievements__cards {
+    display:block;
     grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
   }
@@ -647,6 +648,9 @@
 
   .team__member p {
     margin-bottom: 1.5rem;
+  }
+  .achievement__card{
+    margin:2.5rem 0;
   }
 }
   /* =================== CATEGORIES ===================== */
