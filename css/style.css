@@ -1131,17 +1131,28 @@
   /* ====================== START OF SCROLL-TO-TOP BUTTON===================== */    
 
   #progress {
-    background-color: #0077B5;
+    background-color: #023055;
     position: fixed;
     bottom: 20px;
     right: 10px;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     display: grid;
     place-items: center;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+  }
+
+  #progress:hover{
+    background: transparent;
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
   }
 
   #progress-value {
@@ -1153,7 +1164,7 @@
     display: grid;
     place-items: center;
     font-size: 35px;
-    color: #001a2e;
+    color: #023055;
   }
 
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
