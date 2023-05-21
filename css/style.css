@@ -35,7 +35,7 @@
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
-    --color-black: #000;
+    --color-black: ;
     --color-bg: #1f2641;
     /*--color-bg1: #2e3267;*/
     --color-bg1: #023055;
@@ -44,23 +44,73 @@
     --container-width-md: 90%;
     --container-width-sm: 94%;
     --transition: all 500ms ease;
+
+  }
+  :root{
+    --primary--color: black;
+    --secondary--color: black;
+    
+  }
+  .dark-theme{
+    --primary--color: darkblue;
+    --secondary--color: darkblue;
+
+  }
+  
+  body {
+
 }
 
 body {
+
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     line-height: 1.7;
     color: var(--color-white);
+
+    background: var(--primary--color);
+    
+
+  }
+
+  #icon{
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 9;
+    left: 0;
+  }
+
+  nav div ul{
+    flex: 1;
+    text-align: right;
+  }
+  
+  .container {
+
     background: #071F30;
 }
 
+
+  }
+  
+  .container {
+    width: 88%;
+    margin: 0 auto;
+  }
+  
+  section {
+    scroll-margin-top:89px;
+
 .container {
+
     width: var(--container-width-lg);
     margin: 0 auto;
 }
 
 section {
     scroll-margin-top: 100px;
+
     padding: 4rem 0;
 }
 
@@ -1084,24 +1134,6 @@ footer ul li a:hover {
 
 
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
-/* ====================== SCROLL BAR ===================== */
-
-::-webkit-scrollbar{
-  width: 12px;
-}
-
-::-webkit-scrollbar-track{
-  background: rgb(7, 31, 48);
-}
-
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent, #09a0f1);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(transparent, #ff00ff);
-}
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     /* ====================== POPULAR COURSES ===================== */
