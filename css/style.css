@@ -7,6 +7,20 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    /* enable smooth scrolling - issue18 */
+    scroll-behavior: smooth;
+}
+
+
+/* =========== MEDIA QUERIES (ACCESSIBILITY) =============*/
+
+
+/* disables smooth scrolling for accessibility - issue18*/
+
+@media ( prefers-reduced-motion) {
+    * {
+        scroll-behavior: auto;
+    }
 }
 
  :root {
@@ -46,6 +60,7 @@ body {
 }
 
 section {
+    scroll-margin-top: 100px;
     padding: 4rem 0;
 }
 
@@ -96,13 +111,15 @@ img {
     border-top: 1px solid;
     border-right: 1px solid;
     font-weight: 500;
-    transition: var(--transition);
+    transition: .5s;
 }
 
 .btn:hover {
     background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
 
 .btn-primary {
@@ -354,8 +371,8 @@ nav {
 }
 
 .logo {
-    max-height: 2;
-    max-width: 2;
+    max-height: 2rem;
+    max-width: 2rem;
 }
 
 nav button {
@@ -365,7 +382,7 @@ nav button {
 .nav__menu {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .nav__menu a {
@@ -469,6 +486,7 @@ header {
 .achievement {
     padding-top: 5rem;
     height: auto;
+    text-shadow: 0 0 5px black;
 }
 
 .ach {
@@ -508,11 +526,14 @@ header {
     border-right: 2px solid;
     border-color: #0077B5;
     box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
+    font-weight: bold;
 }
 
 .achievement__card:hover {
-    background: var(--color-bg2);
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    background-color: var(--color-bg2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .achievement__icon {
@@ -565,6 +586,7 @@ header {
 
 @media screen and (max-width: 600px) {
     .achievements__cards {
+        display: block;
         grid-template-columns: 1fr 1fr;
         gap: 0.7rem;
     }
@@ -577,6 +599,9 @@ header {
     }
     .team__member p {
         margin-bottom: 1.5rem;
+    }
+    .achievement__card {
+        margin: 2.5rem 0;
     }
 }
 
@@ -664,22 +689,7 @@ header {
 .headingh2 {
     font-weight: 600;
     font-size: 50px;
-}
-
-.headingh9 {
-    margin-top: 5%;
-    font-weight: 600;
-    font-size: 50px;
-    padding-right: 10%;
-    padding-left: 10%;
-}
-
-.headingh4 {
-    font-weight: 30;
-    font-size: 20px;
-    padding-right: 10%;
-    padding-left: 10%;
-    text-align: left;
+    text-shadow: 0 0 5px black;
 }
 
 .courses__container {
@@ -702,21 +712,35 @@ header {
     border-top: 2px solid;
     border-right: 2px solid;
     border-color: #0077B5;
-    border-image: auto;
+    /* border-image:auto; */
 }
 
 .course:hover {
-    background: var(--color-bg2);
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    background-color: var(--color-bg2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .course__info {
     padding: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
 }
 
 .course__info p {
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.course_heading {
+    height: 4rem;
+}
+
+.course_description {
+    height: 12rem;
+    text-align: center;
 }
 
 
@@ -741,6 +765,7 @@ header {
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .faq h4 {
@@ -759,7 +784,18 @@ header {
 }
 
 .faq.open p {
+    animation-name: faqOpen;
+    animation-duration: 1s;
     display: block;
+}
+
+@keyframes faqOpen {
+    from {
+        height: 0;
+    }
+    to {
+        height: 165px
+    }
 }
 
 
@@ -791,6 +827,41 @@ footer ul li {
 
 footer ul li a:hover {
     text-decoration: underline;
+}
+
+
+/* footer contact us section email  */
+
+.footer__4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__4 h4 {
+    align-self: center;
+}
+
+.footer__4 input {
+    height: 2rem;
+    width: 100%;
+    background: var(--color-bg2);
+    color: #000;
+    padding-left: 1rem;
+    /* box-shadow: ; */
+    border-color: #0077B5;
+    box-shadow: 0 0 30px 0.1px hsla(0, 4%, 5%, 0.19);
+}
+
+.footer__4 textarea {
+    color: #000;
+    padding-left: 1rem;
+    background: var(--color-bg2);
+    box-shadow: 0 0 30px 0.1px hsla(0, 4%, 5%, 0.19);
+}
+
+.footer__4 .btn {
+    padding: .5rem 1rem;
 }
 
 .footer__socials {
@@ -979,5 +1050,57 @@ footer ul li a:hover {
     }
     .footer__socials {
         justify-content: center;
+    }
+}
+
+
+/* ====================== START OF SCROLL-TO-TOP BUTTON===================== */
+
+#progress {
+    background-color: #0077B5;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+
+
+/* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* ====================== POPULAR COURSES ===================== */
+    .course_heading {
+        height: 1.5rem;
+    }
+    .course_description {
+        height: 7rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* ====================== POPULAR COURSES ===================== */
+    .course_heading {
+        height: 3rem;
+    }
+    .course_description {
+        height: 10rem;
     }
 }
