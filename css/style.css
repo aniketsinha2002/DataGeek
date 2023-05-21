@@ -102,7 +102,6 @@ body {
   section {
     scroll-margin-top:89px;
 
-
 .container {
 
     width: var(--container-width-lg);
@@ -257,7 +256,7 @@ img {
 
 .grad a h4 {
     position: relative;
-    width: 545px;
+    width: 600px;
     height: 550px;
     background: radial-gradient(610px, #2f85f58c, transparent 40%);
     margin-top: 2px;
@@ -426,15 +425,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 70px;
-  }
-  .nav__container a h4 {
 }
 
 .nav__container a h4 {
     height: 100%;
     display: flex;
-    padding-right: 1rem;
+    padding-right: 22rem;
     align-items: center;
 }
 
@@ -450,11 +446,6 @@ nav button {
 .nav__menu {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    
-  }
-  
-  .nav__menu a {
     gap: 3rem;
 }
 
