@@ -6,6 +6,20 @@ window.addEventListener('scroll', () => {
 })
 
 
+//FAQ
+
+const faqContainer = document.querySelector('.faqs__container');
+faqData.forEach((faq)=>{
+    faqContainer.innerHTML+=`<article class="faq">
+    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+    <div class="question__answer">
+        <h4>${faq.ques}</h4>
+        <p>${faq.ans}</p>
+    </div>
+    </article>
+    `
+})
+
 
 // show/hide faq answer 
 
@@ -49,3 +63,55 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav)
+
+// **********************Adjust scroll height****************************
+const navLinks = document.querySelectorAll(".nav__link");
+navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        // prevent default
+        e.preventDefault()
+
+        // select each link element by id
+        const id = e.currentTarget.getAttribute("href").slice(1)
+        let section = document.getElementById(id)
+
+        // calculate heights
+        const navHeight = document.querySelector("nav").getBoundingClientRect().height;
+        let scrollPosition = section.offsetTop - navHeight;
+
+        // scroll to height
+        window.scrollTo({
+            left: 0,
+            top: scrollPosition
+        })
+    })
+})
+
+// Start of Scroll-to-Top Button
+
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+
+    let calcHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 100) {
+      scrollProgress.style.display = "grid";
+    } else {
+      scrollProgress.style.display = "none";
+    }
+
+    scrollProgress.addEventListener("click", () => {
+      document.documentElement.scrollTop = 0;
+    });
+
+    scrollProgress.style.background = `conic-gradient(#0077B5 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  };
+
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;
+
