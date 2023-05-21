@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="./signup.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login">
+                <div class="login__field">
+					<i class="login__icon fa fa-user"></i>
+					<input type="text" class="login__input" placeholder="Name" required>
+				</div>
+                <div class="login__field">
+					<i class="login__icon fa fa-user"></i>
+					<input type="text" class="login__input" placeholder="Email"  required>
+				</div>
+				<div class="login__field ">
+					<i class="login__icon fa fa-lock"></i>
+					<input type="password" class="login__input" id="ps1" placeholder="Password"  required>
+				</div>
+				<div class="login__field ">
+					<i class="login__icon fa fa-lock"></i>
+					<input type="password" class="login__input" id="ps2" placeholder="Confirm Password"  required>
+				</div>
+				<button class="button login__submit submitbtn">
+					<span class="button__text">Sign Up Now</span>
+					<i class="button__icon fa fa-chevron-right"></i>
+				</button>				
+			</form>
+			<div class="social-login">
+				<h3>Sign up via</h3>
+				<div class="social-icons">
+					<a href="#" class="fa fa-instagram" style="font-size:27px;" ></a> 
+					<a href="#" class="fa fa-facebook" style="font-size:24px;"></a>
+					<a href="#" class="fa fa-twitter" style="font-size:28px;"></a>
+				</div>
+			</div>
+			<div class="return_to_home_btn">
+				<form action="/index.html">
+					
+						<a class="btn"  href="/index.html"><i class="fa fa-chevron-circle-left" style="font-size:36px"></i></a>
+
+				</form>
+			</div>
+            <div class="login-opt">
+                <h4><a href="logsig.html">Already have an account? Login here</a></h4>
+            </div>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+
+<script>
+
+    const sub=document.querySelector(".submitbtn")
+    sub.addEventListener("click",function(e){
+        e.preventDefault();
+        var pswd1=document.getElementById('ps1').value;
+        var pswd2=document.getElementById('ps2').value;
+        if(pswd1!=pswd2){
+            alert("Passwords do not match")
+        }
+        else{
+            if(pswd1.length>0){
+                window.location.href='../index.html';
+            }
+        }
+    });
+</script>
