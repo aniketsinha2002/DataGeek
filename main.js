@@ -13,7 +13,22 @@ const faqs = document.querySelectorAll('.faq');
 
 faqs.forEach(faq => {
     faq.addEventListener('click', () => {
-        faq.classList.toggle('open');
+
+        const answer = faq.querySelector("p");
+
+        if(answer.classList.contains("faqActive")) {
+            answer.classList.remove("faqActive");
+            answer.style.maxHeight = null;
+            answer.style.height = null;
+            answer.style.visibility = "hidden";
+            answer.style.marginTop = null;
+        }
+        else {
+            answer.classList.add("faqActive");
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            answer.style.visibility = "visible";
+            answer.style.marginTop = "16px";
+        }
 
         // change icon
         const icon = faq.querySelector('.faq__icon i');
@@ -48,4 +63,4 @@ const closeNav = () => {
     menuBtn.style.display = "inline-block";
 }
 
-closeBtn.addEventListener('click', closeNav)
+closeBtn.addEventListener('click', closeNav);

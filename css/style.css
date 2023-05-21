@@ -813,22 +813,9 @@
   }
   
   .faq p {
-    margin-top: 0.8rem;
-    display: none;
-  }
-  
-  .faq.open p {
-    animation-name: faqOpen;
-    animation-duration: 1s;
-    display: block;
-  }
-  @keyframes faqOpen {
-    from {
-      height: 0;
-    }
-    to {
-      height: 165px
-    }
+    max-height: 0;
+    transition: max-height 0.2s;
+    visibility: hidden;
   }
   
   
