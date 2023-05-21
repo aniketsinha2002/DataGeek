@@ -61,16 +61,19 @@
         <div class="container nav__container grad">
 
 
+
             <a href="index.html">
                 <h4>DATA SCIENCE</h4>
             </a>
             <ul class="nav__menu">
+
 
                 <li><a href="#home" class="nav__link">Home</a></li>
                 <li><a href="#about" class="nav__link">About</a></li>
                 <li><a href="#courses" class="nav__link">Courses</a></li>
                 <li><a href="#faq" class="nav__link">Faq</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
+
                 <li><a class="btn" href="./Form/logsig.html">Sign Up</a></li>
                 <img src="/images/dark mode.png" id="icon">
 
@@ -277,23 +280,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="faqs" id="faq">
         <h2 class="headingh2">Frequently Asked Questions</h2>
         <div class="container faqs__container"></div>
     </section>
-    <!--====================== END OF FAQs =====================-->
+      <!--====================== END OF FAQs =====================-->
 
 
     <section class="faqs" id="faq">
@@ -512,9 +503,35 @@
                       </p>
                   </div>
               </article>-->
-        </div>
-    </section>
-    <!--====================== END OF FAQs =====================-->
+
+          </div>
+      </section>
+      <!--====================== END OF FAQs =====================-->
+<!--=================Start of Doubts Section======================-->
+
+<section class="faqs" id="faq">
+    <h2 class="headingh2">Have Doubts?</h2>
+    <div class="container Doubts__container">
+        <article class="doubt">
+            <div class="question__answer">
+                <h4>Please enter your doubt</h4><br>
+                <p>
+                        <div class="container123">
+                            <form action="" id="loginForm">
+                              <!-- <input type="text" id="username" class="form-control" placeholder="Enter your Username...">
+                              <input type="password" id="password" class="form-control" placeholder="Enter your Password..."> -->
+                              <textarea name="myTextBox" placeholder="Enter Text" cols="50" rows="5" style="background-color:#FCF5D8;color:#AD8C08;border:3px solid #AD8C08;">
+                            </textarea>
+                              <button type="submit">Submit</button>
+                            </form>
+                          </div>
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
 
 
 
@@ -697,14 +714,19 @@
     <script src="./data/faqData.js"></script>
     <script src="./main.js"></script>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
 
+      <script>  
+        function myButton()
+        {
+            pas=document.getElementById("").submit()  
+        }
+    </script>  
+    
+      <script>
+        
+          // slides for testimonials section
+          var swiper = new Swiper(".mySwiper", {
 
-
-    <script>
-        // slides for testimonials section
-        var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
             pagination: {

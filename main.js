@@ -64,6 +64,7 @@ const closeNav = () => {
 
 closeBtn.addEventListener('click', closeNav)
 
+
 // Number counter animation
 function animateCounter(counterElement, targetNumber, duration) {
     const startNumber = parseInt(counterElement.innerText);
@@ -103,6 +104,7 @@ function animateCounter(counterElement, targetNumber, duration) {
   counters.forEach((counterElement) => {
     observer.observe(counterElement); // Observe each counter element
   });
+
 // **********************Adjust scroll height****************************
 const navLinks = document.querySelectorAll(".nav__link");
 navLinks.forEach((link) => {
@@ -125,6 +127,7 @@ navLinks.forEach((link) => {
         })
     })
 })
+
 
 
 //footer contact us 
@@ -170,6 +173,7 @@ form.addEventListener('submit',(e)=>{
 });
 
 //  Start of Scroll-to-Top button
+
 
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");

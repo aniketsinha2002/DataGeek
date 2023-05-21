@@ -324,8 +324,8 @@ img {
 
 .social-menu ul {
     position: absolute;
-    top: 73%;
-    left: 33%;
+    top: 100%;
+    left: 21%;
     transform: translate(-50%, -50%);
     padding: 0;
     margin: 0;
@@ -811,7 +811,7 @@ header {
     padding: 2rem;
     display: flex;
     align-items: center;
-    gap: 1.4rem;
+    gap: 2rem;
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
@@ -837,21 +837,64 @@ header {
     animation-name: faqOpen;
     animation-duration: 1s;
     display: block;
-}
 
-@keyframes faqOpen {
+  }
+
+  .faq form {
+    margin-top: 0.8rem;
+    display: none;
+
+  @keyframes faqOpen {
+
     from {
         height: 0;
     }
     to {
         height: 165px
     }
-}
 
 
-/* =================== FOOTER ===================== */
+  }
+  
+  .faq.open form {
+    display: block;
+  }
+  
+  /* =================== Doubts ===================== */
+  .Doubts__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .container123 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100px;
+    margin: 0 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #172432;
+  }
+  
+  button {
+    display: block;
+    background-color: #172432;
+    border: none;
+    color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  /* =================== FOOTER ===================== */
+  footer {
 
-footer {
     background: var(--color-bg2);
     padding-top: 5rem;
     font-size: 0.9rem;
