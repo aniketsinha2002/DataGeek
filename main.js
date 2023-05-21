@@ -6,6 +6,20 @@ window.addEventListener('scroll', () => {
 })
 
 
+//FAQ
+
+const faqContainer = document.querySelector('.faqs__container');
+faqData.forEach((faq)=>{
+    faqContainer.innerHTML+=`<article class="faq">
+    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+    <div class="question__answer">
+        <h4>${faq.ques}</h4>
+        <p>${faq.ans}</p>
+    </div>
+    </article>
+    `
+})
+
 
 // show/hide faq answer 
 
@@ -51,46 +65,6 @@ const closeNav = () => {
 closeBtn.addEventListener('click', closeNav)
 
 
-// Number counter animation
-function animateCounter(counterElement, targetNumber, duration) {
-    const startNumber = parseInt(counterElement.innerText);
-    const increment = Math.ceil((targetNumber - startNumber) / (duration / 10)); 
-    let currentNumber = startNumber;
-    const timer = setInterval(() => {
-      currentNumber += increment; 
-      counterElement.innerText = currentNumber; 
-
-      // Check if the current number has reached or exceeded the target number
-      if ((increment > 0 && currentNumber >= targetNumber) || (increment < 0 && currentNumber <= targetNumber)) {
-        clearInterval(timer);
-        counterElement.innerText = targetNumber; 
-      }
-    }, 10); 
-    return timer; 
-  }
-  
-  function handleIntersection(entries, observer) {
-    entries.forEach((entry) => {
-      const counterElement = entry.target;
-      const targetNumber = parseInt(counterElement.dataset.target);
-      const duration = 2000; 
-      if (entry.isIntersecting) {
-        counterElement.style.visibility = 'visible'; 
-        animateCounter(counterElement, targetNumber, duration);
-        observer.unobserve(counterElement); 
-      } else {
-        counterElement.style.visibility = 'hidden';
-      }
-    });
-  }
-
-  //using IntersectionObserver to triggrt animation once element is visible on screen
-  const observer = new IntersectionObserver(handleIntersection);
-  const counters = document.querySelectorAll('.num_count');   
-  counters.forEach((counterElement) => {
-    observer.observe(counterElement); // Observe each counter element
-  });
-
 // **********************Adjust scroll height****************************
 const navLinks = document.querySelectorAll(".nav__link");
 navLinks.forEach((link) => {
@@ -113,6 +87,7 @@ navLinks.forEach((link) => {
         })
     })
 })
+
 
 
 
@@ -159,6 +134,7 @@ form.addEventListener('submit',(e)=>{
 });
 
 //  Start of Scroll-to-Top button
+
 
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
