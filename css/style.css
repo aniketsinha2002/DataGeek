@@ -222,7 +222,7 @@
 
   .grad a h4{
     position: relative;
-    width: 600px;
+    width: 545px;
     height: 550px;
     background: radial-gradient(610px, #2f85f58c, transparent 40%);
     margin-top: 2px;
@@ -399,11 +399,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 70px;
   }
   .nav__container a h4 {
     height: 100%;
     display: flex;
-    padding-right: 22rem;
+    padding-right: 1rem;
     align-items: center;
   }
 
@@ -422,7 +423,7 @@
   .nav__menu {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     
   }
   
