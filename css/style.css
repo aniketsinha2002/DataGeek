@@ -54,6 +54,17 @@ body {
     background: #071F30;
 }
 
+
+  }
+  
+  .container {
+    width: 88%;
+    margin: 0 auto;
+  }
+  
+  section {
+    scroll-margin-top:89px;
+
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -61,6 +72,7 @@ body {
 
 section {
     scroll-margin-top: 100px;
+
     padding: 4rem 0;
 }
 
