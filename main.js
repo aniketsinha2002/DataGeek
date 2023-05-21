@@ -6,6 +6,20 @@ window.addEventListener('scroll', () => {
 })
 
 
+//FAQ
+
+const faqContainer = document.querySelector('.faqs__container');
+faqData.forEach((faq)=>{
+    faqContainer.innerHTML+=`<article class="faq">
+    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+    <div class="question__answer">
+        <h4>${faq.ques}</h4>
+        <p>${faq.ans}</p>
+    </div>
+    </article>
+    `
+})
+
 
 // show/hide faq answer 
 
