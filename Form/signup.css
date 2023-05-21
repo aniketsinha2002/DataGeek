@@ -87,7 +87,7 @@ body {
 .login {
 	width: 320px;
 	padding: 30px;
-	padding-top: 156px;
+	padding-top: 30px;
 }
 
 .login__field {
@@ -169,7 +169,7 @@ body {
 
 .return_to_home_btn {
 	padding-left: 2rem;
-	padding-top: 5.5rem;
+	padding-top: 3rem;
 
 }
 
@@ -199,6 +199,7 @@ body {
 	color: rgb(6, 180, 238);
 }
 
+
 .login-opt h4 a{ 
     color:white;
     font-size: 13px;
@@ -207,7 +208,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.8rem;   
+    padding-top: 1.5rem;   
 }
 
 .login-opt h4 a:hover{
