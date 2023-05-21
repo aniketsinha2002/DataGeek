@@ -58,12 +58,22 @@
                 <h4>DATA SCIENCE</h4>
             </a>
             <ul class="nav__menu">
+
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#courses" class="nav__link">Courses</a></li>
+                <li><a href="#faq" class="nav__link">Faq</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+                <li><a class="btn" href="./Form/logsig.html">Sign Up</a></li>
+                <img src="/images/dark mode.png" id="icon">
+
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a class="btn" href="./Form/logsig.html">Log In</a></li>
+
 
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -88,6 +98,8 @@
             <img class="shape4" src="images/shape1.svg" alt="">
             <img class="shape5" src="images/shape1.svg" alt="">
         </div>
+
+      
 
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class=" grad1 button lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -630,6 +642,19 @@
         });
 
       </script>
+      <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+          document.body.classList.toggle("dark-theme");
+          if(document.body.classList.contains("dark-theme")) {
+            icon.src = "images/light mode.png";
+          }else{
+            icon.src = "images/dark mode.png";
+          }
+        }
+      </script>
+
 <script src="db/course.js"></script>
 
     </script>
