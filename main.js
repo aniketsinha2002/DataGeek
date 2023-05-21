@@ -1,3 +1,4 @@
+alert("Welcome !!");
 
 // change navbar styles on scroll
 
