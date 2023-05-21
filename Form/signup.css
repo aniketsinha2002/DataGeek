@@ -8,7 +8,7 @@
 }
 
 body {
-	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+	background: linear-gradient(90deg, #C7C5F4, darkblue);		
 }
 
 .container {
@@ -19,11 +19,11 @@ body {
 }
 
 .screen {		
-	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	background: linear-gradient(90deg, darkblue, darkblue);		
 	position: relative;	
 	height: 600px;
 	width: 360px;	
-	box-shadow: 0px 0px 24px #5C5696;
+	box-shadow: 0px 0px 24px darkblue;
 }
 
 .screen__content {
@@ -60,7 +60,7 @@ body {
 .screen__background__shape2 {
 	height: 220px;
 	width: 220px;
-	background: #6C63AC;	
+	background: darkblue;	
 	top: -172px;
 	right: 0;	
 	border-radius: 32px;
@@ -69,7 +69,7 @@ body {
 .screen__background__shape3 {
 	height: 540px;
 	width: 190px;
-	background: linear-gradient(270deg, #5D54A4, #6A679E);
+	background: linear-gradient(270deg, darkblue, darkblue);
 	top: -24px;
 	right: 0;	
 	border-radius: 32px;
@@ -78,7 +78,7 @@ body {
 .screen__background__shape4 {
 	height: 400px;
 	width: 200px;
-	background: #7E7BB9;	
+	background: darkblue;	
 	top: 420px;
 	right: 50px;	
 	border-radius: 60px;
@@ -98,7 +98,7 @@ body {
 .login__icon {
 	position: absolute;
 	top: 30px;
-	color: #7875B5;
+	color: darkblue;
 }
 
 .login__input {
@@ -116,7 +116,7 @@ body {
 .login__input:focus,
 .login__input:hover {
 	outline: none;
-	border-bottom-color: #6A679E;
+	border-bottom-color: darkblue;
 }
 
 .login__submit {
@@ -131,8 +131,8 @@ body {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	color: #4C489D;
-	box-shadow: 0px 2px 2px #5C5696;
+	color: darkblue;
+	box-shadow: 0px 2px 2px darkblue;
 	cursor: pointer;
 	transition: .2s;
 }
@@ -147,7 +147,7 @@ body {
 .button__icon {
 	font-size: 24px;
 	margin-left: auto;
-	color: #7875B5;
+	color: darkblue;
 }
 
 .social-login {	
@@ -181,7 +181,7 @@ body {
 .fa-facebook,
 .fa-twitter
 {
-	color: #4C489D;
+	color: darkblue;
 }
 
 
