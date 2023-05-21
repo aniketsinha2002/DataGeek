@@ -32,6 +32,16 @@
     <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- email js  -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  //enter your public key here
+  emailjs.init("O8X9yIvWLHHcB3a7o");
+})();
+</script>
 
 
 
@@ -90,7 +100,7 @@
               <br class="hidden lg:inline-block"> Interactively</b>
             </h1>
             <p class="para1 mb-8">Build projects, practice and learn to code from scratch - without leaving your browser.</p>
-            <a href="#" class="bttn bttn-prrimary"><span>Get Started</span></a>
+            <a href="./Form/logsig.html" class="bttn bttn-prrimary"><span>Get Started</span></a>
           </div>
           <div class="imgg lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img class="object-cover object-center rounded" alt="hero" src="./images/1.png">
@@ -152,7 +162,7 @@
         <span class="achievement__icon">
             <i class="uil uil-video"></i>
         </span>
-        <h3>450+</h3>
+        <h3 class="num_count" data-target="450">0</h3>
         <p>Courses</p>
     </article>
     
@@ -160,7 +170,7 @@
         <span class="achievement__icon">
             <i class="uil uil-users-alt"></i>
         </span>
-        <h3>79,000+</h3>
+        <h3 class="num_count" data-target="79000">0</h3>
         <p>Students</p>
     </article>
 
@@ -168,7 +178,7 @@
         <span class="achievement__icon">
             <i class="uil uil-trophy"></i>
         </span>
-        <h3>26+</h3>
+        <h3 class="num_count" data-target="26">0</h3>
         <p>Awards</p>
     </article>
   </div>
@@ -193,8 +203,8 @@
                     <img src="./images/3.jpg">
                 </div>
                 <div class="course__info">
-                    <h4>Data Science</h4>
-                    <p>
+                    <h4 class="course_heading">Data Science</h4>
+                    <p class="course_description">
                        Foundations using R <br />
                        Johns Hopkins University<br />
                        Launch Your Career in Data Science. A ten-course introduction to data science, developed and taught by leading professors.
@@ -210,9 +220,8 @@
                     <img src="./images/3.jpg">
                 </div>
                 <div class="course__info">
-                    <h4>IBM Data Science</h4>
-                    <p>
-                      
+                    <h4 class="course_heading">IBM Data Science</h4>
+                    <p class="course_description">
                      IBM Skills Network<br />
                      Kickstart your career in data science & ML. Build data science skills, learn Python & SQL, analyze & visualize data, build machine learning models. No degree or prior experience required.
                     </p>
@@ -225,9 +234,9 @@
                   <img src="./images/3.jpg">
               </div>
               <div class="course__info">
-                  <h4>Deep Learning Specification</h4>
-                  <p
-                    Hawdra University<br /><br />                   
+                  <h4 class="course_heading">Deep Learning Specification</h4>
+                  <p class="course_description">
+                    Hawdra University<br />               
                     Become a Machine Learning expert. Master the fundamentals of deep learning and break into AI. Recently updated with cutting-edge techniques!
                   </p>
                   <a href="https://www.coursera.org/specializations/deep-learning" class="btn btn-primary">Learn More</a>
@@ -350,6 +359,59 @@
                     </p>
                   </div>
               </article>
+               <article class="faq">
+                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                  <div class="question__answer">
+                     <h4> What are the essential knowledge required to study data science?</h4>
+                    <p>
+                        To study data science, it is crucial to have a strong foundation in mathematics, including statistics and linear algebra. 
+                        Additionally, proficiency in programming languages like Python or R is essential for data manipulation and analysis.
+                        Familiarity with machine learning algorithms and techniques, data visualization, and database querying is also beneficial. 
+                        Lastly, having a problem-solving mindset and a curiosity for exploring and interpreting data are valuable traits for a data science learner.
+                    </p>
+                  </div>
+              </article>
+              <article class="faq">
+                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                  <div class="question__answer">
+                     <h4> What are some popular tools and technologies used in the field of data science?</h4>
+                    <p>
+                        There are several popular tools and technologies used in data science. 
+                        Some widely used programming languages include Python and R, which offer extensive libraries and frameworks for data analysis and machine learning. 
+                        Data visualization tools like Tableau and Matplotlib help in creating insightful visual representations. 
+                        For handling big data, technologies like Apache Hadoop and Spark are commonly used. 
+                        Additionally, SQL databases, Jupyter Notebooks, and cloud computing platforms such as 
+                        AWS and Google Cloud are widely employed in data science workflows.
+                    </p>
+                  </div>
+              </article>
+              <article class="faq">
+                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                  <div class="question__answer">
+                     <h4> What are the different types of data used in data science?</h4>
+                    <p>
+                         Data science utilizes various types of data for analysis. Structured data refers to well-organized and formatted data, 
+                        typically stored in databases, with fixed fields and rows. Unstructured data, on the other hand, lacks a predefined structure 
+                        and includes text documents, social media posts, images, and videos. Semi-structured data lies in between, containing some organizational 
+                        elements but without a rigid structure. Time series data captures information collected at regular intervals over time, such as stock prices 
+                        or weather data. Geographic data includes information with spatial coordinates, like GPS data or maps. By leveraging these different data types, 
+                        data scientists can gain insights and make informed decisions.
+                    </p>
+                  </div>
+              </article>
+              <article class="faq">
+                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                  <div class="question__answer">
+                     <h4>What are the main challenges faced in the field of data science?</h4>
+                    <p>
+                         Data science faces several challenges in its implementation. One major challenge is dealing with large volumes of data, 
+                        known as "big data," which requires scalable infrastructure and efficient processing techniques. Ensuring data quality and 
+                        handling missing or inconsistent data is another significant challenge. Extracting meaningful insights from complex and unstructured 
+                        data sources can be difficult. Additionally, privacy and ethical concerns surrounding data collection and usage require careful consideration.
+                        Lastly, staying up-to-date with rapidly evolving technologies and techniques in the field poses a continuous learning challenge for data scientists.
+                    </p>
+                  </div>
+              </article>
 
               <!--<article class="faq">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
@@ -428,8 +490,23 @@
           <div class="footer__1">
             <a href="index.html" class="footer__logo"><h4>DATA SCIENCE</h4></a>
             <p>
-              Launch Your Career in Data Science. A ten-course introduction to data science, developed and taught by leading professors.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsum nobis ratione.
             </p>
+            <ul class="footer__socials">
+              <li>
+             <a href="https://www.facebook.com/"><i class="uil uil-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"><i class="uil uil-instagram-alt"></i></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/"><i class="uil uil-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/"><i class="uil uil-linkedin-alt"></i></a>
+              </li>
+             
+            </ul>
           </div>
   
           <div class="footer__2">
@@ -451,6 +528,17 @@
               <li><a href="#">Refund Policy</a></li>
             </ul>
           </div>
+            <form id="form" >
+              <div class="footer__4">
+                <h4>contact us</h4>
+                <input id="email" type="email" placeholder="enter your email id"  required/>
+                <textarea id="msg" name="message" placeholder="type your message here"  cols='30' rows='4'  required ></textarea>
+                <button type="submit" class="btn btn-primary">submit</button>
+                <p id="Einfo"> </p>
+              </div>
+              </form>
+           
+
   
           <div class="footer__4">
             <h4>Contact Us</h4>
@@ -459,7 +547,19 @@
               <p><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
             </div>
             <ul class="footer__socials">
+              
               <li>
+
+                <a href="https://www.facebook.com/"><i class="uil uil-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"><i class="uil uil-instagram-alt"></i></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/"><i class="uil uil-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/"><i class="uil uil-linkedin-alt"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
               </li>
               <li>
@@ -473,12 +573,23 @@
 
               </li>
             </ul>
+
           </div>
-        </div>
         <div class="footer__copyright">
             <small>Copyright &copy; Aniket Sinha</small>
         </div>
       </footer>
+
+
+      <!--====================== START OF SCROLL-TO-TOP BUTTON =====================-->     
+
+
+      <div id="progress">
+        <span id="progress-value">&#x1F825;</span>
+      </div>
+
+        <!--====================== END OF SCROLL-TO-TOP BUTTON =====================-->
+
 
 
 
