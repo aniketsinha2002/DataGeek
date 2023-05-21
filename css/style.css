@@ -164,6 +164,7 @@
     letter-spacing: 2px;
     font-weight: 500;
     margin-top: 60px;
+    line-height: 24px;
   }
 
   .button a span:before
@@ -517,7 +518,10 @@
     -webkit-text-fill-color: transparent;
     font-weight: 800;
   }
-
+  
+  .grad a h4{
+    width: auto !important;
+  }
   
 /* ============== VISION ============= */
 .vision{
@@ -1055,6 +1059,7 @@
     /* ====================== FOOTER ===================== */
     .footer__container {
       grid-template-columns: 1fr 1fr;
+      display: block;
     }
   }
   
@@ -1066,6 +1071,7 @@
     /* ====================== NAVBAR ===================== */
     .nav__menu {
       right: 3%;
+      position: absolute;
     }
   
     /* ====================== HEADER ===================== */
@@ -1161,10 +1167,10 @@
    @media screen and (min-width: 576px) and (max-width: 767px){
        /* ====================== POPULAR COURSES ===================== */
       .course_heading{
-          height: 1.5rem;
+          height: auto;
       }
       .course_description{
-          height:7rem;
+          height:11rem;
       }
   }
     @media screen and (min-width: 768px) and (max-width: 992px){
@@ -1174,6 +1180,9 @@
       }
       .course_description{
           height:10rem;
+      }
+      .footer__copyright{
+        margin-top: 2rem;
       }
   }
 
