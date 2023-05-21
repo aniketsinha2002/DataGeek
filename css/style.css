@@ -151,7 +151,21 @@ img {
     width: 100%;
     display: block;
     object-fit: cover;
-}
+  }
+  
+  .gotop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:#1982eb;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+  }
 
 .btn {
     display: inline-block;
