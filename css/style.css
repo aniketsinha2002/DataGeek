@@ -439,7 +439,7 @@
   .nav__menu a:hover{
      
    
-    color: #ff3c78;
+    color: var(--color-define);
   
    
     }
@@ -466,6 +466,24 @@
 
     
   }
+
+
+  .nav__menu a:focus{
+    color: var(--color-define);
+  }
+
+
+  .nav__menu a:active{
+    color: var(--color-define);
+  }
+
+
+
+  .nav__menu a.selected{
+    color: var(--color-define);
+  }
+
+  
 
   .para1{
     font-size: 1.5rem;
