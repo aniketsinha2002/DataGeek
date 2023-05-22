@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+
     /* enable smooth scrolling - issue18 */
     scroll-behavior: smooth;
   }
@@ -18,6 +19,7 @@
     * {
       scroll-behavior: auto;
     }
+
   }
   
   :root {
@@ -66,7 +68,9 @@
   }
   
   section {
+
     scroll-margin-top:100px;
+
     padding: 4rem 0;
     
   }
@@ -112,23 +116,25 @@
  
   
 
-
-
-
   .btn {
     display: inline-block;
     border-color: rgb(121, 116, 116);
-    background-color: rgba(157, 147, 147, 0.562);
+    background-color: none;
     padding: 1rem 2rem;
     border-top: 1px solid;
     border-right: 1px solid;
     font-weight: 500;
-    transition: .5s;
+
+
+
+    transition: var(--transition);
+
     
   }
   
   .btn:hover {
     background: transparent;
+
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
@@ -136,6 +142,10 @@
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
                 0 0 100px #03e9f4;
+
+    color: var(--color-white);
+    border-color: var(--color-white);
+
   }
   
   .btn-primary {
@@ -183,6 +193,10 @@
   .button a span:hover:before{
     width: 100%;
   }
+
+
+
+
 
   .imgg img{
     position: relative;
@@ -408,8 +422,8 @@
   }
 
   .logo {
-    max-height: 2rem;
-    max-width: 2rem;
+    max-height: 2;
+    max-width: 2;
     
    
   }
@@ -422,7 +436,7 @@
   .nav__menu {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     
   }
   
@@ -473,6 +487,9 @@
     letter-spacing: normal;
   }
   
+  .landingpg{
+    height: 760px;
+  }
 
   .grad1 .pge1{
 
@@ -527,9 +544,8 @@
 .achievement{
   padding-top: 5rem;
   height: auto;
-  text-shadow: 0 0 5px black;
+  
 }
-
 
 .ach{
   
@@ -555,14 +571,15 @@
 }
 
 .achievements__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 2rem;
 }
 
-.achievement__card {
+.achievements__cards .achievement__card {
   background: var(--color-bg2);
-  padding: 1.6rem;
+  padding: 2rem;
   border-radius: 1rem;
   text-align: center;
   transition: var(--transition);
@@ -570,15 +587,13 @@
   border-right: 2px solid;
   border-color: #0077B5;
   box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
-  font-weight: bold;
+  width: 250px;
 }
 
 .achievement__card:hover {
-
-  background-color: var(--color-bg2);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  transform: scale(1.05); 
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  background: var(--color-bg2);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  
 }
 
 .achievement__icon {
@@ -619,6 +634,12 @@
     margin: 0 auto;
   }
 
+@media screen and (max-width: 600px) {
+  .achievements__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
   .team__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
@@ -630,12 +651,7 @@
 }
 
 /* ==================== MEDIA QUERIES (TABLETS) ================= */
-
 @media screen and (max-width: 600px) {
-  .achievements__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.7rem;
-  }
 
   .team__container {
     grid-template-columns: 1fr 1fr;
@@ -736,7 +752,6 @@
   .headingh2{
     font-weight: 600;
     font-size: 50px;
-    text-shadow: 0 0 5px black;
   }
 
   .courses__container {
@@ -774,6 +789,20 @@
     padding: 2rem; 
     font-weight: bold;
     text-shadow: 0 0 4px black;
+    border-image:auto;
+
+   
+  }
+  
+  .course:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .course__info {
+    padding: 2rem;
+    
+    
   }
   
   .course__info p {
@@ -827,7 +856,6 @@
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
-    overflow: hidden;
   }
   
   .faq h4 {
@@ -846,17 +874,7 @@
   }
   
   .faq.open p {
-    animation-name: faqOpen;
-    animation-duration: 1s;
     display: block;
-  }
-  @keyframes faqOpen {
-    from {
-      height: 0;
-    }
-    to {
-      height: 165px
-    }
   }
   
   
@@ -891,11 +909,11 @@
   
   .footer__socials {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
   }
-
+  
   .footer__copyright {
     text-align: center;
     margin-top: 4rem;
