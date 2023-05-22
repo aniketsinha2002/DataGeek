@@ -99,11 +99,6 @@ img {
     object-fit: cover;
 }
 
-
-
-
-
-
 .btn {
     display: inline-block;
     border-color: rgb(121, 116, 116);
@@ -185,7 +180,7 @@ img {
 
     width: 600px;
     height: 550px;
-    background: radial-gradient(610px, #2f85f58c, transparent 40%);
+    background: `al-gradient(610px, #2f85f58c, transparent 40%);
 
 
 
@@ -217,16 +212,6 @@ img {
     background: radial-gradient(610px, #2f85f58c, transparent 40%);
     margin-top: 2px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .shape img {
@@ -415,6 +400,10 @@ nav {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.nav_logo a {
+    display: block;
+}
+
 .nav_logo a h4 {
     font-size: 1rem;
 }
@@ -425,11 +414,15 @@ nav {
 
 .signup_button {
     background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
     border: 1px solid white;
     border-radius: 30px;
 }
+
+.logo_style {
+    background: radial-gradient(710px, #2f85f58c, transparent 40%);
+    display: block;
+}
+
 
 @media screen and (max-width:576px) {
     .nav_container {
@@ -508,10 +501,6 @@ nav {
     .nav_menu li a {
         margin: 5px;
     }
-
-    /* 
-  .nav_logo {
-  } */
 }
 
 @media screen and (min-width:769px) {
