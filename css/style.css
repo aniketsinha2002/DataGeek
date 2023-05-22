@@ -1057,6 +1057,74 @@
   
     .footer__socials {
       justify-content: center;
-      
+    
     }
   }
+.wrapper ul{
+  list-style: none;
+}
+
+.footer_5 ul li{
+  width: 26px;
+  height: 27px;
+  line-height: 24px;
+  margin: 0 2px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #56615a;
+  float: left;
+  transition: all 0.5s ease;
+}
+.footer_5 ul li .uil {
+  color: white;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+.footer_5 ul li:hover.facebook{
+  border: 1px solid #3b5999;
+  box-shadow: 0 0 5px  #3b5999;
+  transition: all 0.5s ease;
+}
+
+.footer_5 ul li:hover .uil-facebook-f{
+  color: #3b5999;
+  text-shadow: 0 0 15px #3b5999;
+  transition: all 0.5s ease;
+}
+.footer_5 ul li:hover.instagram{
+  border: 1px solid  #e4405f;
+  box-shadow: 0 0 5px  #e4405f;
+  transition: all 0.5s ease;
+}
+
+.footer_5 ul li:hover .uil-instagram-alt{
+  color: #e4405f;
+  text-shadow: 0 0 15px #e4405f;
+  transition: all 0.5s ease;
+}
+.footer_5 ul li:hover.twitter{
+  border: 1px solid  #55acee;
+  box-shadow: 0 0 5px  #55acee;
+  transition: all 0.5s ease;
+}
+
+.footer_5 ul li:hover .uil-twitter{
+  color: #55acee;
+  text-shadow: 0 0 15px #55acee;
+  transition: all 0.5s ease;
+}
+.footer_5 ul li:hover.linkedin{
+  border: 1px solid  #0A66C2;
+  box-shadow: 0 0 5px  #0A66C2;
+  transition: all 0.5s ease;
+  
+}
+
+.footer_5 ul li:hover .uil-linkedin-alt{
+  color: #0A66C2;
+ text-shadow: 0 0 15px #0A66C2;
+  transition: all 0.5s ease;
+}
+
+
