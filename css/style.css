@@ -44,12 +44,24 @@
     line-height: 1.7;
     color: var(--color-white);
     background: #071F30;
+    overflow-x: hidden;
      
     
     
 
   }
   
+    ::-webkit-scrollbar{
+    background: #000a11;
+    /* width: 10px; */
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top,rgb(1, 1, 125), rgb(4, 4, 88),black);
+    border-radius: 10px;
+  }
+
+
   .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -312,9 +324,9 @@
     left: 33%;
     transform: translate(-50%, -50%);
     padding: 0;
-    margin: 0;
+    margin: 158px -65px 0px;
     display: flex;
-    
+
 }
 .social-menu ul li {
     list-style: none;
@@ -452,7 +464,7 @@
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
-
+    box-shadow: 0px 20px 80px 0px rgba(44, 81, 216, 0.788);
     
   }
 
