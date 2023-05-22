@@ -37,7 +37,7 @@ This webpage is still under construction. I'm making this project open source so
 </div>
 <br>
  
-**Components of Websitee**
+**Components of Website**
 
 **Landing Page**
  
