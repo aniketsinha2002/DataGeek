@@ -77,5 +77,5 @@ If you have any issue regarding the course go into contact section.
 
 ![img6](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/bbc6357b-a129-4c47-aa12-b8319717e91e)
 
-<br>
 ### Show some ❤ by starring ⭐ the repository.
+<br>
