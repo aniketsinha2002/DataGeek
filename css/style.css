@@ -205,6 +205,7 @@
   .grad4{
     
     background: radial-gradient(500px, #2f85f58c, transparent 50%);   
+    padding: 7% 0 0 0;
     
   }
 
@@ -716,6 +717,7 @@
   
   .courses {
     margin-top:2rem;  
+    padding: 7% 0 0 0;
   }
   
   .headingh2{
