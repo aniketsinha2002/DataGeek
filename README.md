@@ -36,8 +36,9 @@ This webpage is still under construction. I'm making this project open source so
 </p>
 </div>
 <br>
-                                                                  **Components of Website**
  
+**Components of Websitee**
+
 **Landing Page**
  
 This page appears when user clicks on the site and lands on the page.
