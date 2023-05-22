@@ -849,6 +849,34 @@
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
   }
+  .footer-contactitems{
+    text-align: center;
+  }
+  .footer__4 input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding:5px 10px;
+    width: 235px;
+    color: black;
+  }
+  .footer__4 textarea{
+    padding: 5px 10px;
+    color: black;
+    resize: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .footer__4 button{
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #3b9bcf;
+  }
+  .footer__4 button:hover{
+    background-color: #023055;
+    box-shadow: 0 0 5px 2px #174cdd;
+
+  }
   
   /* ===================== MEDIA QUERIES (TABLETS) ==================== */
   @media screen and (max-width: 1024px) {
