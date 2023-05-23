@@ -1056,3 +1056,44 @@
       
     }
   }
+
+/* ====================== START OF SCROLL-TO-TOP BUTTON===================== */    
+
+#progress {
+  background-color: #023055;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress:hover{
+  background: transparent;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #023055;
+}
+
+/* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
