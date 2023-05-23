@@ -27,19 +27,42 @@
 
     <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./css/style.css">
+<!-- making navbar responisive -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
 
 
 
 
 </head>
 <body>
+  <style>
+    .zoom {
+      /* padding: 50px;
+      background-color: green; */
+      transition: transform .2s; /* Animation */
+      /* width: 200px;
+      height: 200px; */
+      margin: 0 auto;
+    }
+    
+    .zoom:hover {
+      transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    .body{
+      background-color: #071F30;;
+    }
+    .grad{
+      /* display: flex; */
+    }
+    </style>
     <nav>
         <div class="container nav__container grad">
           <!--<div class="logo">
             <img src="./images/logo.png" alt="">
           </div>-->
-
-            <a href="index.html"><h4>DATA SCIENCE</h4></a>
+<div class="zoom">
+            <a href="index.html"><h4>DATA SCIENCE</h4></a></div>
             <ul class="nav__menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -79,8 +102,8 @@
             <p class="para1 mb-8">Build projects, practice and learn to code from scratch - without leaving your browser.</p>
             <a href="#" class="bttn bttn-prrimary"><span>Get Started</span></a>
           </div>
-          <div class="imgg lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="./images/1.png">
+          <div class="imgg lg:max-w-lg lg:w-full md:w-1/2 w-5/6"><div class="zoom">
+            <img class="object-cover object-center rounded" alt="hero" src="./images/1.png"></div>
           </div>
 
           <div class="social-menu">
@@ -107,8 +130,8 @@
 
     <section class="grad4">
       <div class="container about__achievements-container">
-          <div class="about__achievements-left">
-              <img class="grad2" src="./images/domain.png">
+          <div class="about__achievements-left"><div class="zoom">
+              <img class="grad2" src="./images/domain.png"></div>
           </div>
 
           <div class="about__achievements-right">
