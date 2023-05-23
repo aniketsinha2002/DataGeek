@@ -28,9 +28,10 @@
     <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./css/style.css">
 
-
-
-
+    <!-- AOS FILE LINK -->
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <nav>
@@ -113,10 +114,18 @@
           <div class="about__achievements-right">
               <h1 class="vision grad3">What is Data Science ?</h1>
               <p>
+                <div data-aos="fade-up">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam velit, assumenda, obcaecati molestiae voluptatem placeat alias iste ad modi sunt quidem veniam recusandae possimus consequuntur quisquam soluta vero sapiente.
-                  <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam velit, assumenda, obcaecati molestiae voluptatem placeat alias iste ad modi sunt quidem veniam recusandae possimus consequuntur quisquam soluta vero sapiente.
-                  <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam velit, assumenda, obcaecati molestiae voluptatem placeat alias iste ad modi sunt quidem veniam recusandae possimus consequuntur quisquam soluta vero sapiente.
-              </p>
+                </div>
+                <br><br>
+                <div data-aos="fade-up" data-aos-offset="130px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam velit, assumenda, obcaecati molestiae voluptatem placeat alias iste ad modi sunt quidem veniam recusandae possimus consequuntur quisquam soluta vero sapiente.
+                </div>
+                <br><br> 
+                <div data-aos="fade-up" data-aos-offset="140px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam velit, assumenda, obcaecati molestiae voluptatem placeat alias iste ad modi sunt quidem veniam recusandae possimus consequuntur quisquam soluta vero sapiente.
+                </div>
+                </p>
               
           </div>
       </div>
@@ -138,7 +147,8 @@
 
  <section class="achievement">
   <div class="ach achievements__cards">
-    <article class="achievement__card">
+
+    <article class="achievement__card" data-aos="zoom-in-right" data-aos-offset="126px">
         <span class="achievement__icon">
             <i class="uil uil-video"></i>
         </span>
@@ -146,7 +156,7 @@
         <p>Courses</p>
     </article>
     
-    <article class="achievement__card">
+    <article class="achievement__card" data-aos="zoom-in" data-aos-offset="126px">
         <span class="achievement__icon">
             <i class="uil uil-users-alt"></i>
         </span>
@@ -154,7 +164,7 @@
         <p>Students</p>
     </article>
 
-    <article class="achievement__card">
+    <article class="achievement__card" data-aos="zoom-in-left" data-aos-offset="126px">
         <span class="achievement__icon">
             <i class="uil uil-trophy"></i>
         </span>
@@ -178,7 +188,7 @@
           <h2 class="headingh2">Our Popular Courses</h2>
           <div class="container courses__container">
 
-            <article class="course">
+            <article class="course" data-aos="fade-up-right" data-aos-offset="126px">
                 <div class="course__image">
                     <img src="./images/3.jpg">
                 </div>
@@ -193,7 +203,7 @@
 
 
 
-            <article class="course">
+            <article class="course" data-aos="fade-up" data-aos-offset="126px">
                 <div class="course__image">
                     <img src="./images/3.jpg">
                 </div>
@@ -206,7 +216,7 @@
                 </div>
             </article>
 
-            <article class="course">
+            <article class="course" data-aos="fade-up-left" data-aos-offset="126px">
               <div class="course__image">
                   <img src="./images/3.jpg">
               </div>
@@ -241,7 +251,7 @@
       <section class="faqs">
           <h2 class="headingh2">Frequently Asked Questions</h2>
           <div class="container faqs__container">
-              <article class="faq">
+              <article class="faq"  data-aos="fade-right">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -251,7 +261,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq"  data-aos="fade-left">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -261,7 +271,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq" data-aos="fade-right">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -271,7 +281,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq"  data-aos="fade-left">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -281,7 +291,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq" data-aos="fade-right">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -291,7 +301,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq"  data-aos="fade-left">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -301,7 +311,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq" data-aos="fade-right">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -311,7 +321,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq" data-aos="fade-left">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -321,7 +331,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq" data-aos="fade-right">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -331,7 +341,7 @@
                   </div>
               </article>
 
-              <article class="faq">
+              <article class="faq" data-aos="fade-left">
                   <div class="faq__icon"><i class="uil uil-plus"></i></div>
                   <div class="question__answer">
                       <h4>How do I know the right courses for me?</h4>
@@ -350,7 +360,7 @@
 
 
 
-      <footer>
+      <footer data-aos="zoom-in-down">
         <div class="container footer__container">
           <div class="footer__1">
             <a href="index.html" class="footer__logo"><h4>DATA SCIENCE</h4></a>
@@ -411,8 +421,13 @@
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       <script src="./main.js"></script>
 
+      <!-- AOS JS LINKS -->
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="bower_components/aos/dist/aos.js"></script>
+
 
       <script>
+        AOS.init();
           // slides for testimonials section
           var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
