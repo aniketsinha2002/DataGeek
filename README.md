@@ -1,7 +1,7 @@
 
 # Project Information
 
-This repository contains the code for an educational website. The website makes it easier for aspiring data scientists and learners to get a simple roadmap to becoming well versed with the subject and field. The website contains information about data science, provides links resources such as online courses through which you can enhance your skills.
+The source code for the educational website Data Science is available in this repository. This website was developed for aspiring students who are interested in data science and it gives you access to resources, including courses, that can help you develop your abilities. To direct users to the desired area of the website, the website is made up of a number of different sections, including home, about, courses, FAQ, and contact. Students can sign up and begin their career as a data scientist.
 
 This webpage is still under construction. I'm making this project open source so that if any one wants to contribute to this project, to make it easier for their fellow learners to grasp the concepts of data science, then genuinly you are welcome here :)
 
@@ -40,7 +40,7 @@ This webpage is still under construction. I'm making this project open source so
  
 **Landing Page**
  
-This page appears when user clicks on the site and lands on the page.
+This is the initial page a user sees when the website is opened. The navigation bar on the website is divided into several areas, including about, courses, FAQ, and contact. Users can sign up on this website in order to keep track of their courses and learning progress. You have the choice to 'get started' in this area and start your data science adventure.
 <br>
  
 ![img1](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/a977102a-412f-4a6f-adc2-1c8e5531413a)
@@ -48,7 +48,7 @@ This page appears when user clicks on the site and lands on the page.
  
 **About Us**
 
-This Page gives user the brief about the website.
+This section provides a quick explanation of what Data Science is along with a visual illustration of the fields that make up data science. This section also includes a representation of the number of courses offered, students enrolled, and prizes awarded.
 <br>
  
 ![img2](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/11cd2d21-da57-42c8-936f-1ce53774e8af)
@@ -57,21 +57,21 @@ This Page gives user the brief about the website.
   
 **Courses**
 
-This give information about the courses where you can enrolled and learn skills.
+The courses page offers a comprehensive selection of courses designed to equip you with the knowledge and skills needed to excel in the field of data science. Whether you're a beginner or an experienced professional, we have courses designed to meet your needs and help you stay ahead in this rapidly evolving field.
 <br>
 
 ![img4](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/8289ce46-8d9d-4f62-ad4e-5a2eb1c9bc95)
 
 **FAQ**
 
-In this FAQ's section, if you have any doubt related to course you can ask in it.
+The Frequently Asked Questions is dedicated towards providing answers to commonly asked questions. These questions aim at addressing the most common queries, offer insights, and provide clarity on various aspects of Data Science that a user could have.
 <br>
 
 ![img5](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/718f8129-cb8e-4083-a629-af59d5a7cf7f)
 
 **Contact**
 
-If you have any issue regarding the course go into contact section.
+Last but not least, the website includes information about how the user can get in touch via the provided phone number or email address. Users can use a variety of social media links to keep up with the most recent Data Science related news, announcements, events, and blog articles. It includes the website's privacy statement, terms & conditions, and return policy.
 <br>
 
 ![img6](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/bbc6357b-a129-4c47-aa12-b8319717e91e)
