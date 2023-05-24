@@ -57,7 +57,7 @@ This section provides a quick explanation of what Data Science is along with a v
   
 **Courses**
 
-The courses page offers a comprehensive selection of courses designed to equip you with the knowledge and skills needed to excel in the field of data science. Whether you're a beginner or an experienced professional, we have courses designed to meet your needs and help you stay ahead in this rapidly evolving field.
+The courses page offers a wide range of courses designed to equip you with the knowledge and skills needed to excel in the field of data science. Whether you're a beginner or an experienced professional, we have courses designed to meet your needs and help you stay ahead in this rapidly evolving field.
 <br>
 
 ![img4](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/8289ce46-8d9d-4f62-ad4e-5a2eb1c9bc95)
