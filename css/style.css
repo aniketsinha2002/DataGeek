@@ -824,18 +824,26 @@
     background: var(--color-bg2);
     padding-top: 5rem;
     font-size: 0.9rem;
+    
   }
   
   .footer__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
+    
+    padding: 20px;
   }
   
   .footer__container > div h4 {
     margin-bottom: 1.2rem;
   }
-  
+  .footer__container>div{
+    
+    padding: 20px;
+    box-shadow: 20px 20px 20px 20px rgba(14, 13, 13, 0.3);
+    border-radius: 10px;
+  }
   .footer__1 p {
     margin: 0 0 2rem;
   }
@@ -846,6 +854,8 @@
   
   footer ul li a:hover {
     text-decoration: underline;
+    
+    
   }
   
   .footer__socials {
@@ -1066,6 +1076,8 @@
       margin: 1rem auto;
       
     }
+
+    
   
     .footer__socials {
       justify-content: center;
