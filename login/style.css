@@ -11,8 +11,8 @@
 }
 
 html {
-    background-image: url('../images/login-bg.jpg');
-    background-size: cover;
+    background-image: url('../images/wallpaperflare.com_wallpaper\(1\).jpg');
+    background-position: 45%;
 }
 
 *,
@@ -41,7 +41,7 @@ html {
     --ff-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 
-    --color-primary: #0092ca;
+    --color-primary: #c22915;
     --color-secondary: #6dd5ed;
     --color-primary-dark: #192294;
     --color-error: #cc3333;
@@ -56,9 +56,9 @@ html {
     --color-dark-grey: #a4a3a3;
     --gradient: linear-gradient(135deg var(--color-primary), var(--color-secondary));
 
-    --main-color: #6dd5ed;
-    --secondary-color: #317cde;
-    --gradient: linear-gradient(135deg,
+    --main-color: #ee5d3d;
+    --secondary-color: #296cc5;
+    --gradient: linear-gradient(115deg,
             var(--main-color),
             var(--secondary-color));
 
