@@ -28,7 +28,7 @@ main{
 }
 
 .contact-heading{
-    padding: 2em 0;
+    padding: 1em 0;
     color: white;
 }
 
@@ -88,7 +88,7 @@ main{
     }
 
     .contact-sec input{
-        height: 4vh;
+        height: 3vh;
         width: 70%;
         margin: auto;
     }
@@ -99,7 +99,7 @@ main{
 
 }
 
-@media only screen and (max-width:675px){
+@media only screen and (max-width:670px){
 
     .contact-heading{
         font-size: 0.8em;
