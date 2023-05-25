@@ -16,6 +16,7 @@ main{
    display: flex;
    justify-content: center;
    align-items: center;
+   text-align: center;
 }
 
 .contact-main{
@@ -27,7 +28,7 @@ main{
 }
 
 .contact-heading{
-    padding: 2em 0;
+    padding: 1em 0;
     color: white;
 }
 
@@ -64,17 +65,17 @@ main{
 
 .contact-sec button{
     margin: auto;
-    width: 6.5vw;
-    height: 4vh;
+    width: 8.5vw;
+    height: 5vh;
     background: transparent;
     color: white;
     font-weight: 600;
     margin: 1vh auto;
 }
 
-.contact-sec button:hover{
-    background-color: rgb(111, 111, 197, 0.8);
-    transition: 0.5s ease-in;
+.contact-sec button{
+    background-color: rgba(45, 45, 219, 0.8);
+    
 }
 
 @media only screen and (max-width:1200px){
@@ -87,7 +88,7 @@ main{
     }
 
     .contact-sec input{
-        height: 4vh;
+        height: 3vh;
         width: 70%;
         margin: auto;
     }
@@ -98,7 +99,7 @@ main{
 
 }
 
-@media only screen and (max-width:675px){
+@media only screen and (max-width:670px){
 
     .contact-heading{
         font-size: 0.8em;
