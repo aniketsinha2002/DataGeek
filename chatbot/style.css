@@ -273,6 +273,13 @@ select {
 	font-weight: 600;
 	text-align: center;
 }
+
+
+#dots-nav{
+	font-size: 1.5em;
+	display: flex;
+}
+
 /* CHATBOX */
 
 
