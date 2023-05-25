@@ -6,22 +6,6 @@ window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
 })
 
-//dark and light mode
-const toggle_btn = document.querySelector('#checkbox')
-
-
-
-toggle_btn.addEventListener('change',()=>{
-    if(toggle_btn.checked){
-        document.body.classList.add('light-mode')
-        
-    }
-    else{
-        document.body.classList.remove('light-mode')
-        
-    }
-})
-
 
 
 // show/hide faq answer 
