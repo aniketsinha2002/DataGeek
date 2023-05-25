@@ -52,7 +52,7 @@ body{
 	border: 2px solid #ff3c78;
 	border-color: #ff3c78;
 	box-shadow: 0 0 30px 15px hsl(266, 89%, 11%);
-	animation: Dance 15s infinite;
+	animation: Dance 20s infinite;
 }
 .button-box
 {
