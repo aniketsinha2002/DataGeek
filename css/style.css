@@ -48,7 +48,9 @@
 
 
 
+
   }
+
 
   .container {
     width: var(--container-width-lg);
@@ -107,7 +109,7 @@
   .btn {
     display: inline-block;
     border-color: rgb(121, 116, 116);
-    background-color: rgba(157, 147, 147, 0.562);
+    background-color: none;
     padding: 1rem 2rem;
     border-top: 1px solid;
     border-right: 1px solid;
@@ -312,7 +314,7 @@
     left: 33%;
     transform: translate(-50%, -50%);
     padding: 0;
-    margin: 0;
+    margin: 158px -65px 0px;
     display: flex;
 
 }
@@ -453,7 +455,6 @@
     color: var(--color-white);
     border-color: var(--color-white);
 
-
   }
 
   .para1{
@@ -520,7 +521,6 @@
 
 }
 
-
 .ach{
 
   width: 100%;
@@ -545,14 +545,15 @@
 }
 
 .achievements__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 2rem;
 }
 
-.achievement__card {
+.achievements__cards .achievement__card {
   background: var(--color-bg2);
-  padding: 1.6rem;
+  padding: 2rem;
   border-radius: 1rem;
   text-align: center;
   transition: var(--transition);
@@ -560,7 +561,7 @@
   border-right: 2px solid;
   border-color: #0077B5;
   box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
-
+  width: 250px;
 }
 
 .achievement__card:hover {
@@ -621,6 +622,7 @@
 }
 
 /* ==================== MEDIA QUERIES (TABLETS) ================= */
+
 @media screen and (max-width: 768px) {
   .achievements__cards {
     grid-template-columns: 1fr 1fr;
@@ -850,11 +852,11 @@
 
   .footer__socials {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
   }
-
+  
   .footer__copyright {
     text-align: center;
     margin-top: 4rem;
@@ -1073,3 +1075,44 @@
 
     }
   }
+
+/* ====================== START OF SCROLL-TO-TOP BUTTON===================== */    
+
+#progress {
+  background-color: #023055;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress:hover{
+  background: transparent;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #023055;
+}
+
+/* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
