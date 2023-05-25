@@ -28,11 +28,15 @@
     <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Chat Bot -->
+
+    <!--Favicon-->
+    <link rel="icon" href="images/data-sciencee.png">
+   <!-- Chat Bot -->
     <link rel="stylesheet" href="/chatbot/style.css">
 
     <!-- icon pack -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 
 
 
@@ -48,9 +52,9 @@
             <a href="index.html"><h4>DATA SCIENCE</h4></a>
             <ul class="nav__menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#faqs">FAQ</a></li>
                 <li><a href="contact/index.html">Contact</a></li>
                 <li><a class="btn" href="/login/index.html">Sign Up</a></li>
             </ul>
@@ -111,7 +115,7 @@
 
     
 
-    <section class="grad4">
+    <section class="grad4" id="about">
       <div class="container about__achievements-container">
           <div class="about__achievements-left">
               <img class="grad2" src="./images/domain.png">
@@ -149,7 +153,13 @@
         <span class="achievement__icon">
             <i class="uil uil-video"></i>
         </span>
-        <h3>450+</h3>
+        <!-- <h3>450+</h3> -->
+        <h3><span
+        data-purecounter-start="0"
+        data-purecounter-end="450"
+        data-purecounter-once="true"
+        class="purecounter"
+        >0</span>+</h3>
         <p>Courses</p>
     </article>
     
@@ -157,7 +167,12 @@
         <span class="achievement__icon">
             <i class="uil uil-users-alt"></i>
         </span>
-        <h3>79,000+</h3>
+        <!-- <h3>79,000+</h3> -->
+        <h3><span
+          data-purecounter-start="0"
+          data-purecounter-end="79000"
+          data-purecounter-once="true"
+          class="purecounter">0</span>+</h3>
         <p>Students</p>
     </article>
 
@@ -165,7 +180,12 @@
         <span class="achievement__icon">
             <i class="uil uil-trophy"></i>
         </span>
-        <h3>26+</h3>
+        <!-- <h3>26+</h3> -->
+        <h3><span
+          data-purecounter-start="0"
+          data-purecounter-end="26"
+          data-purecounter-once="true"
+          class="purecounter">0</span>+</h3>
         <p>Awards</p>
     </article>
   </div>
@@ -181,7 +201,7 @@
 
 
 
-      <section class="courses">
+      <section class="courses" id="courses">
           <h2 class="headingh2">Our Popular Courses</h2>
           <div class="container courses__container">
 
@@ -245,7 +265,7 @@
 
 
 
-      <section class="faqs">
+      <section class="faqs" id="faqs">
           <h2 class="headingh2">Frequently Asked Questions</h2>
           <div class="container faqs__container">
             <article class="faq">
@@ -416,8 +436,8 @@
     </div>
     <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
 
-    
-	<div class="chatbox-wrapper">
+<!-- Chat bot  -->
+  <div class="chatbox-wrapper">
 		<div class="chatbox-toggle">
 			<i class='bx bx-message-dots'></i>
 		</div>
@@ -462,6 +482,8 @@
 			</div>
 		</div>
 	</div>
+<!--  end  -->
+      <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       <script src="./main.js"></script>
