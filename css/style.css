@@ -413,7 +413,11 @@
     display: flex;
     padding-right: 22rem;
     align-items: center;
+    transition: 0.5s;
   }
+.nav__container a h4:hover{
+  color: #ff3c78;
+}
 
   .logo {
     max-height: 2;
@@ -439,18 +443,10 @@
     transition: var(--transition);
     
   }
-  
-  /*.nav__menu a:hover {
-    color: #00bf8e;
-  }*/
 
   .nav__menu a:hover{
-     
-   
     color: #ff3c78;
     font-size: 1rem;
-  
-   
     }
     
 
@@ -472,13 +468,9 @@
     background-color: #ff3c78;
     color: var(--color-white);
     border-color: var(--color-white);
-<<<<<<< HEAD
     width: 150px;
     height: 51px;
-=======
     box-shadow: 0px 20px 80px 0px rgba(44, 81, 216, 0.788);
-    
->>>>>>> 94edcd4520cdabe162523f10e640ba7d1f5a0123
   }
 
   .para1{
@@ -586,18 +578,21 @@
   border-right: 2px solid;
   border-color: #0077B5;
   box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
-<<<<<<< HEAD
   animation: Dance 10s infinite;
-
-=======
   width: 250px;
->>>>>>> 94edcd4520cdabe162523f10e640ba7d1f5a0123
 }
 
 .achievement__card:hover {
   background: var(--color-bg2);
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   
+}
+
+#head-ach{
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+  margin: 5rem;
 }
 
 .achievement__icon {
@@ -756,7 +751,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    
+    animation: Dance 10s infinite;
   }
 
   .course__image img{
@@ -817,11 +812,8 @@
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
-<<<<<<< HEAD
     overflow: hidden;
     transition: 0.5s;
-=======
->>>>>>> 94edcd4520cdabe162523f10e640ba7d1f5a0123
   }
   
   .faq h4 {
@@ -898,16 +890,14 @@
     gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
+    transform: translateX(2rem);
   }
-<<<<<<< HEAD
 
 
   .footer__4 .email:hover{
     color: #00a2f9;
   }
-=======
   
->>>>>>> 94edcd4520cdabe162523f10e640ba7d1f5a0123
   .footer__copyright {
     text-align: center;
     margin-top: 4rem;
@@ -1126,7 +1116,6 @@
     }
   }
 
-<<<<<<< HEAD
   @keyframes Dance {
     0%{
       transform: translateY(0.5rem);
@@ -1203,4 +1192,4 @@
 }
 
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
->>>>>>> 94edcd4520cdabe162523f10e640ba7d1f5a0123
+
