@@ -1106,7 +1106,8 @@
   background-color: #023055;
   position: fixed;
   bottom: 20px;
-  right: 10px;
+  right: 35px;
+  margin-bottom: 90px;
   height: 60px;
   width: 60px;
   display: grid;
