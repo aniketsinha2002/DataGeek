@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>DataTech</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Aniket</title>
+
 
     
     <!-- BOOTSTRAP 4.7 CDN -->
@@ -17,9 +16,6 @@
 
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-
-    <!-- FONT AWESOME ICONS  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- GOOGLE FONTS (MONTSERRAT) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,18 +34,19 @@
 </head>
 <body>
     <nav>
-        
         <div class="container nav__container grad">
-         
+          <!--<div class="logo">
+            <img src="./images/logo.png" alt="">
+          </div>-->
 
             <a href="index.html"><h4>DATA SCIENCE</h4></a>
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#faq">Faq</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a class="btn" href="./Form/logsig.html">Sign Up</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
+                <li><a class="btn" href="login.html">Sign Up</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -64,7 +61,7 @@
     
 
 
-    <section class="landingpg text-gray-400  body-font" id="home">
+    <section class="landingpg text-gray-400  body-font">
 
       <div class="shape">
         <img class="shape1" src="images/shape1.svg" alt="">
@@ -86,11 +83,17 @@
             <img class="object-cover object-center rounded" alt="hero" src="./images/1.png">
           </div>
 
-          
+          <div class="social-menu">
+            <ul>
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa fa-youtube"></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
 
         </div>
-        
-        
       </section>
 
     <!--========================== END OF LANDING PAGE ============================-->
@@ -102,7 +105,7 @@
 
     
 
-    <section class="grad4" id="about">
+    <section class="grad4">
       <div class="container about__achievements-container">
           <div class="about__achievements-left">
               <img class="grad2" src="./images/domain.png">
@@ -111,10 +114,9 @@
           <div class="about__achievements-right">
               <h1 class="vision grad3">What is Data Science ?</h1>
               <p>
-                Data science is a deep study of the massive amount of data, which involves extracting meaningful insights from raw, structured, and unstructured data that is processed using the scientific method, different technologies, and algorithms.
-              
-                  <br><br>Data science, or data-driven science, combines different fields of work in statistics and computation in order to interpret data for the purpose of decision making.
-                  <br><br> Data science uses the most powerful hardware, programming systems, and most efficient algorithms to solve the data related problems. It is the future of artificial intelligence.
+                  Data Science is the field of study that combines domain expertise , programming skills , knowledge of mathematics and statistics to extract meaningful insights from data for business.
+                  <br><br> It is a multidisciplinary approach that combines principles and practices from the fields of artificial intelligence and above fields to analyze large amounts of data. 
+                  <br><br> This analysis helps data scientists to ask and answer questions like what happened , why it happened , what will happen , and what can be done with the results.
               </p>
               
           </div>
@@ -136,7 +138,6 @@
 
 
  <section class="achievement">
-    <h2 class="headingh2">Achievements</h2>
   <div class="ach achievements__cards">
     <article class="achievement__card">
         <span class="achievement__icon">
@@ -174,7 +175,7 @@
 
 
 
-      <section class="courses" id="courses">
+      <section class="courses">
           <h2 class="headingh2">Our Popular Courses</h2>
           <div class="container courses__container">
 
@@ -183,13 +184,11 @@
                     <img src="./images/3.jpg">
                 </div>
                 <div class="course__info">
-                    <h4>Data Science</h4>
+                    <h4>Data Sc 1</h4>
                     <p>
-                       Foundations using R <br />
-                       Johns Hopkins University<br />
-                       Launch Your Career in Data Science. A ten-course introduction to data science, developed and taught by leading professors.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam deserunt eaque quos iure ad debitis.
                     </p>
-                    <a href="https://www.coursera.org/specializations/data-science-foundations-r" class="btn btn-primary">Learn More</a>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
                 </div>
             </article>
 
@@ -200,13 +199,11 @@
                     <img src="./images/3.jpg">
                 </div>
                 <div class="course__info">
-                    <h4>IBM Data Science</h4>
+                    <h4>Data Sc 2</h4>
                     <p>
-                      
-                     IBM Skills Network<br />
-                     Kickstart your career in data science & ML. Build data science skills, learn Python & SQL, analyze & visualize data, build machine learning models. No degree or prior experience required.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam deserunt eaque quos iure ad debitis.
                     </p>
-                    <a href="https://www.coursera.org/professional-certificates/ibm-data-science" class="btn btn-primary">Learn More</a>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
                 </div>
             </article>
 
@@ -215,14 +212,11 @@
                   <img src="./images/3.jpg">
               </div>
               <div class="course__info">
-                  <h4>Deep Learning Specification</h4>
+                  <h4>Data Sc 3</h4>
                   <p>
-                    
-                    Hawdra University<br /><br />
-                   
-                    Become a Machine Learning expert. Master the fundamentals of deep learning and break into AI. Recently updated with cutting-edge techniques!
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam deserunt eaque quos iure ad debitis.
                   </p>
-                  <a href="https://www.coursera.org/specializations/deep-learning" class="btn btn-primary">Learn More</a>
+                  <a href="course.html" class="btn btn-primary">Learn More</a>
               </div>
           </article>
 
@@ -245,108 +239,104 @@
 
 
 
-      <section class="faqs" id="faq">
+      <section class="faqs">
           <h2 class="headingh2">Frequently Asked Questions</h2>
           <div class="container faqs__container">
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do I know the right courses for me?</h4>
+                   <p>
+                      Determine your specific goals and objectives in the field of data science. Are you looking to acquire a broad understanding of the field or specialize in a specific area. Knowing your goals will help you narrow down the course options.
+                  </p>
+                </div>
+            </article>
 
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What programming languages are used in data science?</h4>
+                  <p>
+                      Python and R are the most commonly used programming languages in data science courses due to their extensive libraries and tools for data analysis and machine learning.
+                  </p>
+                </div>
+            </article>
 
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What are the prerequisites for a data science course?</h4>
+                  <p>
+                      To study data science, it is crucial to have a strong foundation in mathematics, including statistics and linear algebra. Additionally, proficiency in programming languages like Python or R is essential for data manipulation and analysis.
+                  </p>
+                </div>
+            </article>
 
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What is the meaning of Deep Learning</h4>
+                  <p>
+                      Deep learning is a subset of machine learning that trains neural networks to mimic the human brain, enabling automatic learning through interconnected layers. It utilizes backpropagation to adjust network weights and improve accuracy in predictions.
+                  </p>
+                </div>
+            </article>
 
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What is Machine learning?</h4>
+                  <p>
+                      Machine learning focuses on developing algorithms that enable computers to learn and make predictions or decisions without explicit programming instructions, based on patterns and data. It involves training models on data to improve their performance over time.
+                  </p>
+                </div>
+            </article>
 
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
-
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
-
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
-
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
-
-              <article class="faq">
-                  <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                  <div class="question__answer">
-                      <h4>How do I know the right courses for me?</h4>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-                      </p>
-                  </div>
-              </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                   <h4>How to kick start your career in Data science</h4>
+                  <p>
+                      Acquire a strong foundation in statistics and programming languages like Python or R. Gain hands-on experience through projects, internships, and online courses to showcase your skills and build a professional network within the data science community.
+                  </p>
+                </div>
+            </article>
+             <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                   <h4> What job roles are available in the field of data science?</h4>
+                  <p>
+                      The field of data science offers diverse job roles, including data scientist, data analyst, machine learning engineer, business analyst, data engineer, and data consultant, among others.
+                  </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                   <h4> What are the tools and technologies used in data science?</h4>
+                  <p>
+                      Some popular tools and technologies used in the field of data science include Python (with libraries such as Pandas, NumPy, and Scikit-learn), R (with packages like ggplot and caret), and data visualization tools like Tableau and Matplotlib.
+                  </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                   <h4> How long do the data science courses typically last?</h4>
+                  <p>
+                      The duration of our data science courses varies depending on the specific course. We offer both short-term intensive courses and longer-term comprehensive programs. The course duration is mentioned in the course details on our website.
+                  </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                   <h4>Are the courses suitable for non-technical professionals?</h4>
+                  <p>
+                      Yes, we offer data science courses tailored to accommodate learners with non-technical backgrounds. These courses provide a comprehensive introduction to data science concepts and emphasize practical applications without assuming extensive technical knowledge.
+                  </p>
+                </div>
+            </article>
           </div>
       </section>
       <!--====================== END OF FAQs =====================-->
@@ -357,7 +347,7 @@
 
 
 
-      <footer id="contact">
+      <footer>
         <div class="container footer__container">
           <div class="footer__1">
             <a href="index.html" class="footer__logo"><h4>DATA SCIENCE</h4></a>
@@ -369,16 +359,15 @@
           <div class="footer__2">
             <h4>Data Science</h4>
             <ul class="permalinks">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#courses">Courses</a></li>
-              <li><a href="#faq">Faq</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
   
           <div class="footer__3">
-            <h4>Privacy</h4>
+            <h4>Primacy</h4>
             <ul class="privacy">
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms and conditions</a></li>
@@ -389,11 +378,18 @@
           <div class="footer__4">
             <h4>Contact Us</h4>
             <div>
+<<<<<<< HEAD
               <p>+91 0000000000</p>
               <p><a class="email" href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+=======
+              <p><a href="tel:+91 0000000000" style="color: white;">+91 0000000000</a></p>
+              <p><a href="mailto:abc@gmail.com" style="color: white;">abc@gmail.com</a></p>
+>>>>>>> 94edcd4520cdabe162523f10e640ba7d1f5a0123
             </div>
+  
             <ul class="footer__socials">
               <li>
+<<<<<<< HEAD
                 <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
               </li>
               <li>
@@ -405,6 +401,18 @@
               <li>
                 <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
 
+=======
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-instagram-alt"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+>>>>>>> 94edcd4520cdabe162523f10e640ba7d1f5a0123
               </li>
             </ul>
           </div>
@@ -414,6 +422,11 @@
         </div>
       </footer>
 
+     <!-- ====================== START OF SCROLL-TO-TOP BUTTON=====================  -->
+    <div id="progress">
+        <span id="progress-value"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+    </div>
+    <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
 
 
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
