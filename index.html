@@ -30,12 +30,12 @@
 
     <!--Favicon-->
     <link rel="icon" href="images/data-sciencee.png">
-        <!-- Chat Bot -->
-    <link rel="stylesheet" href="/chatbot/style.css">
-
+    
     <!-- icon pack -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
+    
+    <!-- Chat Bot -->
+<link rel="stylesheet" href="/chatbot/style.css">
 
 
 
@@ -436,7 +436,42 @@
     <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
 
 
+<!--   Chat bot   -->
+<div class="chatbox-wrapper">
+  <div class="chatbox-toggle">
+    <i class='bx bx-message-dots'></i>
+  </div>
+  <div class="chatbox-message-wrapper">
+    <div class="chatbox-message-header">
+      <div class="chatbox-message-profile">
+        <img src="/images/pngegg(2).png" alt="" class="chatbox-message-image">
+        <div>
+          <h4 class="chatbox-message-name">Aniket</h4>
+          <p class="chatbox-message-status">online</p>
+        </div>
+      </div>
+      <div class="chatbox-message-dropdown">
+        <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
+        <ul class="chatbox-message-dropdown-menu">
+          <li>
+            <a href="#">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="chatbox-message-content">
+      <h4 class="chatbox-message-no-message">Ask me anything !</h4>
+    </div>
+    <div class="chatbox-message-bottom">
+      <form action="#" class="chatbox-message-form">
+        <textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
+        <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+      </form>
+    </div>
+  </div>
+</div>
 
+<!--  chat bot finish  -->
 
 
       <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
@@ -444,54 +479,7 @@
       <script src="./main.js"></script>
       <script src="/chatbot/script.js"></script>
 
-  <!--   Chat bot   -->
-	<div class="chatbox-wrapper">
-		<div class="chatbox-toggle">
-			<i class='bx bx-message-dots'></i>
-		</div>
-		<div class="chatbox-message-wrapper">
-			<div class="chatbox-message-header">
-				<div class="chatbox-message-profile">
-					<img src="/images/pngegg(2).png" alt="" class="chatbox-message-image">
-					<div>
-						<h4 class="chatbox-message-name">Aniket</h4>
-						<p class="chatbox-message-status">online</p>
-					</div>
-				</div>
-				<div class="chatbox-message-dropdown">
-					<i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
-					<ul class="chatbox-message-dropdown-menu">
-						<li>
-							<a href="#">Report</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="chatbox-message-content">
-				<h4 class="chatbox-message-no-message">Ask me anything !</h4>
-				<!-- <div class="chatbox-message-item sent">
-					<span class="chatbox-message-item-text">
-						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
-					</span>
-					<span class="chatbox-message-item-time">08:30</span>
-				</div>
-				<div class="chatbox-message-item received">
-					<span class="chatbox-message-item-text">
-						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
-					</span>
-					<span class="chatbox-message-item-time">08:30</span>
-				</div> -->
-			</div>
-			<div class="chatbox-message-bottom">
-				<form action="#" class="chatbox-message-form">
-					<textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
-					<button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
-				</form>
-			</div>
-		</div>
-	</div>
-
-<!--  chat bot finish  -->
+  
   
       <script>
           // slides for testimonials section
