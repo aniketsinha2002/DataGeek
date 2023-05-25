@@ -8,15 +8,13 @@
 }
 
 body{
-	background-color: none;
-
-	
+	background-color: rgb(54, 14, 103);
 }
 
 
 .back-button{
 	color: white;
-	background-color: rgb(4, 132, 230);
+	background-color: rgb(149, 85, 168);
 	box-shadow: 0 0 20px 5px hsla(0, 43%, 89%, 0.178);
 	position: relative;
 	top: 35px;
@@ -24,8 +22,14 @@ body{
 	width: 80px;
 	height: 30px;
 	border-radius: 50px;
-	transition: .5s;
+	transition: 0.5s;
 	
+}
+
+.back-button:hover{
+	cursor: pointer;
+	background-color: rgb(54, 14, 103);
+	box-shadow: 0rem 0rem 2px 1px #ff3c78;
 }
 
 .back-button a{
@@ -39,18 +43,16 @@ body{
 	height:520px;
 	position:relative;
 	margin:2% auto;
-	background:rgba(0,0,0,0.3);
+	background-color: black;
 	padding:10px;
     overflow: hidden;
 	border-radius: 16px;
 	position: relative;
 	top: 70px;
-	border: 1px solid;
-	border-top: 5px solid;
-	border-right: 5px solid;
+	border: 2px solid #ff3c78;
 	border-color: #ff3c78;
-	box-shadow: 0 0 20px 9px hsla(0, 43%, 89%, 0.178);
-	
+	box-shadow: 0 0 30px 15px hsl(266, 89%, 11%);
+	animation: Dance 15s infinite;
 }
 .button-box
 {
@@ -68,8 +70,8 @@ body{
 	border:0;
 	outline: none;
 	position: relative;
-	color: rgb(233, 238, 238);
-	
+	color: white;
+	font-weight: 300;
 }
 #btn
 {
@@ -124,11 +126,17 @@ body{
 	border: 0px solid;
 	border-top: 3px solid;
 	border-right: 3px solid;
-	border-color: #ac89ffbe;
+	border-color: #d7829c;
 	position: relative;
 	top: 20px;
 	
 }
+
+.submit-btn:hover{
+	background-color: #e6215c;
+
+}
+
 .check-box
 {
 	margin: 25px 10px 0px 0;
@@ -158,3 +166,39 @@ span
 	color:white;
 	font-size: 15;
 }
+
+@keyframes Dance {
+    0%{
+      transform: translateY(0.5rem);
+  }
+  25%{
+      transform: translateY(-0.5rem);
+  }
+  50%{
+      transform: translateY(0.5rem);
+  }
+  75%{
+      transform: translateY(-0.5rem);
+  }
+  100%{
+      transform: translateY(0.5rem);
+  }
+  }
+
+  @keyframes revDance {
+    0%{
+      transform: translateY(-0.5rem);
+  }
+  25%{
+      transform: translateY(0.5rem);
+  }
+  50%{
+      transform: translateY(-0.5rem);
+  }
+  75%{
+      transform: translateY(0.5rem);
+  }
+  100%{
+      transform: translateY(-0.5rem);
+  }
+  }
