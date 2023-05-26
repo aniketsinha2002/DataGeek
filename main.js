@@ -98,3 +98,10 @@ let calcScrollValue = () => {
 
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
+
+  // Clickable Copyright name
+  const copyright  = document.querySelector(".footer__copyright small span");
+
+  copyright.addEventListener("click", function(){
+    window.open("https://github.com/aniketsinha2002?tab=repositories", "blank")
+  })

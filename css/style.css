@@ -887,6 +887,14 @@
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
   }
+
+  .footer__copyright small span{
+    cursor: pointer;
+  }
+
+  .footer__copyright small span:hover{
+    text-decoration: underline;
+  }
   
   /* ===================== MEDIA QUERIES (TABLETS) ==================== */
   @media screen and (max-width: 1024px) {
