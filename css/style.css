@@ -133,6 +133,11 @@
     color: var(--color-white);
     border-color: var(--color-white);
   }
+
+  .btn-top{
+    bottom: 25rem;;
+    position: absolute;
+  }
   
   .btn-primary {
     background: var(--color-define);
@@ -785,7 +790,7 @@
   
   .faqs__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   
@@ -797,16 +802,42 @@
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
+    border-radius: 1%/9%;
+  }
+
+  .faq:hover{
+    background: #0a486e;
+    background-image: -webkit-linear-gradient(top, #0a486e, #108de0);
+    background-image: -moz-linear-gradient(top, #0a486e, #108de0);
+    background-image: -ms-linear-gradient(top, #0a486e, #108de0);
+    background-image: -o-linear-gradient(top, #0a486e, #108de0);
+    background-image: linear-gradient(to bottom, #0a486e, #108de0);
+    text-decoration: none;
+    transition-delay: 0.2s;
   }
   
   .faq h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2.2;
   }
   
   .faq__icon {
-    align-self: flex-start;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    align-items: center;
+    
+  }
+ .faq__icon:hover{
+    animation: mymove 1s 1;
+    
+  }
+
+  @keyframes mymove {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   
   .faq p {
@@ -860,6 +891,14 @@
     margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
+  }
+
+  .footer__copyright small span{
+    cursor: pointer;
+  }
+
+  .footer__copyright small span:hover{
+    text-decoration: underline;
   }
   
   /* ===================== MEDIA QUERIES (TABLETS) ==================== */
@@ -995,6 +1034,7 @@
     .faq {
       padding: 1.5rem;
     }
+
   
     /* ====================== FOOTER ===================== */
     .footer__container {
