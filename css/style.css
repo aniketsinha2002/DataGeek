@@ -133,6 +133,11 @@
     color: var(--color-white);
     border-color: var(--color-white);
   }
+
+  .btn-top{
+    bottom: 25rem;;
+    position: absolute;
+  }
   
   .btn-primary {
     background: var(--color-define);
