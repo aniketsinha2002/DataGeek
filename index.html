@@ -28,6 +28,15 @@
     <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!--Favicon-->
+    <link rel="icon" href="images/data-sciencee.png">
+    
+    <!-- icon pack -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Chat Bot -->
+<link rel="stylesheet" href="/chatbot/style.css">
+
 
 
 
@@ -42,11 +51,11 @@
             <a href="index.html"><h4>DATA SCIENCE</h4></a>
             <ul class="nav__menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#faqs">FAQ</a></li>
                 <li><a href="contact/index.html">Contact</a></li>
-                <li><a class="btn" href="login.html">Sign Up</a></li>
+                <li><a class="btn" href="./login/index.html">Sign Up </a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -54,11 +63,6 @@
     </nav>
     <!--========================== END OF NAVBAR ============================-->
 
-
-
-
-
-    
 
 
     <section class="landingpg text-gray-400  body-font">
@@ -83,16 +87,16 @@
             <img class="object-cover object-center rounded" alt="hero" src="./images/1.png">
           </div>
 
-          <div class="social-menu">
-            <ul>
-              <li><a href=""><i class="fa fa-facebook"></i></a></li>
-              <li><a href=""><i class="fa fa-twitter"></i></a></li>
-              <li><a href=""><i class="fa fa-instagram"></i></a></li>
-              <li><a href=""><i class="fa fa-youtube"></i></a></li>
-              <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-
+          
+        </div>
+        <div class="social-menu">
+          <ul>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+          </ul>
         </div>
       </section>
 
@@ -105,7 +109,7 @@
 
     
 
-    <section class="grad4">
+    <section class="grad4" id="about">
       <div class="container about__achievements-container">
           <div class="about__achievements-left">
               <img class="grad2" src="./images/domain.png">
@@ -175,7 +179,7 @@
 
 
 
-      <section class="courses">
+      <section class="courses" id="courses">
           <h2 class="headingh2">Our Popular Courses</h2>
           <div class="container courses__container">
 
@@ -239,7 +243,7 @@
 
 
 
-      <section class="faqs">
+      <section class="faqs" id="faqs">
           <h2 class="headingh2">Frequently Asked Questions</h2>
           <div class="container faqs__container">
             <article class="faq">
@@ -362,7 +366,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="courses.html">Courses</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
             </ul>
           </div>
   
@@ -399,9 +403,10 @@
           </div>
         </div>
         <div class="footer__copyright">
-            <small>Copyright &copy; Aniket Sinha</small>
+            <small>&copy; Copyright 2023 | Aniket Sinha</small>
         </div>
       </footer>
+      
 
      <!-- ====================== START OF SCROLL-TO-TOP BUTTON=====================  -->
     <div id="progress">
@@ -410,10 +415,51 @@
     <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
 
 
+<!--   Chat bot   -->
+<div class="chatbox-wrapper">
+  <div class="chatbox-toggle">
+    <i class='bx bx-message-dots'></i>
+  </div>
+  <div class="chatbox-message-wrapper">
+    <div class="chatbox-message-header">
+      <div class="chatbox-message-profile">
+        <img src="/images/pngegg(2).png" alt="" class="chatbox-message-image">
+        <div>
+          <h4 class="chatbox-message-name">Aniket</h4>
+          <p class="chatbox-message-status">online</p>
+        </div>
+      </div>
+      <div class="chatbox-message-dropdown">
+        <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
+        <ul class="chatbox-message-dropdown-menu">
+          <li>
+            <a href="#">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="chatbox-message-content">
+      <h4 class="chatbox-message-no-message">Ask me anything !</h4>
+    </div>
+    <div class="chatbox-message-bottom">
+      <form action="#" class="chatbox-message-form">
+        <textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
+        <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--  chat bot finish  -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       <script src="./main.js"></script>
+      <script src="/chatbot/script.js"></script>
 
-
+  
+  
       <script>
           // slides for testimonials section
           var swiper = new Swiper(".mySwiper", {
@@ -432,5 +478,8 @@
         });
       </script>
 
+  
+     
+      
 </body>
 </html>
