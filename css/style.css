@@ -877,6 +877,8 @@
   
   footer ul li a:hover {
     text-decoration: underline;
+    color :#00bf8e
+    
   }
   
   .footer__socials {
@@ -886,20 +888,75 @@
     margin-top: 2rem;
   }
   
+  /* Add hover styles for social media icons */
+  .footer__socials li a:hover {
+    color:#00bf8e;
+    letter-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  
+  /* Add hover styles for the footer links */
+  .footer__2 ul li a:hover,
+  .privacy li a:hover {
+    text-decoration: underline;
+    color:#00bf8e;
+    letter-spacing: 2px;
+  }
+  
+  /* Add hover styles for the contact information */
+  .footer__4 p a:hover {
+    color: var(--color-primary);
+    color:#00bf8e;
+    letter-spacing: 2px;
+  }
+  
+  /* Add hover styles for the footer copyright */
   .footer__copyright {
     text-align: center;
     margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
   }
-
-  .footer__copyright small span{
+  
+  /* Add hover styles for the author name */
+  .footer__copyright small span {
     cursor: pointer;
-  }
-
-  .footer__copyright small span:hover{
     text-decoration: underline;
   }
+  
+  .footer__copyright small span:hover {
+    color: var(--color-primary);
+    color:#00bf8e;
+  }
+
+  .datascience{
+    color:aquamarine;
+  }
+
+  .primacy1{
+    color:aquamarine;
+  }
+  .contactus{
+    color:aquamarine;
+  }
+
+  .datascience:hover{
+    color:#ff960b;
+    letter-spacing: 2px;
+  }
+  .primacy1:hover{
+    color:#ff960b;
+    letter-spacing: 2px;
+  }
+  .contactus:hover{
+    color:#ff960b;
+    letter-spacing: 2px;
+  }
+ 
+
+  
+
+  
   
   /* ===================== MEDIA QUERIES (TABLETS) ==================== */
   @media screen and (max-width: 1024px) {
