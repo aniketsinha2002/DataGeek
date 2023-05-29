@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 .headingh9 {
     margin-top: 5%;
     font-weight: 600;
@@ -25,6 +26,8 @@
     text-align: left;
 }
 
+=======
+>>>>>>> Stashed changes
  :root {
     /*--color-primary: #6c63ff;*/
     /*--color-primary:#424890;*/
@@ -132,6 +135,15 @@ img {
     border-color: var(--color-white);
 }
 
+<<<<<<< Updated upstream
+=======
+.btn-top {
+    bottom: 25rem;
+    ;
+    position: absolute;
+}
+
+>>>>>>> Stashed changes
 .btn-primary {
     background: var(--color-define);
     color: var(--color-white);
@@ -284,8 +296,13 @@ img {
 
 .social-menu ul {
     position: absolute;
+<<<<<<< Updated upstream
     top: 73%;
     left: 33%;
+=======
+    top: 71%;
+    left: 26%;
+>>>>>>> Stashed changes
     transform: translate(-50%, -50%);
     padding: 0;
     margin: 158px -65px 0px;
@@ -687,11 +704,35 @@ header {
     margin-top: 2rem;
 }
 
+<<<<<<< Updated upstream
 .headingh2 {
     font-weight: 600;
     font-size: 50px;
 }
 
+=======
+.headingh9 {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.headingh4 {
+    font-weight: 30;
+    font-size: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.headingh2 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+>>>>>>> Stashed changes
 .courses__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -751,6 +792,7 @@ header {
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
+<<<<<<< Updated upstream
 }
 
 .faq h4 {
@@ -761,6 +803,43 @@ header {
 .faq__icon {
     align-self: flex-start;
     font-size: 1.2rem;
+=======
+    border-radius: 1%/9%;
+}
+
+.faq:hover {
+    background: #0a486e;
+    background-image: -webkit-linear-gradient(top, #0a486e, #108de0);
+    background-image: -moz-linear-gradient(top, #0a486e, #108de0);
+    background-image: -ms-linear-gradient(top, #0a486e, #108de0);
+    background-image: -o-linear-gradient(top, #0a486e, #108de0);
+    background-image: linear-gradient(to bottom, #0a486e, #108de0);
+    text-decoration: none;
+    transition-delay: 0.2s;
+}
+
+.faq h4 {
+    font-size: 1.5rem;
+    line-height: 2.2;
+}
+
+.faq__icon {
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.faq__icon:hover {
+    animation: mymove 1s 1;
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+>>>>>>> Stashed changes
 }
 
 .faq p {
@@ -817,6 +896,17 @@ footer ul li a:hover {
     border-top: 1px solid var(--color-bg2);
 }
 
+<<<<<<< Updated upstream
+=======
+.footer__copyright small span {
+    cursor: pointer;
+}
+
+.footer__copyright small span:hover {
+    text-decoration: underline;
+}
+
+>>>>>>> Stashed changes
 
 /* ===================== MEDIA QUERIES (TABLETS) ==================== */
 
@@ -999,7 +1089,12 @@ footer ul li a:hover {
     background-color: #023055;
     position: fixed;
     bottom: 20px;
+<<<<<<< Updated upstream
     right: 10px;
+=======
+    right: 35px;
+    margin-bottom: 90px;
+>>>>>>> Stashed changes
     height: 60px;
     width: 60px;
     display: grid;
