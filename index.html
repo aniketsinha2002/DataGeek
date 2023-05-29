@@ -8,7 +8,6 @@
     <title>Aniket</title>
 
 
-
     <!-- BOOTSTRAP 4.7 CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -65,9 +64,9 @@
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
+
+
     <!--========================== END OF NAVBAR ============================-->
-
-
 
 
 
@@ -501,6 +500,22 @@
             }
         });
     </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
 
 
 
