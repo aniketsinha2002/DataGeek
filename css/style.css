@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+<<<<<<< Updated upstream
 }
 
 <<<<<<< Updated upstream
@@ -27,6 +28,10 @@
 }
 
 =======
+>>>>>>> Stashed changes
+=======
+}
+
 >>>>>>> Stashed changes
  :root {
     /*--color-primary: #6c63ff;*/
@@ -57,6 +62,7 @@ body {
     line-height: 1.7;
     color: var(--color-white);
     background: #071F30;
+<<<<<<< Updated upstream
     overflow-x: hidden;
 }
 
@@ -70,6 +76,10 @@ body {
     border-radius: 10px;
 }
 
+=======
+}
+
+>>>>>>> Stashed changes
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -136,6 +146,7 @@ img {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 .btn-top {
     bottom: 25rem;
@@ -143,6 +154,8 @@ img {
     position: absolute;
 }
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 .btn-primary {
     background: var(--color-define);
@@ -297,15 +310,20 @@ img {
 .social-menu ul {
     position: absolute;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     top: 73%;
     left: 33%;
 =======
     top: 71%;
     left: 26%;
 >>>>>>> Stashed changes
+=======
+    top: 73%;
+    left: 33%;
+>>>>>>> Stashed changes
     transform: translate(-50%, -50%);
     padding: 0;
-    margin: 158px -65px 0px;
+    margin: 0;
     display: flex;
 }
 
@@ -445,7 +463,10 @@ nav button {
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
+<<<<<<< Updated upstream
     box-shadow: 0px 20px 80px 0px rgba(44, 81, 216, 0.788);
+=======
+>>>>>>> Stashed changes
 }
 
 .para1 {
@@ -687,6 +708,7 @@ header {
     background: var(--color-primary);
     padding: 0.7rem;
     border-radius: 0.9rem;
+<<<<<<< Updated upstream
 }
 
 .category h5 {
@@ -717,14 +739,23 @@ header {
     font-size: 50px;
     padding-right: 10%;
     padding-left: 10%;
+=======
+>>>>>>> Stashed changes
 }
 
-.headingh4 {
-    font-weight: 30;
-    font-size: 20px;
-    padding-right: 10%;
-    padding-left: 10%;
-    text-align: left;
+.category h5 {
+    margin: 2rem 0 1rem;
+}
+
+.category p {
+    font-size: 0.85rem;
+}
+
+
+/* =================== POPULAR COURSES ===================== */
+
+.courses {
+    margin-top: 2rem;
 }
 
 .headingh2 {
@@ -732,6 +763,9 @@ header {
     font-size: 50px;
 }
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 .courses__container {
     display: grid;
@@ -793,6 +827,9 @@ header {
     background: var(--color-primary);
     cursor: pointer;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 }
 
 .faq h4 {
@@ -897,6 +934,7 @@ footer ul li a:hover {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 .footer__copyright small span {
     cursor: pointer;
@@ -906,6 +944,8 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 /* ===================== MEDIA QUERIES (TABLETS) ==================== */
@@ -1080,6 +1120,7 @@ footer ul li a:hover {
     .footer__socials {
         justify-content: center;
     }
+<<<<<<< Updated upstream
 }
 
 
@@ -1126,3 +1167,6 @@ footer ul li a:hover {
 
 
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
+=======
+}
+>>>>>>> Stashed changes
