@@ -8,9 +8,31 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+<<<<<<< Updated upstream
   }
   
   :root {
+=======
+}
+
+.headingh9 {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.headingh4 {
+    font-weight: 30;
+    font-size: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+ :root {
+>>>>>>> Stashed changes
     /*--color-primary: #6c63ff;*/
     /*--color-primary:#424890;*/
     --color-primary:#03548664;
@@ -134,12 +156,16 @@
     border-color: var(--color-white);
   }
 
+<<<<<<< Updated upstream
   .btn-top{
     bottom: 25rem;;
     position: absolute;
   }
   
   .btn-primary {
+=======
+.btn-primary {
+>>>>>>> Stashed changes
     background: var(--color-define);
     color: var(--color-white);
     border-radius: 30px;
@@ -325,8 +351,13 @@
 
   .social-menu ul {
     position: absolute;
+<<<<<<< Updated upstream
     top: 60%;
     left: 33.5%;
+=======
+    top: 73%;
+    left: 33%;
+>>>>>>> Stashed changes
     transform: translate(-50%, -50%);
     padding: 0;
     margin: 158px -65px 0px;
@@ -728,6 +759,7 @@
 
 
 
+<<<<<<< Updated upstream
   
   /* =================== POPULAR COURSES ===================== */
   
@@ -736,11 +768,39 @@
   }
   
   .headingh2{
+=======
+.headingh2 {
+>>>>>>> Stashed changes
     font-weight: 600;
     font-size: 50px;
   }
 
+<<<<<<< Updated upstream
   .courses__container {
+=======
+.headingh9 {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.headingh4 {
+    font-weight: 30;
+    font-size: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.headingh2 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.courses__container {
+>>>>>>> Stashed changes
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -802,6 +862,7 @@
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
+<<<<<<< Updated upstream
     border-radius: 1%/9%;
   }
 
@@ -841,6 +902,21 @@
   }
   
   .faq p {
+=======
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+>>>>>>> Stashed changes
     margin-top: 0.8rem;
     display: none;
   }
@@ -893,6 +969,7 @@
     border-top: 1px solid var(--color-bg2);
   }
 
+<<<<<<< Updated upstream
   .footer__copyright small span{
     cursor: pointer;
   }
@@ -903,6 +980,12 @@
   
   /* ===================== MEDIA QUERIES (TABLETS) ==================== */
   @media screen and (max-width: 1024px) {
+=======
+
+/* ===================== MEDIA QUERIES (TABLETS) ==================== */
+
+@media screen and (max-width: 1024px) {
+>>>>>>> Stashed changes
     .container {
       width: var(--container-width-md);
     }
@@ -1116,6 +1199,7 @@
 /* ====================== START OF SCROLL-TO-TOP BUTTON===================== */    
 
 #progress {
+<<<<<<< Updated upstream
   background-color: #023055;
   position: fixed;
   bottom: 20px;
@@ -1128,6 +1212,21 @@
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+=======
+    background-color: #023055;
+    position: fixed;
+    bottom: 20px;
+    <<<<<<< Updated upstream right: 10px;
+    =======right: 35px;
+    margin-bottom: 90px;
+    >>>>>>>Stashed changes height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+>>>>>>> Stashed changes
 }
 
 #progress:hover{
