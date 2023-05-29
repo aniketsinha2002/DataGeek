@@ -44,12 +44,24 @@
     line-height: 1.7;
     color: var(--color-white);
     background: #071F30;
+    overflow-x: hidden;
      
     
     
 
   }
   
+    ::-webkit-scrollbar{
+    background: #000a11;
+    /* width: 10px; */
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top,rgb(1, 1, 125), rgb(4, 4, 88),black);
+    border-radius: 10px;
+  }
+
+
   .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -120,6 +132,11 @@
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
+  }
+
+  .btn-top{
+    bottom: 25rem;;
+    position: absolute;
   }
   
   .btn-primary {
@@ -308,13 +325,13 @@
 
   .social-menu ul {
     position: absolute;
-    top: 73%;
-    left: 33%;
+    top: 60%;
+    left: 33.5%;
     transform: translate(-50%, -50%);
     padding: 0;
-    margin: 0;
+    margin: 158px -65px 0px;
     display: flex;
-    
+
 }
 .social-menu ul li {
     list-style: none;
@@ -452,7 +469,7 @@
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
-
+    box-shadow: 0px 20px 80px 0px rgba(44, 81, 216, 0.788);
     
   }
 
@@ -773,7 +790,7 @@
   
   .faqs__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   
@@ -785,16 +802,42 @@
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
+    border-radius: 1%/9%;
+  }
+
+  .faq:hover{
+    background: #0a486e;
+    background-image: -webkit-linear-gradient(top, #0a486e, #108de0);
+    background-image: -moz-linear-gradient(top, #0a486e, #108de0);
+    background-image: -ms-linear-gradient(top, #0a486e, #108de0);
+    background-image: -o-linear-gradient(top, #0a486e, #108de0);
+    background-image: linear-gradient(to bottom, #0a486e, #108de0);
+    text-decoration: none;
+    transition-delay: 0.2s;
   }
   
   .faq h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2.2;
   }
   
   .faq__icon {
-    align-self: flex-start;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    align-items: center;
+    
+  }
+ .faq__icon:hover{
+    animation: mymove 1s 1;
+    
+  }
+
+  @keyframes mymove {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   
   .faq p {
@@ -848,6 +891,14 @@
     margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
+  }
+
+  .footer__copyright small span{
+    cursor: pointer;
+  }
+
+  .footer__copyright small span:hover{
+    text-decoration: underline;
   }
   
   /* ===================== MEDIA QUERIES (TABLETS) ==================== */
@@ -983,6 +1034,7 @@
     .faq {
       padding: 1.5rem;
     }
+
   
     /* ====================== FOOTER ===================== */
     .footer__container {
@@ -1060,3 +1112,45 @@
       
     }
   }
+
+/* ====================== START OF SCROLL-TO-TOP BUTTON===================== */    
+
+#progress {
+  background-color: #023055;
+  position: fixed;
+  bottom: 20px;
+  right: 35px;
+  margin-bottom: 90px;
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress:hover{
+  background: transparent;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #023055;
+}
+
+/* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
