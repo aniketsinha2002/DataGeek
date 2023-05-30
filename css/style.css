@@ -751,7 +751,7 @@
     border-radius: 20px;
   }
   
-  .course {
+  .course:hover {
     background: var(--color-bg2);
     text-align: center;
     border-radius: 20px;
@@ -762,8 +762,8 @@
     border-right: 2px solid;
     border-color: #0077B5;
     border-image:auto;
-
-   
+    transform: scale(1.1);
+    z-index: 1;
   }
   
   .course:hover {
