@@ -357,13 +357,6 @@ select {
   transform: scale(1);
 }
 
-/* Add your custom styles for the chatbox header, content, and bottom */
-
-/* CHATBOX */
-
-/* Add your custom CSS styles here */
-
-
 .chatbox-message-header {
 	padding: 1rem;
 	background-color: var(--blue);
