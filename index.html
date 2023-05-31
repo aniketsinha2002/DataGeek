@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aniket</title>
 
-
-
   <!-- BOOTSTRAP 4.7 CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -38,6 +36,12 @@
 
   <!-- Chat Bot -->
   <link rel="stylesheet" href="/chatbot/style.css">
+
+     <!-- icon pack -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Chat Bot -->
+    <link rel="stylesheet" href="./chatbot/style.css">
 
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -155,16 +159,6 @@
     </div>
   </section>
   <!----================ END OF What is Data Sc ===-->
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -506,9 +500,81 @@
         </form>
       </div>
     </div>
-  </div>
 
-  <!--  chat bot finish  -->
+    <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
+
+    
+        
+	<div class="chatbox-wrapper">
+		<div class="chatbox-toggle">
+			<i class='bx bx-message-dots'></i>
+		</div>
+		<div class="chatbox-message-wrapper">
+			<div class="chatbox-message-header">
+				<div class="chatbox-message-profile">
+					<img src="/images/pngegg(2).png" alt="" class="chatbox-message-image">
+					<div>
+						<h4 class="chatbox-message-name">Aniket</h4>
+						<p class="chatbox-message-status">online</p>
+					</div>
+				</div>
+				<div class="chatbox-message-dropdown">
+					<i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
+					<ul class="chatbox-message-dropdown-menu">
+						<li>
+							<a href="#">Report</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="chatbox-message-content">
+				<h4 class="chatbox-message-no-message">Ask me anything !</h4>
+				<!-- <div class="chatbox-message-item sent">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div>
+				<div class="chatbox-message-item received">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div> -->
+			</div>
+			<div class="chatbox-message-bottom">
+				<form action="#" class="chatbox-message-form">
+					<textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
+					<button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+ </div>
+
+
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script src="./main.js"></script>
+      <script src="./chatbot/script.js"></script>
+      <script>
+          // slides for testimonials section
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            // when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+      </script>
+
+    
 
 
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
@@ -519,8 +585,7 @@
   <script src="smoothscroll.js"></script>
   <script src="./main.js"></script>
   <script src="/chatbot/script.js"></script>
-
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   <script>
     // slides for testimonials section
@@ -540,14 +605,9 @@
     });
   </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-
-
-
-
 </body>
 
 </html>
