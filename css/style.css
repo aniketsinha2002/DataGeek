@@ -135,7 +135,7 @@
   }
 
   .btn-top{
-    bottom: 25rem;;
+    bottom: 10rem;
     position: absolute;
   }
   
@@ -325,7 +325,7 @@
 
   .social-menu ul {
     position: absolute;
-    top: 60%;
+    top: 64%;
     left: 33.5%;
     transform: translate(-50%, -50%);
     padding: 0;
