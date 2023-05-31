@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="./chatbot/style.css">
 
 
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -64,7 +64,7 @@
         <li><a href="#courses">Courses</a></li>
         <li><a href="#faqs">FAQ</a></li>
         <li><a href="contact/index.html">Contact</a></li>
-        <li><a class="btn" href="./login/index.html">Sign Up </a></li>
+        <li><a class="signup" href="./login/index.html">Sign_Up</a></li>
       </ul>
       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
       <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -136,11 +136,15 @@
 
   <section class="grad4" id="about">
     <div class="container about__achievements-container">
-      <div class="about__achievements-left">
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="about__achievements-left">
         <img class="grad2" src="./images/domain.png">
       </div>
 
-      <div class="about__achievements-right">
+      <div data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="about__achievements-right">
         <h1 class="vision grad3">What is Data Science ?</h1>
         <p>
           Data Science is the field of study that combines domain expertise , programming skills , knowledge of
@@ -161,7 +165,7 @@
 
   <section class="achievement">
     <div class="ach achievements__cards">
-      <article class="achievement__card">
+      <article class="achievement__card" data-aos="flip-up">
         <span class="achievement__icon">
           <i class="uil uil-video"></i>
         </span>
@@ -171,7 +175,7 @@
         <p>Courses</p>
       </article>
 
-      <article class="achievement__card">
+      <article class="achievement__card" data-aos="flip-up">
         <span class="achievement__icon">
           <i class="uil uil-users-alt"></i>
         </span>
@@ -181,7 +185,7 @@
         <p>Students</p>
       </article>
 
-      <article class="achievement__card">
+      <article class="achievement__card" data-aos="flip-up">
         <span class="achievement__icon">
           <i class="uil uil-trophy"></i>
         </span>
@@ -204,10 +208,10 @@
 
 
   <section class="courses" id="courses">
-    <h2 class="headingh2">Our Popular Courses</h2>
+    <h2 class="headingh2" data-aos="zoom-in">Our Popular Courses</h2>
     <div class="container courses__container">
 
-      <article class="course">
+      <article class="course" data-aos="flip-left">
         <div class="course__image">
           <img src="./images/3.jpg">
         </div>
@@ -223,7 +227,7 @@
 
 
 
-      <article class="course">
+      <article class="course"  data-aos="flip-up">
         <div class="course__image">
           <img src="./images/3.jpg">
         </div>
@@ -237,7 +241,7 @@
         </div>
       </article>
 
-      <article class="course">
+      <article class="course"  data-aos="flip-right">
         <div class="course__image">
           <img src="./images/3.jpg">
         </div>
@@ -271,7 +275,7 @@
 
 
   <section class="faqs" id="faqs">
-    <h2 class="headingh2">Frequently Asked Questions</h2>
+    <h2 class="headingh2" data-aos="zoom-in">Frequently Asked Questions</h2>
     <div class="container faqs__container">
       <article class="faq">
         <div class="faq__icon"><i class="uil uil-plus"></i></div>
@@ -400,15 +404,15 @@
     <div class="container footer__container">
       <div class="footer__1">
         <a href="index.html" class="footer__logo">
-          <h4>DATA SCIENCE</h4>
+          <h4 >DATA SCIENCE</h4>
         </a>
-        <p>
+        <p class="datascience1">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsum nobis ratione.
         </p>
       </div>
 
       <div class="footer__2">
-        <h4>Data Science</h4>
+        <h4 class="datascience">Data Science</h4>
         <ul class="permalinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -418,7 +422,7 @@
       </div>
 
       <div class="footer__3">
-        <h4>Primacy</h4>
+        <h4 >Primacy</h4>
         <ul class="privacy">
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms and conditions</a></li>
@@ -427,7 +431,7 @@
       </div>
 
       <div class="footer__4">
-        <h4>Contact Us</h4>
+        <h4 >Contact Us</h4>
         <div>
           <p><a href="tel:+91 0000000000" style="color: white;">+91 0000000000</a></p>
           <p><a href="mailto:abc@gmail.com" style="color: white;">abc@gmail.com</a></p>
@@ -465,28 +469,29 @@
   <!--   Chat bot   -->
   <div class="chatbox-wrapper">
     <div class="chatbox-toggle">
-      <i class='bx bx-message-dots'></i>
+      <i class="bx bx-message"></i>
     </div>
     <div class="chatbox-message-wrapper">
       <div class="chatbox-message-header">
         <div class="chatbox-message-profile">
-          <img src="/images/pngegg(2).png" alt="" class="chatbox-message-image">
+          <img src="/images/chatbot.png" alt="Profile Image" class="chatbox-message-image">
           <div>
-            <h4 class="chatbox-message-name">Aniket</h4>
-            <p class="chatbox-message-status">online</p>
+            <h4 class="chatbox-message-name">Chatbot</h4>
+            <span class="chatbox-message-status">We're Online!</span>
           </div>
         </div>
         <div class="chatbox-message-dropdown">
-          <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
+          <div class="chatbox-message-dropdown-toggle">
+            <i class="bx bx-dots-vertical-rounded"></i>
+          </div>
           <ul class="chatbox-message-dropdown-menu">
-            <li>
-              <a href="#">Report</a>
-            </li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Close</a></li>
           </ul>
         </div>
       </div>
       <div class="chatbox-message-content">
-        <h4 class="chatbox-message-no-message">Ask me anything !</h4>
+        <h4 class="chatbox-message-no-message">Hi Aniket! How can I help you? </h4>
       </div>
       <div class="chatbox-message-bottom">
         <form action="#" class="chatbox-message-form">
@@ -574,10 +579,35 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- adding jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="smoothscroll.js"></script>
   <script src="./main.js"></script>
   <script src="/chatbot/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+  <script>
+    // slides for testimonials section
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // when window width is >= 600px
+      breakpoints: {
+        600: {
+          slidesPerView: 2
+        }
+      }
+    });
+  </script>
 
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
