@@ -69,6 +69,13 @@ let calcScrollValue = () => {
   scrollProgress.style.background = `conic-gradient(#0077B5 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 };
 
+function scrolltotop(){
+  window.scroll ({
+    top:0,
+    behavior:"smooth"
+  });
+}
+
 //Pure counter
 new PureCounter();
 
