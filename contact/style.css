@@ -223,6 +223,10 @@ iframe{
     /* border-color: #f7327a; */
     border-color: rgb(100, 203, 245);
 }
+.contact-form{
+    background-color: aqua;
+    opacity:80%;
+}
 
 @media screen and (min-width: 768px){
     .contact-bg .text{
