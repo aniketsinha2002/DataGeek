@@ -398,7 +398,9 @@
     margin-top: 30px;
   }
 
-  
+  nav li{
+    margin: -10px;
+  }
   
   /* change navbar styles on scroll using javascript */
   .window-scroll {
