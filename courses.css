@@ -323,7 +323,7 @@ nav {
 }
 
 nav li {
-  margin: 50px;
+  margin: -56px;
 }
 
 /* change navbar styles on scroll using javascript */
