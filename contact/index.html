@@ -8,86 +8,27 @@
     <title>Contact Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <main>
-        <section class = "contact-section">
-            <div class = "contact-bg" style="background-image: url(images/p02q_rf7s_191031.jpg)">
-              <!-- <h3>Get in Touch with Us</h3> -->
-              <h2>contact us</h2>
-              <div class = "line">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>   
-            <div class = "contact-body">
-              <div class = "contact-info">
-                <div data-aos="zoom-in" data-aos-duration="2000">
-                  <span><i class = "fas fa-mobile-alt"></i></span>
-                  <span>Phone No.</span>
-                  <span class = "text">1-2392-23928-2</span>
+        <div class="contact">
+            <div class="contact-main">
+                <div class="contact-heading">
+                    <h1>CONTACT US</h1>
+                    <p>WE'RE HERE TO HELP</p>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2000">
-                  <span><i class = "fas fa-envelope-open"></i></span>
-                  <span>E-mail</span>
-                  <span class = "text">mail@company.com</span>
+                <div class="contact-sec">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Your Message">
+                    <button>Submit <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2000">
-                  <span><i class = "fas fa-brands fa-github"></i></span>
-                  <span>Github</span>
-                  <span class = "text"><a href="https://github.com/aniketsinha2002/DataScienceWebsite.github.io" target="_blank" rel="noopener noreferrer" style="text-decoration: none;color: white;">LINK</a></span>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000">
-                  <span><i class = "fas fa-clock"></i></span>
-                  <span>Opening Hours</span>
-                  <span class = "text">Monday - Friday (9:00 AM to 5:00 PM)</span>
-                </div>
-              </div>
-      
-              <div style="padding: 5% 9%;" class = "contact-form container-fluid">
-                <form data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                  <div>
-                    <input type = "text" class = "form-control" placeholder="First Name">
-                    <input type = "text" class = "form-control" placeholder="Last Name">
-                  </div>
-                  <div>
-                    <input type = "email" class = "form-control" placeholder="E-mail">
-                    <input type = "text" class = "form-control" placeholder="Phone">
-                  </div>
-                  <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
-                  <input type = "submit" class = "send-btn" value = "send message">
-                </form>
-      
-                <div data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                  <img src = "../images/contact-png.png" alt = "">
-                </div>
-              </div>
             </div>
-      
-            <div class = "contact-footer">
-              <h3>Follow Us</h3>
-              <div class = "social-links">
-                <a href = "#" class = "fab fa-facebook-f"></a>
-                <a href = "#" class = "fab fa-twitter"></a>
-                <a href = "#" class = "fab fa-instagram"></a>
-                <a href = "#" class = "fab fa-linkedin"></a>
-                <a href = "#" class = "fab fa-youtube"></a>
-              </div>
-            </div>
-          </section>
+        </div>
     </main>
 
 </body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
 </html>

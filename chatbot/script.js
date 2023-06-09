@@ -113,9 +113,3 @@ function isValid(value) {
 
 	return text.length > 0
 }
-
-// CHATBOT MENU TOGGLE
-const closeLink = document.querySelector('.chatbox-message-dropdown-menu li:nth-child(2) a');
-closeLink.addEventListener('click', () => {
-	chatboxMessage.classList.toggle('show')
-});
