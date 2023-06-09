@@ -365,12 +365,12 @@ nav {
 }
 
 
-/* change navbar styles on scroll using javascript */
-
-.window-scroll {
+  /* change navbar styles on scroll using javascript */
+  .window-scroll {
     background: #071F30;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
+  }
+
 
 .nav__container {
     height: 100%;
