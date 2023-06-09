@@ -127,19 +127,11 @@
     transition: var(--transition);
     
   }
- 
- 
- 
   
   .btn:hover {
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
-  }
-
-  .btn-top{
-    bottom: 10rem;
-    position: absolute;
   }
   
   .btn-primary {
@@ -328,7 +320,7 @@
 
   .social-menu ul {
     position: absolute;
-    top: 64%;
+    top: 60%;
     left: 33.5%;
     transform: translate(-50%, -50%);
     padding: 0;
@@ -389,17 +381,12 @@
   /* =================== NAVBAR ===================== */
   nav {
     background: transparent;
-    width: 20vw;
+    width: 100vw;
     height: 5rem;
     position: fixed;
     top: 0;
     z-index: 11;
     text-transform:uppercase ;
-    margin-top: 30px;
-  }
-
-  nav li{
-    margin: -10px;
   }
   
   /* change navbar styles on scroll using javascript */
@@ -416,9 +403,8 @@
   }
   .nav__container a h4 {
     height: 100%;
-    display: flex;    
-    padding-left: 70px;
-    margin-top: 10px;
+    display: flex;
+    padding-right: 22rem;
     align-items: center;
   }
 
@@ -438,38 +424,49 @@
     display: flex;
     align-items: center;
     gap: 4rem;
+    
   }
   
   .nav__menu a {
     font-size: 0.9rem;
     transition: var(--transition);
+    
   }
   
-  .nav__menu a:hover {
+  /*.nav__menu a:hover {
+    color: #00bf8e;
+  }*/
+
+  .nav__menu a:hover{
+     
+   
     color: #ff3c78;
-  }
   
-  .nav__menu a.signup {
+   
+    }
+    
+
+  .nav__menu a.btn {
     display: inline-block;
     width: 140px;
     height: 50px;
-    line-height: 50px;
+    line-height: 20px;
     background-color: transparent;
-    color:aqua;
-    border: 2px solid rgba(255, 255, 255, 0.488);
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.488);
     text-align: center;
     font-size: 0.9rem;
     border-radius: 30px;
+    background-color: transparent;
     transition: var(--transition);
   }
-  
-  .nav__menu a.signup:hover {
+  .nav__menu a.btn:hover {
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
-    box-shadow:5px 5px 5px orange;
+    box-shadow: 0px 20px 80px 0px rgba(44, 81, 216, 0.788);
+    
   }
-  
 
   .para1{
     font-size: 1.5rem;
@@ -749,7 +746,7 @@
     border-radius: 20px;
   }
   
-  .course:hover {
+  .course {
     background: var(--color-bg2);
     text-align: center;
     border-radius: 20px;
@@ -760,8 +757,8 @@
     border-right: 2px solid;
     border-color: #0077B5;
     border-image:auto;
-    transform: scale(1.1);
-    z-index: 1;
+
+   
   }
   
   .course:hover {
@@ -788,7 +785,7 @@
   
   .faqs__container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
   
@@ -800,42 +797,16 @@
     height: fit-content;
     background: var(--color-primary);
     cursor: pointer;
-    border-radius: 1%/9%;
-  }
-
-  .faq:hover{
-    background: #0a486e;
-    background-image: -webkit-linear-gradient(top, #0a486e, #108de0);
-    background-image: -moz-linear-gradient(top, #0a486e, #108de0);
-    background-image: -ms-linear-gradient(top, #0a486e, #108de0);
-    background-image: -o-linear-gradient(top, #0a486e, #108de0);
-    background-image: linear-gradient(to bottom, #0a486e, #108de0);
-    text-decoration: none;
-    transition-delay: 0.2s;
   }
   
   .faq h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2.2;
   }
   
   .faq__icon {
-    font-size: 1.5rem;
-    align-items: center;
-    
-  }
- .faq__icon:hover{
-    animation: mymove 1s 1;
-    
-  }
-
-  @keyframes mymove {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    align-self: flex-start;
+    font-size: 1.2rem;
   }
   
   .faq p {
@@ -875,8 +846,6 @@
   
   footer ul li a:hover {
     text-decoration: underline;
-    color :#00bf8e
-    
   }
   
   .footer__socials {
@@ -886,53 +855,12 @@
     margin-top: 2rem;
   }
   
-  /* Add hover styles for social media icons */
-  .footer__socials li a:hover {
-    color:#00bf8e;
-    
-   
-  }
-  
-  /* Add hover styles for the footer links */
-  .footer__2 ul li a:hover,
-  .privacy li a:hover {
-    text-decoration: underline;
-    color:#00bf8e;
-  
-  }
-  
-  /* Add hover styles for the contact information */
-  .footer__4 p a:hover {
-    color: var(--color-primary);
-    color:#00bf8e;
-    
-  }
-  
-  /* Add hover styles for the footer copyright */
   .footer__copyright {
     text-align: center;
     margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
   }
-  
-  /* Add hover styles for the author name */
-  .footer__copyright small span {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  
-  .footer__copyright small span:hover {
-    color: var(--color-primary);
-    color:#00bf8e;
-  }
-
-
- 
-
-  
-
-  
   
   /* ===================== MEDIA QUERIES (TABLETS) ==================== */
   @media screen and (max-width: 1024px) {
@@ -1067,7 +995,6 @@
     .faq {
       padding: 1.5rem;
     }
-
   
     /* ====================== FOOTER ===================== */
     .footer__container {
@@ -1185,5 +1112,26 @@
   font-size: 35px;
   color: #023055;
 }
+
+  /* Add hover styles for the footer copyright */
+  .footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg2);
+  }
+  
+  /* Add hover styles for the author name */
+  .footer__copyright small span {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .footer__copyright small span:hover {
+    color: var(--color-primary);
+    color:#00bf8e;
+  }
+
+
 
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
