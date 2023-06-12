@@ -1,534 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniket</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aniket</title>
+    <!-- BOOTSTRAP 4.7 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- BOOTSTRAP 4.7 CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- TAILWIND CSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- TAILWIND CSS -->
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
 
-  <!-- ICONSCOUT CDN -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- GOOGLE FONTS (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- GOOGLE FONTS (MONTSERRAT) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
-  <!-- SWIPER JS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- CSS FILE LINK -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- CSS FILE LINK -->
-  <link rel="stylesheet" href="./css/style.css">
+    <!--Favicon-->
+    <link rel="icon" href="images/data-sciencee.png" />
 
-  <!--Favicon-->
-  <link rel="icon" href="images/data-sciencee.png">
+    <!-- icon pack -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- icon pack -->
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Chat Bot -->
+    <link rel="stylesheet" href="/chatbot/style.css" />
 
-  <!-- Chat Bot -->
-  <link rel="stylesheet" href="/chatbot/style.css">
+    <!-- icon pack -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- icon pack -->
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Chat Bot -->
+    <link rel="stylesheet" href="./chatbot/style.css" />
 
-  <!-- Chat Bot -->
-  <link rel="stylesheet" href="./chatbot/style.css">
-
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-</head>
-<body>
-  <header>
-  <nav>
-    <div class="container nav__container grad">
-      <!--<div class="logo">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container nav__container grad">
+          <!--<div class="logo">
             <img src="./images/logo.png" alt="">
           </div>-->
 
-      <a href="index.html">
-        <h4>DATA SCIENCE</h4>
-      </a>
-      <ul class="nav__menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#faqs">FAQ</a></li>
-        <li><a href="contact/index.html">Contact</a></li>
-        <li><a class="signup" href="./login/index.html">Sign_Up</a></li>
-      </ul>
-      <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-    </div>
-  </nav>
-  </header>
+          <a href="index.html">
+            <h4>DATA SCIENCE</h4>
+          </a>
+          <ul class="nav__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#faqs">FAQ</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+            <li><a class="signup" href="./login/index.html">Sign Up</a></li>
+          </ul>
+          <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+          <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+      </nav>
+    </header>
 
-  <!--========================== END OF NAVBAR ============================-->
+    <!--========================== END OF NAVBAR ============================-->
 
+    <main>
+      <section class="landingpg text-gray-400 body-font">
+        <div class="shape">
+          <img class="shape1" src="images/shape1.svg" alt="" />
+          <img class="shape2" src="images/shape1.svg" alt="" />
+          <img class="shape3" src="images/shape1.svg" alt="" />
+          <img class="shape4" src="images/shape1.svg" alt="" />
+          <img class="shape5" src="images/shape1.svg" alt="" />
+        </div>
 
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        >
+          <div
+            class="grad1 button lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          >
+            <h1
+              class="pge1 title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+            >
+              <b>
+                Learn <br /><span>Data Science</span>
+                <br class="hidden lg:inline-block" />
+                Interactively</b
+              >
+            </h1>
+            <!-- <p class="para1 mb-8">Build projects, practice and learn to code from scratch - without leaving your browser.</p> -->
 
+            <h1>
+              <p
+                href=""
+                class="typewrite"
+                data-period="2000"
+                style="font-size: 0.7em"
+                data-type='[ "Data is future.", "Data is big.", "Data is beautiful.", "Data is valuable.", "Data is growing." ]'
+              >
+                <span class="wrap"></span>
+              </p>
+            </h1>
 
+            <a href="#" class="bttn bttn-prrimary btn-top"
+              ><span>Get Started</span></a
+            >
+          </div>
+          <div class="imgg lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="./images/1.png"
+            />
+          </div>
+        </div>
+        <div class="social-menu">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/your-page-url"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/your-twitter-url"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/your-instagram-url"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/your-youtube-url"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/your-linkedin-url"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <!--========================== END OF LANDING PAGE ============================-->
 
+      <section class="grad4" id="about">
+        <div class="container about__achievements-container">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="about__achievements-left"
+          >
+            <img class="grad2" src="./images/domain.png" />
+          </div>
 
-<main>
-  <section class="landingpg text-gray-400  body-font">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="about__achievements-right"
+          >
+            <h1 class="vision grad3">What is Data Science ?</h1>
+            <p>
+              Data Science is the field of study that combines domain expertise
+              , programming skills , knowledge of mathematics and statistics to
+              extract meaningful insights from data for business.
+              <br /><br />
+              It is a multidisciplinary approach that combines principles and
+              practices from the fields of artificial intelligence and above
+              fields to analyze large amounts of data. <br /><br />
+              This analysis helps data scientists to ask and answer questions
+              like what happened , why it happened , what will happen , and what
+              can be done with the results.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!----================ END OF What is Data Sc ===-->
 
-    <div class="shape">
-      <img class="shape1" src="images/shape1.svg" alt="">
-      <img class="shape2" src="images/shape1.svg" alt="">
-      <img class="shape3" src="images/shape1.svg" alt="">
-      <img class="shape4" src="images/shape1.svg" alt="">
-      <img class="shape5" src="images/shape1.svg" alt="">
-    </div>
+      <section class="achievement">
+        <div class="ach achievements__cards">
+          <article class="achievement__card" data-aos="flip-up">
+            <span class="achievement__icon">
+              <i class="uil uil-video"></i>
+            </span>
+            <!-- <h3>450+</h3> -->
+            <h3>
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="450"
+                data-purecounter-once="true"
+                class="purecounter"
+                >0</span
+              >+
+            </h3>
+            <p>Courses</p>
+          </article>
 
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div
-        class=" grad1 button lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="pge1 title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> <b> Learn <br><span>Data
-              Science</span>
-            <br class="hidden lg:inline-block"> Interactively</b>
-        </h1>
-        <!-- <p class="para1 mb-8">Build projects, practice and learn to code from scratch - without leaving your browser.</p> -->
+          <article class="achievement__card" data-aos="flip-up">
+            <span class="achievement__icon">
+              <i class="uil uil-users-alt"></i>
+            </span>
+            <!-- <h3>79,000+</h3> -->
+            <h3>
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="79000"
+                data-purecounter-once="true"
+                class="purecounter"
+                >0</span
+              >+
+            </h3>
+            <p>Students</p>
+          </article>
 
-        <h1>
-          <p href="" class="typewrite" data-period="2000" style="font-size: 0.7em;"
-            data-type='[ "Data is future.", "Data is big.", "Data is beautiful.", "Data is valuable.", "Data is growing." ]'>
-            <span class="wrap"></span>
+          <article class="achievement__card" data-aos="flip-up">
+            <span class="achievement__icon">
+              <i class="uil uil-trophy"></i>
+            </span>
+            <!-- <h3>26+</h3> -->
+            <h3>
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="26"
+                data-purecounter-once="true"
+                class="purecounter"
+                >0</span
+              >+
+            </h3>
+            <p>Awards</p>
+          </article>
+        </div>
+      </section>
+      <!----================ END OF CARDS ===-->
+
+      <section class="courses" id="courses">
+        <h2 class="headingh2" data-aos="zoom-in">Our Popular Courses</h2>
+        <div class="container courses__container">
+          <article class="course" data-aos="flip-left">
+            <div class="course__image">
+              <img src="./images/3.jpg" />
+            </div>
+            <div class="course__info">
+              <h4>Data Sc 1</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt aperiam deserunt eaque quos iure ad debitis.
+              </p>
+              <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+
+          <article class="course" data-aos="flip-up">
+            <div class="course__image">
+              <img src="./images/3.jpg" />
+            </div>
+            <div class="course__info">
+              <h4>Data Sc 2</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt aperiam deserunt eaque quos iure ad debitis.
+              </p>
+              <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+
+          <article class="course" data-aos="flip-right">
+            <div class="course__image">
+              <img src="./images/3.jpg" />
+            </div>
+            <div class="course__info">
+              <h4>Data Sc 3</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt aperiam deserunt eaque quos iure ad debitis.
+              </p>
+              <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--====================== END OF COURSES =====================-->
+
+      <section class="faqs" id="faqs">
+        <h2 class="headingh2" data-aos="zoom-in">Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>How do I know the right courses for me?</h4>
+              <p>
+                Determine your specific goals and objectives in the field of
+                data science. Are you looking to acquire a broad understanding
+                of the field or specialize in a specific area. Knowing your
+                goals will help you narrow down the course options.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>What programming languages are used in data science?</h4>
+              <p>
+                Python and R are the most commonly used programming languages in
+                data science courses due to their extensive libraries and tools
+                for data analysis and machine learning.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>What are the prerequisites for a data science course?</h4>
+              <p>
+                To study data science, it is crucial to have a strong foundation
+                in mathematics, including statistics and linear algebra.
+                Additionally, proficiency in programming languages like Python
+                or R is essential for data manipulation and analysis.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>What is the meaning of Deep Learning</h4>
+              <p>
+                Deep learning is a subset of machine learning that trains neural
+                networks to mimic the human brain, enabling automatic learning
+                through interconnected layers. It utilizes backpropagation to
+                adjust network weights and improve accuracy in predictions.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>What is Machine learning?</h4>
+              <p>
+                Machine learning focuses on developing algorithms that enable
+                computers to learn and make predictions or decisions without
+                explicit programming instructions, based on patterns and data.
+                It involves training models on data to improve their performance
+                over time.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>How to kick start your career in Data science</h4>
+              <p>
+                Acquire a strong foundation in statistics and programming
+                languages like Python or R. Gain hands-on experience through
+                projects, internships, and online courses to showcase your
+                skills and build a professional network within the data science
+                community.
+              </p>
+            </div>
+          </article>
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>
+                What job roles are available in the field of data science?
+              </h4>
+              <p>
+                The field of data science offers diverse job roles, including
+                data scientist, data analyst, machine learning engineer,
+                business analyst, data engineer, and data consultant, among
+                others.
+              </p>
+            </div>
+          </article>
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>What are the tools and technologies used in data science?</h4>
+              <p>
+                Some popular tools and technologies used in the field of data
+                science include Python (with libraries such as Pandas, NumPy,
+                and Scikit-learn), R (with packages like ggplot and caret), and
+                data visualization tools like Tableau and Matplotlib.
+              </p>
+            </div>
+          </article>
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>How long do the data science courses typically last?</h4>
+              <p>
+                The duration of our data science courses varies depending on the
+                specific course. We offer both short-term intensive courses and
+                longer-term comprehensive programs. The course duration is
+                mentioned in the course details on our website.
+              </p>
+            </div>
+          </article>
+          <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+              <h4>Are the courses suitable for non-technical professionals?</h4>
+              <p>
+                Yes, we offer data science courses tailored to accommodate
+                learners with non-technical backgrounds. These courses provide a
+                comprehensive introduction to data science concepts and
+                emphasize practical applications without assuming extensive
+                technical knowledge.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!--====================== END OF FAQs =====================-->
+
+    <!-- FOOTER SECTION START -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__1">
+          <a href="index.html" class="footer__logo">
+            <h4>DATA SCIENCE</h4>
+          </a>
+          <p class="datascience1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            ipsum nobis ratione.
           </p>
-        </h1>
-
-
-        <a href="#" class="bttn bttn-prrimary btn-top"><span>Get Started</span></a>
-      </div>
-      <div class="imgg lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="hero" src="./images/1.png">
-      </div>
-
-
-    </div>
-    <div class="social-menu">
-      <ul>
-        <li><a href="https://www.facebook.com/your-page-url"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://www.twitter.com/your-twitter-url"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.instagram.com/your-instagram-url"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/your-youtube-url"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/your-linkedin-url"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!--========================== END OF LANDING PAGE ============================-->
-
-
-
-
-
-
-
-
-  <section class="grad4" id="about">
-    <div class="container about__achievements-container">
-      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="about__achievements-left">
-        <img class="grad2" src="./images/domain.png">
-      </div>
-
-      <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="about__achievements-right">
-        <h1 class="vision grad3">What is Data Science ?</h1>
-        <p>
-          Data Science is the field of study that combines domain expertise , programming skills , knowledge of
-          mathematics and statistics to extract meaningful insights from data for business.
-          <br><br> It is a multidisciplinary approach that combines principles and practices from the fields of
-          artificial intelligence and above fields to analyze large amounts of data.
-          <br><br> This analysis helps data scientists to ask and answer questions like what happened , why it happened
-          , what will happen , and what can be done with the results.
-        </p>
-
-      </div>
-    </div>
-  </section>
-  <!----================ END OF What is Data Sc ===-->
-
-
-
-
-  <section class="achievement">
-    <div class="ach achievements__cards">
-      <article class="achievement__card" data-aos="flip-up">
-        <span class="achievement__icon">
-          <i class="uil uil-video"></i>
-        </span>
-        <!-- <h3>450+</h3> -->
-        <h3><span data-purecounter-start="0" data-purecounter-end="450" data-purecounter-once="true"
-            class="purecounter">0</span>+</h3>
-        <p>Courses</p>
-      </article>
-
-      <article class="achievement__card" data-aos="flip-up">
-        <span class="achievement__icon">
-          <i class="uil uil-users-alt"></i>
-        </span>
-        <!-- <h3>79,000+</h3> -->
-        <h3><span data-purecounter-start="0" data-purecounter-end="79000" data-purecounter-once="true"
-            class="purecounter">0</span>+</h3>
-        <p>Students</p>
-      </article>
-
-      <article class="achievement__card" data-aos="flip-up">
-        <span class="achievement__icon">
-          <i class="uil uil-trophy"></i>
-        </span>
-        <!-- <h3>26+</h3> -->
-        <h3><span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-once="true"
-            class="purecounter">0</span>+</h3>
-        <p>Awards</p>
-      </article>
-    </div>
-  </section>
-  <!----================ END OF CARDS ===-->
-
-
-
-
-
-
-
-
-
-
-  <section class="courses" id="courses">
-    <h2 class="headingh2" data-aos="zoom-in">Our Popular Courses</h2>
-    <div class="container courses__container">
-
-      <article class="course" data-aos="flip-left">
-        <div class="course__image">
-          <img src="./images/3.jpg">
-        </div>
-        <div class="course__info">
-          <h4>Data Sc 1</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam deserunt eaque quos iure ad
-            debitis.
-          </p>
-          <a href="course.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </article>
-
-
-
-      <article class="course" data-aos="flip-up">
-        <div class="course__image">
-          <img src="./images/3.jpg">
-        </div>
-        <div class="course__info">
-          <h4>Data Sc 2</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam deserunt eaque quos iure ad
-            debitis.
-          </p>
-          <a href="course.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </article>
-
-      <article class="course" data-aos="flip-right">
-        <div class="course__image">
-          <img src="./images/3.jpg">
-        </div>
-        <div class="course__info">
-          <h4>Data Sc 3</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam deserunt eaque quos iure ad
-            debitis.
-          </p>
-          <a href="course.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!--====================== END OF COURSES =====================-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section class="faqs" id="faqs">
-    <h2 class="headingh2" data-aos="zoom-in">Frequently Asked Questions</h2>
-    <div class="container faqs__container">
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4>How do I know the right courses for me?</h4>
-          <p>
-            Determine your specific goals and objectives in the field of data science. Are you looking to acquire a
-            broad understanding of the field or specialize in a specific area. Knowing your goals will help you narrow
-            down the course options.
-          </p>
-        </div>
-      </article>
-
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4>What programming languages are used in data science?</h4>
-          <p>
-            Python and R are the most commonly used programming languages in data science courses due to their extensive
-            libraries and tools for data analysis and machine learning.
-          </p>
-        </div>
-      </article>
-
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4>What are the prerequisites for a data science course?</h4>
-          <p>
-            To study data science, it is crucial to have a strong foundation in mathematics, including statistics and
-            linear algebra. Additionally, proficiency in programming languages like Python or R is essential for data
-            manipulation and analysis.
-          </p>
-        </div>
-      </article>
-
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4>What is the meaning of Deep Learning</h4>
-          <p>
-            Deep learning is a subset of machine learning that trains neural networks to mimic the human brain, enabling
-            automatic learning through interconnected layers. It utilizes backpropagation to adjust network weights and
-            improve accuracy in predictions.
-          </p>
-        </div>
-      </article>
-
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4>What is Machine learning?</h4>
-          <p>
-            Machine learning focuses on developing algorithms that enable computers to learn and make predictions or
-            decisions without explicit programming instructions, based on patterns and data. It involves training models
-            on data to improve their performance over time.
-          </p>
-        </div>
-      </article>
-
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4>How to kick start your career in Data science</h4>
-          <p>
-            Acquire a strong foundation in statistics and programming languages like Python or R. Gain hands-on
-            experience through projects, internships, and online courses to showcase your skills and build a
-            professional network within the data science community.
-          </p>
-        </div>
-      </article>
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4> What job roles are available in the field of data science?</h4>
-          <p>
-            The field of data science offers diverse job roles, including data scientist, data analyst, machine learning
-            engineer, business analyst, data engineer, and data consultant, among others.
-          </p>
-        </div>
-      </article>
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4> What are the tools and technologies used in data science?</h4>
-          <p>
-            Some popular tools and technologies used in the field of data science include Python (with libraries such as
-            Pandas, NumPy, and Scikit-learn), R (with packages like ggplot and caret), and data visualization tools like
-            Tableau and Matplotlib.
-          </p>
-        </div>
-      </article>
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4> How long do the data science courses typically last?</h4>
-          <p>
-            The duration of our data science courses varies depending on the specific course. We offer both short-term
-            intensive courses and longer-term comprehensive programs. The course duration is mentioned in the course
-            details on our website.
-          </p>
-        </div>
-      </article>
-      <article class="faq">
-        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-        <div class="question__answer">
-          <h4>Are the courses suitable for non-technical professionals?</h4>
-          <p>
-            Yes, we offer data science courses tailored to accommodate learners with non-technical backgrounds. These
-            courses provide a comprehensive introduction to data science concepts and emphasize practical applications
-            without assuming extensive technical knowledge.
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
-</main>
-  <!--====================== END OF FAQs =====================-->
-
-
-
-
-
-
- <!-- FOOTER SECTION START -->
-  <footer>
-    <div class="container footer__container">
-      <div class="footer__1">
-        <a href="index.html" class="footer__logo">
-          <h4>DATA SCIENCE</h4>
-        </a>
-        <p class="datascience1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsum nobis ratione.
-        </p>
-      </div>
-
-      <div class="footer__2">
-        <h4 class="datascience">Data Science</h4>
-        <ul class="permalinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="/contact/index.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__3">
-        <h4>Primacy</h4>
-        <ul class="privacy">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms and conditions</a></li>
-          <li><a href="#">Refund Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__4">
-        <h4>Contact Us</h4>
-        <div>
-          <p><a href="tel:+91 0000000000" style="color: white;">+91 0000000000</a></p>
-          <p><a href="mailto:abc@gmail.com" style="color: white;">abc@gmail.com</a></p>
         </div>
 
-        <ul class="footer__socials">
-          <li>
-            <a href="https://www.facebook.com/your-page-url"><i class="uil uil-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/your-instagram-url"><i class="uil uil-instagram-alt"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/your-twitter-url"><i class="uil uil-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/your-linkedin-url"><i class="uil uil-linkedin-alt"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__copyright">
-      <small>&copy; Copyright 2023 | <span>Aniket Sinha</span></small>
-    </div>
-  </footer>
- <!-- FOOTER SECTION END -->
+        <div class="footer__2">
+          <h4 class="datascience">Data Science</h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+          </ul>
+        </div>
 
-  <!-- ====================== START OF SCROLL-TO-TOP BUTTON=====================  -->
-  <div id="progress">
-    <span id="progress-value"><i onclick="scrolltotop()" class="fa fa-arrow-up" aria-hidden="true"></i></span>
-  </div>
-  <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
+        <div class="footer__3">
+          <h4>Primacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
 
-
-  <!--   Chat bot   -->
-  <div class="chatbox-wrapper">
-    <div class="chatbox-toggle">
-      <i class="bx bx-message"></i>
-    </div>
-    <div class="chatbox-message-wrapper">
-      <div class="chatbox-message-header">
-        <div class="chatbox-message-profile">
-          <img src="/images/chatbot.png" alt="Profile Image" class="chatbox-message-image">
+        <div class="footer__4">
+          <h4>Contact Us</h4>
           <div>
-            <h4 class="chatbox-message-name">Chatbot</h4>
-            <span class="chatbox-message-status">We're Online!</span>
+            <p>
+              <a href="tel:+91 0000000000" style="color: white"
+                >+91 0000000000</a
+              >
+            </p>
+            <p>
+              <a href="mailto:abc@gmail.com" style="color: white"
+                >abc@gmail.com</a
+              >
+            </p>
           </div>
-        </div>
-        <div class="chatbox-message-dropdown">
-          <div class="chatbox-message-dropdown-toggle">
-            <i class="bx bx-dots-vertical-rounded"></i>
-          </div>
-          <ul class="chatbox-message-dropdown-menu">
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Close</a></li>
+
+          <ul class="footer__socials">
+            <li>
+              <a href="https://www.facebook.com/your-page-url"
+                ><i class="uil uil-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/your-instagram-url"
+                ><i class="uil uil-instagram-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/your-twitter-url"
+                ><i class="uil uil-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/your-linkedin-url"
+                ><i class="uil uil-linkedin-alt"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="chatbox-message-content">
-        <h4 class="chatbox-message-no-message">Hi Aniket! How can I help you? </h4>
+      <div class="footer__copyright">
+        <small>&copy; Copyright 2023 | <span>Aniket Sinha</span></small>
       </div>
-      <div class="chatbox-message-bottom">
-        <form action="#" class="chatbox-message-form">
-          <textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
-          <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
-        </form>
-      </div>
-    </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
 
+    <!-- ====================== START OF SCROLL-TO-TOP BUTTON=====================  -->
+    <div id="progress">
+      <span id="progress-value"
+        ><i
+          onclick="scrolltotop()"
+          class="fa fa-arrow-up"
+          aria-hidden="true"
+        ></i
+      ></span>
+    </div>
     <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
 
-
-
+    <!--   Chat bot   -->
     <div class="chatbox-wrapper">
       <div class="chatbox-toggle">
-        <i class='bx bx-message-dots'></i>
+        <i class="bx bx-message"></i>
       </div>
       <div class="chatbox-message-wrapper">
         <div class="chatbox-message-header">
           <div class="chatbox-message-profile">
-            <img src="/images/pngegg(2).png" alt="" class="chatbox-message-image">
+            <img
+              src="/images/chatbot.png"
+              alt="Profile Image"
+              class="chatbox-message-image"
+            />
             <div>
-              <h4 class="chatbox-message-name">Aniket</h4>
-              <p class="chatbox-message-status">online</p>
+              <h4 class="chatbox-message-name">Chatbot</h4>
+              <span class="chatbox-message-status">We're Online!</span>
             </div>
           </div>
           <div class="chatbox-message-dropdown">
-            <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
+            <div class="chatbox-message-dropdown-toggle">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
             <ul class="chatbox-message-dropdown-menu">
-              <li>
-                <a href="#">Report</a>
-              </li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Close</a></li>
             </ul>
           </div>
         </div>
         <div class="chatbox-message-content">
-          <h4 class="chatbox-message-no-message">Ask me anything !</h4>
-          <!-- <div class="chatbox-message-item sent">
+          <h4 class="chatbox-message-no-message">
+            Hi Aniket! How can I help you?
+          </h4>
+        </div>
+        <div class="chatbox-message-bottom">
+          <form action="#" class="chatbox-message-form">
+            <textarea
+              rows="1"
+              placeholder="Enter your message..."
+              class="chatbox-message-input"
+            ></textarea>
+            <button type="submit" class="chatbox-message-submit">
+              <i class="bx bx-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
+
+      <div class="chatbox-wrapper">
+        <div class="chatbox-toggle">
+          <i class="bx bx-message-dots"></i>
+        </div>
+        <div class="chatbox-message-wrapper">
+          <div class="chatbox-message-header">
+            <div class="chatbox-message-profile">
+              <img
+                src="/images/pngegg(2).png"
+                alt=""
+                class="chatbox-message-image"
+              />
+              <div>
+                <h4 class="chatbox-message-name">Aniket</h4>
+                <p class="chatbox-message-status">online</p>
+              </div>
+            </div>
+            <div class="chatbox-message-dropdown">
+              <i
+                class="bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle"
+                id="dots-nav"
+              ></i>
+              <ul class="chatbox-message-dropdown-menu">
+                <li>
+                  <a href="#">Report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chatbox-message-content">
+            <h4 class="chatbox-message-no-message">Ask me anything !</h4>
+            <!-- <div class="chatbox-message-item sent">
 					<span class="chatbox-message-item-text">
 						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
 					</span>
@@ -540,75 +633,77 @@
 					</span>
 					<span class="chatbox-message-item-time">08:30</span>
 				</div> -->
-        </div>
-        <div class="chatbox-message-bottom">
-          <form action="#" class="chatbox-message-form">
-            <textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
-            <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
-          </form>
+          </div>
+          <div class="chatbox-message-bottom">
+            <form action="#" class="chatbox-message-form">
+              <textarea
+                rows="1"
+                placeholder="Enter your message..."
+                class="chatbox-message-input"
+              ></textarea>
+              <button type="submit" class="chatbox-message-submit">
+                <i class="bx bx-send"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- SCRIPT TAGS START HERE -->
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="./main.js"></script>
-  <script src="./chatbot/script.js"></script>
-  <script>
-    // slides for testimonials section
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // when window width is >= 600px
-      breakpoints: {
-        600: {
-          slidesPerView: 2
-        }
-      }
-    });
-  </script>
+    <!-- SCRIPT TAGS START HERE -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./chatbot/script.js"></script>
+    <script>
+      // slides for testimonials section
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // when window width is >= 600px
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- adding jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="smoothscroll.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <script>
+      // slides for testimonials section
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // when window width is >= 600px
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
 
+    <script>
+      AOS.init();
+    </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <!-- adding jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script src="smoothscroll.js"></script>
-  <script src="./main.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-  <script>
-    // slides for testimonials section
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // when window width is >= 600px
-      breakpoints: {
-        600: {
-          slidesPerView: 2
-        }
-      }
-    });
-  </script>
-
-  <script>
-    AOS.init();
-  </script>
-
-  <script src="./chatbot/script.js"></script>
- <!-- SCRIPT TAGS ENDS HERE -->
-</body>
-
+    <script src="./chatbot/script.js"></script>
+    <!-- SCRIPT TAGS ENDS HERE -->
+  </body>
 </html>
