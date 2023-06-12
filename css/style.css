@@ -10,6 +10,7 @@
     box-sizing: border-box;
   }
   
+ 
   :root {
     /*--color-primary: #6c63ff;*/
     /*--color-primary:#424890;*/
@@ -38,7 +39,24 @@
     --transition: all 500ms ease;
   }
   
+  #rest{
+    display: none;
+  }
+  #load{
+   display: flex;
+   justify-content: center;
+    position: absolute;
+    margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-left: 550px;
+height: 100vh;
+width: 100px;
+  }
   body {
+  
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     line-height: 1.7;
@@ -491,6 +509,7 @@
     
   }
   /* =================== HEADER ===================== */
+ 
   header {
     position: relative;
     top: 5rem;
