@@ -289,8 +289,13 @@ img {
 
 .social-menu ul {
     position: absolute;
+<<<<<<< Updated upstream
     top: 64%;
     left: 33.5%;
+=======
+    top: 70%;
+    left: 25%;
+>>>>>>> Stashed changes
     transform: translate(-50%, -50%);
     padding: 0;
     margin: 158px -65px 0px;
