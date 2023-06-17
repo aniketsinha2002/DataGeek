@@ -7,10 +7,7 @@
     <title>Aniket</title>
 
     <!-- BOOTSTRAP 4.7 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- TAILWIND CSS -->
     <link
@@ -63,32 +60,46 @@
     <link rel="stylesheet" href="./chatbot/style.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="container nav__container grad">
-          <!--<div class="logo">
-            <img src="./images/logo.png" alt="">
-          </div>-->
 
-          <a href="index.html">
-            <h4>DATA SCIENCE</h4>
-          </a>
-          <ul class="nav__menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#faqs">FAQ</a></li>
-            <li><a href="contact/index.html">Contact</a></li>
-            <li><a class="signup" href="./login/index.html">Sign Up</a></li>
-          </ul>
-          <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-          <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-        </div>
-      </nav>
-    </header>
-
+  <div class="navcolor sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand text-light" href="#"><h4>DATA SCIENCE</h4></a>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="#about">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="#courses">Courses <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="#faqs">FAQ <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="contact/index.html">Contact <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light signup" href="./login/index.html">Sign Up<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
     <!--========================== END OF NAVBAR ============================-->
 
     <main>
