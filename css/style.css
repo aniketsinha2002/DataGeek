@@ -112,7 +112,11 @@ img {
 }
 
 
-
+.nav__menu li a:hover{
+    cursor:pointer;
+    text-decoration:underline;
+    transition: all ease-in-out 0.2s;
+}
 
 
 
