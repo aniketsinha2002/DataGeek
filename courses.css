@@ -489,6 +489,8 @@ header {
 .achievement__card:hover {
   background: var(--color-bg2);
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  transform:scaleX(1.2);
+  transition:all ease-in-out 0.2s;
 }
 
 .achievement__icon {
