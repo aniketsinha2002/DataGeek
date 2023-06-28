@@ -1,10 +1,26 @@
 // change navbar styles on scroll
 
-window.addEventListener("scroll", () => {
+/*window.addEventListener("scroll", () => {
   document
     .querySelector("nav")
     .classList.toggle("window-scroll", window.scrollY > 0);
+});*/
+
+// Get the navbar element
+const navbar = document.querySelector('.navbar');
+
+// Add an event listener to the scroll event
+window.addEventListener('scroll', () => {
+  // Check if the scroll position is greater than a certain threshold
+  if (window.scrollY > 0) {
+    // Add the "window-scroll" class to the navbar
+    navbar.classList.add('window-scroll');
+  } else {
+    // Remove the "window-scroll" class from the navbar
+    navbar.classList.remove('window-scroll');
+  }
 });
+
 
 // show/hide faq answer
 
