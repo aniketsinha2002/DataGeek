@@ -932,7 +932,25 @@ nav button {
   
   
   
-  
+  #whatsdata{
+    width: 30rem;
+    margin-left: 45px;
+    margin-right: 20px;
+    animation: move 2s infinite alternate;
+  }
+
+  @keyframes move {
+    100%{
+      transform: translateY(-60px);
+    }
+  }
+
+  .heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
   
   
   
