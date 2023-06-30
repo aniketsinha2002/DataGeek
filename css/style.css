@@ -332,7 +332,7 @@ img {
 
 
 /* ==================== MEDIA QUERIES (TABLETS) ================= */
-/*@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px)*/ 
 
 
 .social-menu ul {
@@ -561,7 +561,7 @@ nav button {
 }
 
 /* ============== ACHIEVEMENTS ============= */
-/*.achievement {
+.achievement {
   padding-top: 5rem;
   height: auto;
 
@@ -640,7 +640,7 @@ nav button {
 
 
 /* ==================== MEDIA QUERIES (TABLETS) ================= */
-/*@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .about__achievements {
     margin-top: 2rem;
   }
@@ -1057,7 +1057,7 @@ nav {
   }
   
   nav li {
-    margin: -10px;
+    margin: -20px;
   }
   
   /* change navbar styles on scroll using javascript */
