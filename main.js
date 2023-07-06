@@ -8,19 +8,34 @@
 
 // Get the navbar element
 const navbar = document.querySelector('.navbar');
-
+const scrollBtn=document.getElementById("progress-value")
+console.log(scrollBtn)
 // Add an event listener to the scroll event
 window.addEventListener('scroll', () => {
   // Check if the scroll position is greater than a certain threshold
   if (window.scrollY > 0) {
     // Add the "window-scroll" class to the navbar
     navbar.classList.add('window-scroll');
+    scrollBtn.style.visibility="visible"
   } else {
     // Remove the "window-scroll" class from the navbar
     navbar.classList.remove('window-scroll');
+      
+    scrollBtn.style.visibility="hidden"
   }
 });
-
+//for initial render icon hide
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.scrollY > 0) {
+   
+  scrollBtn.style.visibility="visible"
+  } else {
+    // Remove the "window-scroll" class from the navbar
+ 
+      
+    scrollBtn.style.visibility="hidden"
+  }
+});
 
 // show/hide faq answer
 
