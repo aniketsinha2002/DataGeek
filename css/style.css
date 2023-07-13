@@ -334,15 +334,14 @@ img {
 /* ==================== MEDIA QUERIES (TABLETS) ================= */
 /*@media screen and (max-width: 600px)*/ 
 
-
 .social-menu ul {
+  display: flex;
   position: absolute;
-  top: 64%;
-  left: 33.5%;
+  top: 62%;
+  left: 36%;
   transform: translate(-50%, -50%);
   padding: 0;
   margin: 158px -65px 0px;
-  display: flex;
 
 }
 
@@ -497,13 +496,13 @@ nav button {
   box-shadow: 5px 5px 5px orange;
 }
 
-
+*/
 .para1 {
   font-size: 1.5rem;
-  line-height: 95%;
+  line-height: 110%;
   letter-spacing: normal;
 }
-
+/*
 .landingpg {
   height: 760px;
 }
@@ -1068,8 +1067,8 @@ nav {
 
   .navbar{
     margin-top: 0;
-    /*background: #071F30;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);*/
+    background: #071f307a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
 
   nav{
@@ -1114,6 +1113,7 @@ nav {
     position: relative;
     top: 0;
     right: 0;
+    
   }
   
   .nav__menu a {
@@ -1148,7 +1148,7 @@ nav {
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
-    box-shadow: 5px 5px 5px orange;
+    box-shadow: 3px 3px 10px orange;
   }
   
   
@@ -1446,6 +1446,7 @@ nav {
 
 .courses__container {
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
@@ -1457,7 +1458,6 @@ nav {
 
 .course:hover {
   background: var(--color-bg2);
-  text-align: center;
   border-radius: 20px;
   transition: var(--transition);
   box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
@@ -1562,6 +1562,9 @@ footer {
   padding-top: 5rem;
   font-size: 0.9rem;
 }
+footer h4{
+  font-size: large;
+}
 
 .footer__container {
   display: grid;
@@ -1569,7 +1572,7 @@ footer {
   gap: 5rem;
 }
 
-.footer__container>div h4 {
+.footer__container div h4 {
   margin-bottom: 1.2rem;
 }
 
@@ -1583,19 +1586,19 @@ footer ul li {
 
 footer ul li a:hover {
   text-decoration: underline;
-  color: #00bf8e
+  color: rgb(100, 203, 245);
 }
 
 .footer__socials {
   display: flex;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
 }
 
 /* Add hover styles for social media icons */
 .footer__socials li a:hover {
-  color: #00bf8e;
+  color: rgb(100, 203, 245);
 
 
 }
@@ -1604,14 +1607,14 @@ footer ul li a:hover {
 .footer__2 ul li a:hover,
 .privacy li a:hover {
   text-decoration: underline;
-  color: #00bf8e;
+  color: rgb(100, 203, 245);
 
 }
 
 /* Add hover styles for the contact information */
 .footer__4 p a:hover {
   color: var(--color-primary);
-  color: #00bf8e;
+  color: rgb(100, 203, 245);
 
 }
 
@@ -1624,14 +1627,14 @@ footer ul li a:hover {
 }
 
 /* Add hover styles for the author name */
-.footer__copyright small span {
+.footer__copyright medium span {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.footer__copyright small span:hover {
+.footer__copyright medium span:hover {
   color: var(--color-primary);
-  color: #00bf8e;
+  color: rgb(100, 203, 245);
 }
 
 
