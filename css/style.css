@@ -1110,7 +1110,7 @@ nav {
   .nav__menu {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 10%;
     position: relative;
     top: 0;
     right: 0;
