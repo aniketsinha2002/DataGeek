@@ -1611,7 +1611,8 @@ footer ul li a:hover {
 /* Add hover styles for the contact information */
 .footer__4 p a:hover {
   color: var(--color-primary);
-  color: #00bf8e;
+  color: #0aa37d;
+  text-decoration: underline;
 
 }
 
