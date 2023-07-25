@@ -1,347 +1,9 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-:root {
-  /*--color-primary: #6c63ff;*/
-  /*--color-primary:#424890;*/
-  /*--color-primary: #03548664;
-  --color-success: #00bf8e;
-  --color-warning: #f7c94b;
-  /*--color-danger: #f75842;*/
-  /*--color-define: #ff3c78;
-  --color-danger: #ff960b;
-  --color-danger-variant: rgba(247, 88, 66, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.7);
-  --color-black: #000;
-  --color-bg: #1f2641;
-  /*--color-bg1: #2e3267;*/
-  /*--color-bg1: #023055;
-
-  --color-bg2: #03548664;
-
-
-
-  --container-width-lg: 80%;
-  --container-width-md: 90%;
-  --container-width-sm: 94%;
-
-  --transition: all 500ms ease;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: var(--color-white);
-  background: #071F30;
-  overflow-x: hidden;
-
-
-
-
-}
-
-::-webkit-scrollbar {
-  background: #000a11;
-  /* width: 10px; *
-}
-
-/*::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top, rgb(1, 1, 125), rgb(4, 4, 88), black);
-  border-radius: 10px;
-}
-
-
-.container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-}
-
-section {
-  padding: 4rem 0;
-
-}
-
-section h2 {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.6rem;
-}
-
-h4 {
-  font-size: 1.3rem;
-}
-
-a {
-  color: var(--color-white);
-}
-
-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-
-
-
-
-
-.btn {
-  display: inline-block;
-  border-color: rgb(121, 116, 116);
-  background-color: none;
-  padding: 1rem 2rem;
-  border-top: 1px solid;
-  border-right: 1px solid;
-  font-weight: 500;
-  transition: var(--transition);
-
-}
-
-
-
-
-.btn:hover {
-  background: transparent;
-  color: var(--color-white);
-  border-color: var(--color-white);
-}
-
-.btn-top {
-  bottom: 10rem;
-  position: absolute;
-}
-
-.btn-primary {
-  background: var(--color-define);
-  color: var(--color-white);
-  border-radius: 30px;
-  transition: all ease 0.5s;
-  box-shadow: 0 0 20px 9px hsla(0, 4%, 5%, 0.19);
-
-  border: 1px solid;
-  border-top: 3px solid;
-  border-right: 3px solid;
-  border-color: #761142b1;
-
-
-}
-
-
-.button a span {
-  position: relative;
-  display: inline-block;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-  padding: 18px 30px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  margin-top: 60px;
-}
-
-.button a span:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  background-color: #ff960b;
-  z-index: -1;
-  transition: all ease 0.5s;
-}
-
-.button a span:hover:before {
-  width: 100%;
-}
-
-
-
-
-
-.imgg img {
-  position: relative;
-  width: 600px;
-  height: 550px;
-  background: radial-gradient(710px, #2f85f58c, transparent 40%);
-  margin-top: -50px;
-
-}
-
-.grad1 {
-
-  width: 600px;
-  height: 550px;
-  background: radial-gradient(610px, #2f85f58c, transparent 40%);
-
-
-
-}
-
-.grad2 {
-
-  background: radial-gradient(600px, #2f85f58c, transparent 35%);
-
-}
-
-.grad3 {
-
-  background: radial-gradient(600px, #2f85f58c, transparent 50%);
-
-}
-
-.grad4 {
-
-  background: radial-gradient(500px, #2f85f58c, transparent 50%);
-
-}
-
-
-.grad a h4 {
-  position: relative;
-  width: 600px;
-  height: 550px;
-  background: radial-gradient(610px, #2f85f58c, transparent 40%);
-  margin-top: 2px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.shape img {
-  position: absolute;
-  width: 100%;
-  z-index: -9;
-  opacity: .2;
-}
-
-.shape .shape1 {
-  right: -160px;
-  top: -50px;
-  width: 50px;
-
-  transform-origin: center;
-  animation: shape linear 30s infinite reverse;
-}
-
-.shape .shape2 {
-  left: -70px;
-  bottom: -50px;
-  width: 50px;
-
-  transform-origin: center;
-  animation: shape linear 30s infinite reverse;
-}
-
-@keyframes shape {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.shape .shape3 {
-  top: 0;
-  left: 0;
-  width: 250px;
-
-  transform-origin: center;
-  animation: shape3 linear 20s infinite;
-  transform: translate(-200px, -100px) rotate(0deg);
-}
-
-@keyframes shape3 {
-  100% {
-    transform: translate(1300px, 600px) rotate(360deg);
-  }
-}
-
-.shape .shape4 {
-  left: 0;
-  bottom: 0;
-  width: 150px;
-
-  transform-origin: center;
-  animation: shape4 linear 20s infinite 5s;
-  transform: translate(700px, 80px) rotate(0deg);
-}
-
-@keyframes shape4 {
-  100% {
-    transform: translate(1200px, -800px) rotate(360deg);
-  }
-}
-
-.shape .shape5 {
-  left: 500px;
-  top: 0;
-  width: 100px;
-
-  transform-origin: center;
-  animation: shape5 linear 25s infinite;
-  transform: translate(0, -150px) rotate(0deg);
-}
-
-@keyframes shape5 {
-  100% {
-
-    transform: translate(0, 800px) rotate(720deg);
-  }
-}
-
-
-
-/* ==================== MEDIA QUERIES (TABLETS) ================= */
-/*@media screen and (max-width: 600px)*/ 
-
-
 .social-menu ul {
   position: absolute;
   top: 64%;
   left: 33.5%;
   transform: translate(-50%, -50%);
   padding: 0;
-  margin: 158px -65px 0px;
   display: flex;
 
 }
@@ -404,161 +66,6 @@ img {
 
 
 
-
-/* =================== NAVBAR ===================== *
-
-
-nav {
-  /*background: #071f30;*/
-  /*background: red;
-  width: 20vw;
-  height: 5rem;
-  position: fixed;
-  top: 0;
-  z-index: 11;
-  text-transform: uppercase;
-  margin-top: 30px;
-}
-
-nav li {
-  margin: -10px;
-}
-
-/* change navbar styles on scroll using javascript */
-/*.window-scroll {
-  background: #071F30;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.nav__container {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__container a h4 {
-  height: 100%;
-  display: flex;
-  padding-left: 70px;
-  margin-top: 10px;
-  align-items: center;
-}
-
-.logo {
-  max-height: 2;
-  max-width: 2;
-
-
-}
-
-nav button {
-  display: none;
-
-}
-
-.nav__menu {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-.nav__menu a {
-  font-size: 0.9rem;
-  /*transition: var(--transition);*/
-/*}
-
-.nav__menu li a{
-  display: inline-block;
-}
-
-.nav__menu a:hover {
-  color: #ff3c78;
-}
-
-.nav__menu a.signup {
-  display: inline-block;
-  width: 140px;
-  height: 50px;
-  line-height: 50px;
-  background-color: transparent;
-  color: aqua;
-  border: 2px solid rgba(255, 255, 255, 0.488);
-  text-align: center;
-  font-size: 0.9rem;
-  border-radius: 30px;
-  transition: var(--transition);
-}
-
-.nav__menu a.signup:hover {
-  background: transparent;
-  color: var(--color-white);
-  border-color: var(--color-white);
-  box-shadow: 5px 5px 5px orange;
-}
-
-
-.para1 {
-  font-size: 1.5rem;
-  line-height: 95%;
-  letter-spacing: normal;
-}
-
-.landingpg {
-  height: 760px;
-}
-
-.grad1 .pge1 {
-
-  padding-top: 55px;
-  font-weight: 400;
-  font-size: 4rem;
-  line-height: 90%;
-  letter-spacing: -0.2rem;
-
-}
-
-/* =================== HEADER ===================== */
-/*header {
-  color: #619bcb;
-  position: relative;
-  top: 5rem;
-  overflow: hidden;
-  height: 70vh;
-  margin-bottom: 5rem;
-
-}
-
-.header__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 5rem;
-  height: 100%;
-}
-
-.header__left p {
-  margin: 1rem 0 2.4rem;
-}
-
-
-.title-font b span {
-  /*color: var(--color-danger)*/
-  /*background: linear-gradient(to top right, #6600ff 2%, #ff00ff 60%);
-  animation: animate 10s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-}
-
-
-/* ============== VISION ============= */
-/*.vision {
-  font-weight: 600;
-  font-size: 4rem;
-  line-height: 90%;
-  letter-spacing: -0.2rem;
-}
 
 /* ============== ACHIEVEMENTS ============= */
 .achievement {
@@ -826,10 +333,6 @@ nav button {
     border-color: var(--color-white);
   }
   
-  .btn-top {
-    bottom: 7rem;
-    position: absolute;
-  }
   
   .btn-primary {
     background: var(--color-define);
@@ -926,7 +429,6 @@ nav button {
     position: relative;
     width: 600px;
     height: 550px;
-    background: radial-gradient(610px, #2f85f58c, transparent 40%);
     margin-top: 2px;
   }
   
@@ -1043,8 +545,6 @@ nav button {
 /*--------navbar------------*/  
 
 nav {
-    /*background: #071f30;*/
-    /*background: transparent;*/
     width: 20vw;
     height: 5rem;
     position: fixed;
@@ -1052,31 +552,18 @@ nav {
     z-index: 11;
     text-transform: uppercase;
     margin-top: 30px;
-    background: #071F30;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     
   }
   
   nav li {
     margin: -20px;
   }
-  
-  /* change navbar styles on scroll using javascript */
-  .window-scroll {
-    background: #071F30;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  }
 
   .navbar{
     margin-top: 0;
-    /*background: #071F30;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);*/
   }
 
-  nav{
-    background: #071F30;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  }
+
   
   .nav__container {
     position: relative;
@@ -1128,7 +615,7 @@ nav {
   }
   
   .nav__menu a:hover {
-    color: #ff3c78;
+    color: aqua;
   }
   
   .nav__menu a.signup {
@@ -1149,7 +636,7 @@ nav {
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
-    box-shadow: 5px 5px 5px orange;
+    box-shadow: 5px 5px 5px aqua;
   }
   
   
@@ -1458,7 +945,6 @@ nav {
 
 .course:hover {
   background: var(--color-bg2);
-  text-align: center;
   border-radius: 20px;
   transition: var(--transition);
   box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
@@ -1485,6 +971,7 @@ nav {
 .course__info p {
   margin: 1.2rem 0 2rem;
   font-size: 0.9rem;
+  text-align: justify;
 }
 
 /* =================== FAQs ===================== */
@@ -1857,7 +1344,6 @@ footer ul li a:hover {
 /* ====================== START OF SCROLL-TO-TOP BUTTON===================== */
 
 #progress {
-  background-color: #023055;
   position: fixed;
   bottom: 20px;
   right: 35px;
@@ -1884,8 +1370,8 @@ footer ul li a:hover {
 
 #progress-value {
   display: block;
-  height: calc(100% - 15px);
-  width: calc(100% - 15px);
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
   background-color: #ffffff;
   border-radius: 50%;
   display: grid;

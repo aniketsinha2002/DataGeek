@@ -1,11 +1,3 @@
-// change navbar styles on scroll
-
-/*window.addEventListener("scroll", () => {
-  document
-    .querySelector("nav")
-    .classList.toggle("window-scroll", window.scrollY > 0);
-});*/
-
 // Get the navbar element
 const navbar = document.querySelector('.navbar');
 const scrollBtn=document.getElementById("progress-value")
@@ -24,6 +16,7 @@ window.addEventListener('scroll', () => {
     scrollBtn.style.visibility="hidden"
   }
 });
+
 //for initial render icon hide
 document.addEventListener('DOMContentLoaded', function() {
   if (window.scrollY > 0) {
