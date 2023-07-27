@@ -564,11 +564,10 @@ nav button {
 .achievement {
   padding-top: 5rem;
   height: auto;
-
+  margin-inline: -13rem;
 }
 
 .ach {
-
   width: 100%;
   padding-left: 20%;
   padding-right: 20%;
@@ -577,7 +576,6 @@ nav button {
 .about__achievements {
   margin-top: 3rem;
   background: var(--color-bg1);
-
 }
 
 .about__achievements-container {
