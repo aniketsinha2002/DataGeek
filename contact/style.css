@@ -1,281 +1,4 @@
-.container-fluid{
-    padding: 5% 15%;
-}
-body{
-    font-family:  "Montserrat";
-    /* line-height: 1.5; */
-    /* text-align: center; */
-    /* padding: 5% 15%; */
-    background-color: #023055;
-}
-
-
-.container-fluid{
-    padding: 5% 15%;
-}
-
-.contact-bg{
-    height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-    /* , url(images/contact-bg.jpg) */
-    /* background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    text-align: center;
-    /* color: #fff; */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact-bg h3{
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-.contact-bg h2{
-    font-size: 3rem;
-    text-transform: uppercase;
-    padding: 0.4rem 0;
-    letter-spacing: 4px;
-}
-.line div{
-    margin: 0 0.2rem;
-}
-.line div:nth-child(1),
-.line div:nth-child(3){
-    height: 3px;
-    width: 70px;
-    /* background: #f7327a; */
-    background-color: skyblue;
-    border-radius: 5px;
-}
-.line{
-    display: flex;
-    align-items: center;
-}
-.line div:nth-child(2){
-    width: 10px;
-    height: 10px;
-    /* background: #f7327a; */
-    background-color: skyblue;
-    border-radius: 50%;
-}
-.text{
-    font-weight: 300;
-    opacity: 0.9;
-    color: black;
-}
-.contact-bg .text{
-    margin: 1.6rem 0;
-}
-
-.text{
-    font-weight: 300;
-    opacity: 0.9;
-    /* color: black; */
-    color: white;
-}
-
-.contact-body{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-.contact-info{
-    margin: 2rem 0;
-    text-align: center;
-    padding: 2rem 0;
-}
-.contact-info span{
-    display: block;
-    color: white;
-}
-.contact-info div{
-    margin: 0.8rem 0;
-    padding: 1rem;
-    transition: 0.2s all;
-}
-
-.contact-info div:hover{
-    z-index: 1;
-    box-shadow: 0 8px 50px rgba(0,0,0,0,0.2);
-    transform: scale(1.05);
-}
-
-.contact-info span .fas{
-    font-size: 2rem;
-    padding-bottom: 0.9rem;
-    /* color: #f7327a; */
-    color: rgb(100, 203, 245);
-
-}
-.contact-info span .fas:hover{
-    /* color: #d157c5; */
-    color: rgb(108, 174, 200);
-    border-color: rgb(100, 203, 245);
-
-    /* border-color: #f7327a; */
-}
-
-.contact-info div span:nth-child(2){
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-.contact-info .text{
-    padding-top: 0.4rem;
-}
-.contact-form{
-    padding: 2rem 0;
-    border-top: 1px solid #c7c7c7;
-}
-.contact-form form{
-    padding-bottom: 1rem;
-}
-.form-control{
-    width: 100%;
-    border: 1.5px solid #c7c7c7;
-    border-radius: 5px;
-    padding: 0.7rem;
-    margin: 0.6rem 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    outline: 0;
-}
-.form-control:focus{
-    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
-}
-.contact-form form div{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.6rem;
-}
-.send-btn{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #fff;
-    background: rgb(100, 203, 245);
-    /* background: #f7327a; */
-    border: none;
-    border-radius: 5px;
-    padding: 0.7rem 1.5rem;
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-.send-btn:hover{
-    /* opacity: 0.8; */
-    background: rgb(117, 161, 178);
-    /* background: #e383a6e9; */
-    color:#fff;
-}
-
-iframe{
-    justify-content: center;
-    margin-left:9%;
-    width:82% ;
-    margin-bottom: 24px;
-   
-}
-
-.contact-form > div img{
-    width: 85%;
-}
-.contact-form > div{
-    margin: 0 auto;
-    text-align: center;
-}
-.contact-footer{
-    padding: 2rem 0;
-    /* background: #000; */
-    /* background: white; */
-}
-.contact-footer h3{
-    font-size: 1.3rem;
-    /* color: #fff; */
-    color: white;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-.social-links{
-    display: flex;
-    justify-content: center;
-    /* background: white; */
-}
-.social-links a{
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    /* color: #fff; */
-    color: white;
-
-    border: 2px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.4rem;
-    transition: all 0.4s ease;
-}
-.social-links a:hover{
-    /* color: #f7327a; */
-    color: rgb(100, 203, 245);
-    /* border-color: #f7327a; */
-    border-color: rgb(100, 203, 245);
-}
-
-@media screen and (min-width: 768px){
-    .contact-bg .text{
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .contact-info{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (min-width: 992px){
-    .contact-bg .text{
-        width: 50%;
-    }
-    .contact-form{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .contact-info{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *{
+*{
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -293,7 +16,6 @@ main{
    display: flex;
    justify-content: center;
    align-items: center;
-   text-align: center;
 }
 
 .contact-main{
@@ -305,7 +27,7 @@ main{
 }
 
 .contact-heading{
-    padding: 1em 0;
+    padding: 2em 0;
     color: white;
 }
 
@@ -342,17 +64,17 @@ main{
 
 .contact-sec button{
     margin: auto;
-    width: 8.5vw;
-    height: 5vh;
+    width: 6.5vw;
+    height: 4vh;
     background: transparent;
     color: white;
     font-weight: 600;
     margin: 1vh auto;
 }
 
-.contact-sec button{
-    background-color: rgba(45, 45, 219, 0.8);
-    
+.contact-sec button:hover{
+    background-color: rgb(111, 111, 197, 0.8);
+    transition: 0.5s ease-in;
 }
 
 @media only screen and (max-width:1200px){
@@ -365,7 +87,7 @@ main{
     }
 
     .contact-sec input{
-        height: 3vh;
+        height: 4vh;
         width: 70%;
         margin: auto;
     }
@@ -376,7 +98,7 @@ main{
 
 }
 
-@media only screen and (max-width:670px){
+@media only screen and (max-width:675px){
 
     .contact-heading{
         font-size: 0.8em;
@@ -399,4 +121,4 @@ main{
         width: auto;
         margin-top: 3vh;
     }
-} */
+}
