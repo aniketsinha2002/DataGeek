@@ -1075,6 +1075,7 @@ nav {
   nav{
     background: #071F30;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    /* margin-left: -200px; */
   }
   
   .nav__container {
@@ -1083,6 +1084,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: -210px;
 
   }
 
@@ -1090,7 +1092,7 @@ nav {
   .nav__container a h4 {
     height: 100%;
     display: flex;
-    padding-left: 70px;
+    padding-left: 300px;
     margin-top: 10px;
     align-items: center;
   }
@@ -1114,6 +1116,7 @@ nav {
     position: relative;
     top: 0;
     right: 0;
+    
   }
   
   .nav__menu a {
@@ -1124,6 +1127,7 @@ nav {
   .nav__menu li a{
     display: inline-block;
     margin: 10px 20px;
+    /* margin-left: -1px; */
   }
   
   .nav__menu a:hover {
