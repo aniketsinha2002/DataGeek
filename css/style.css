@@ -842,7 +842,8 @@ nav button {
     border-top: 3px solid;
     border-right: 3px solid;
     border-color: #761142b1;
-    margin-top: 50px;
+  
+  
   }
   
   
@@ -1444,7 +1445,7 @@ nav {
 
 .headingh2 {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .courses__container {
@@ -1456,10 +1457,6 @@ nav {
 
 .course__image img {
   border-radius: 20px;
-}
-
-.course{
-  text-align: center;
 }
 
 .course:hover {
@@ -1484,130 +1481,14 @@ nav {
 
 .course__info {
   padding: 2rem;
-  text-align: center;
 
-}
 
-article.course.aos-init.aos-animate {
-  border: 1.5px solid pink;
-  border-radius: 20px;
-  padding: 12px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .course__info p {
   margin: 1.2rem 0 2rem;
   font-size: 0.9rem;
 }
-
-/* rating BUTTON */
-.courses-like{
-  display: flex;
-}
-
-.rate-col{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top:2.8rem;
-}
-
-#course-rate{
-  font-size: 2rem;
-  color: #e95b5b;
-  margin-top: 0.6rem;
-}
-
-.rating {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 0.3rem;
-  --stroke: #666;
-  --fill: #ffc73a;
-  margin-left: 1.5rem;
-}
-
-.rating input {
-  appearance: unset;
-}
-
-.rating label {
-  cursor: pointer;
-}
-
-.rating svg {
-  width: 3rem;
-  height: 3rem;
-  overflow: visible;
-  fill: transparent;
-  stroke: var(--stroke);
-  stroke-linejoin: bevel;
-  stroke-dasharray: 12;
-  animation: idle 4s linear infinite;
-  transition: stroke 0.2s, fill 0.5s;
-}
-
-@keyframes idle {
-  from {
-    stroke-dashoffset: 24;
-  }
-}
-
-.rating label:hover svg {
-  stroke: var(--fill);
-}
-
-.rating input:checked ~ label svg {
-  transition: 0s;
-  animation: idle 4s linear infinite, yippee 0.75s backwards;
-  fill: var(--fill);
-  stroke: var(--fill);
-  stroke-opacity: 0;
-  stroke-dasharray: 0;
-  stroke-linejoin: miter;
-  stroke-width: 8px;
-}
-
-@keyframes yippee {
-  0% {
-    transform: scale(1);
-    fill: var(--fill);
-    fill-opacity: 0;
-    stroke-opacity: 1;
-    stroke: var(--stroke);
-    stroke-dasharray: 10;
-    stroke-width: 1px;
-    stroke-linejoin: bevel;
-  }
-
-  30% {
-    transform: scale(0);
-    fill: var(--fill);
-    fill-opacity: 0;
-    stroke-opacity: 1;
-    stroke: var(--stroke);
-    stroke-dasharray: 10;
-    stroke-width: 1px;
-    stroke-linejoin: bevel;
-  }
-
-  30.1% {
-    stroke: var(--fill);
-    stroke-dasharray: 0;
-    stroke-linejoin: miter;
-    stroke-width: 8px;
-  }
-
-  60% {
-    transform: scale(1.2);
-    fill: var(--fill);
-  }
-}
-
-
-
-
-
 
 /* =================== FAQs ===================== */
 .faqs {
