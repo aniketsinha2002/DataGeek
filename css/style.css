@@ -1565,6 +1565,7 @@ footer {
   background: var(--color-bg2);
   padding-top: 5rem;
   font-size: 0.9rem;
+  padding: 3rem;
 }
 
 .footer__container {
