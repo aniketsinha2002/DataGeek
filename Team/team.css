@@ -1,0 +1,36 @@
+
+    /* Custom CSS to add gaps between top and bottom cards */
+    .mb-6:not(:last-child) {
+        margin-bottom: 20px; /* Adjust the value as needed */
+    }
+    .contributor-tag {
+        display: inline-block;
+        padding: 4px 8px;
+        background-color: #F59E0B;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+    .pa-tag {
+        display: inline-block;
+        padding: 4px 8px;
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+    /* Scale hover effect for images */
+    .rounded-t-lg {
+        transition: transform 0.3s ease;
+    }
+
+    .rounded-t-lg:hover {
+        transform: scale(1.1);
+    }
+
+    /* Additional styling for the parent container */
+    .contributor-container {
+        overflow: hidden;
+    }
