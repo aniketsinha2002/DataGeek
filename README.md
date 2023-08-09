@@ -1,11 +1,11 @@
 
 # Project Information
 
-The source code for the educational website Data Science is available in this repository. This website was developed for aspiring students who are interested in data science and it gives you access to resources, including courses, that can help you develop your abilities. To direct users to the desired area of the website, the website is made up of a number of different sections, including home, about, courses, FAQ, and contact. Students can sign up and begin their career as a data scientist.
+The source code for the educational website Data Science is available in this repository. This website was developed for aspiring students who are interested in data science and it gives you access to resources, including courses, that can help you develop your abilities. To direct users to the desired area of the website, the website is made up of a number of different sections, including home, about, courses, FAQ, and contact. Students can sign up and begin their careers as data scientists.
 
-This webpage is still under construction. I'm making this project open source so that if any one wants to contribute to this project, to make it easier for their fellow learners to grasp the concepts of data science, then genuinly you are welcome here :)
+This webpage is still under construction. I'm making this project open source so that if anyone wants to contribute to this project, to make it easier for their fellow learners to grasp the concepts of data science, then genuinely you are welcome here :)
 
-**Project Purpose** : Educational Startup related to Data Science
+**Project Purpose**: Educational Startup related to Data Science
 
 **Project Website** : [Visit Here](https://aniketsinha2002.github.io/DataScienceWebsite.github.io/)
 
@@ -13,12 +13,12 @@ This webpage is still under construction. I'm making this project open source so
 
 ## What's in it for you? 🤔
 
-- Meet fellow coders, build a team.
+- Meet fellow coders, and build a team.
 - Get your questions answered and help others by answering theirs.
 - Share your creative ideas about improving this community.
-- Showcase you previous works as a motivation for others.
-- Resources to get you started and sharpening the skills.
-- And lot of things coming from you.
+- Showcase your previous works as a motivation for others.
+- Resources to get you started and sharpen your skills.
+- And a lot of things coming from you.
 
 <div align="center">
 <h2><img src="https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/e325eb32-a9c4-448a-a6bc-74430172d515" alt="High Voltage" width="50" height="50" /><font size="8">Tech Stack</font></h2>
@@ -64,7 +64,7 @@ The courses page offers a wide range of courses designed to equip you with the k
 
 **FAQ**
 
-The Frequently Asked Questions is dedicated towards providing answers to commonly asked questions. These questions aim at addressing the most common queries, offer insights, and provide clarity on various aspects of Data Science that a user could have.
+The Frequently Asked Questions is dedicated to providing answers to commonly asked questions. These questions aim at addressing the most common queries, offer insights, and provide clarity on various aspects of Data Science that a user could have.
 <br>
 
 ![img5](https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/718f8129-cb8e-4083-a629-af59d5a7cf7f)
@@ -132,7 +132,7 @@ git checkout -b <your_branch_name>
 git add .
 ```
 
-**10.** Commit your changes .
+**10.** Commit your changes.
 
 ```
 git commit -m "Your message"
@@ -146,13 +146,13 @@ git push -u origin <your_branch_name>
 **12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repository you are supposed to make a PR to.
 
 
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**13.** Add an appropriate title and description to your pull request explaining your changes and efforts.
 
 
 **14.** Click on `Create Pull Request`.
 
 
-**15.** Congratulations! You have made a succsessful PR to the DataScienceWebsite.<br>
+**15.** Congratulations! You have made a successful PR to the DataScienceWebsite.<br>
 
 **16.** Now sit back patiently and relax while your PR is being reviewed.
 
