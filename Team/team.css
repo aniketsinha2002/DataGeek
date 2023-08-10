@@ -1,8 +1,26 @@
+/* Custom CSS to adjust the size of contributor cards */
+.mb-6 {
+    width: 55%; /* Adjust the value as needed */
+    margin: 0.25rem; /* Reduce the margin for spacing */
+    padding: 0; /* Remove padding to decrease gaps */
+    box-sizing: border-box; /* Include margin and border in the total width */
+}
 
-    /* Custom CSS to add gaps between top and bottom cards */
-    .mb-6:not(:last-child) {
-        margin-bottom: 20px; /* Adjust the value as needed */
-    }
+/* Adjust maximum height of the contributor card container */
+.block {
+    max-height: 350px; /* Adjust the value as needed */
+    overflow: hidden; /* Hide overflowing content */
+    margin: 0; /* Remove default margins */
+    padding: 2rem; /* Add padding to the content */
+}
+
+/* Make the contributor image responsive */
+.rounded-t-lg img {
+    width: 100%;
+    height: auto;
+}
+
+
     .contributor-tag {
         display: inline-block;
         padding: 4px 8px;
