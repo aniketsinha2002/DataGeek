@@ -1845,7 +1845,8 @@ footer ul li a:hover {
   .testimonial__body {
     padding: 1.2rem;
   }
-
+  /*Adding style to chatbot in bot.css*/
+  
   /* ====================== FOOTER ===================== */
   .footer__container {
     grid-template-columns: 1fr;
