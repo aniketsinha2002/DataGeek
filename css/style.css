@@ -1481,8 +1481,7 @@ nav {
 
 .course__info {
   padding: 2rem;
-
-
+  text-align: center;
 }
 
 .course__info p {
