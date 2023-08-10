@@ -63,7 +63,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
+   <!--Bot.css-->
+   <link rel="stylesheet" href="./css/bot.css">
     <!-- SWIPER JS -->
     <link
       rel="stylesheet"
@@ -684,8 +685,91 @@
               ></a>
             </li>
           </ul>
+
+        </div>
+        <div class="footer__5">
+          <!--Adding ChatBot to the website-->
+      <!-- Bot AI container -->
+    <div class="bot-ai-container" >
+      <h2>Bot AI Chat-bot</h2>
+      <!-- Chat container for the chatbot -->
+      
+      <div class="chat-container">
+        <!-- Bot's messages will be displayed here -->
+        <div class="message bot">
+          <div class="message-text">Hello! How can I help you today?</div>
         </div>
       </div>
+      <!-- Type your message input -->
+      <input type="text" id="user-input" placeholder="Type your message..." class="colr" style="color: black;"/>
+      <button id="send-btn">Send</button>
+    </div>
+
+    <script>
+      // JavaScript code for the chatbot
+      document
+        .getElementById("send-btn")
+        .addEventListener("click", function () {
+          // Get user input
+          const userInput = document.getElementById("user-input").value;
+
+          // Display user message
+          displayMessage(userInput, "user");
+
+          // Process user input
+          const botResponse = generateBotResponse(userInput);
+
+          // Display bot response
+          displayMessage(botResponse, "bot");
+
+          // Clear input
+          document.getElementById("user-input").value = "";
+        });
+
+      function displayMessage(message, sender) {
+        const messageContainer = document.querySelector(".chat-container");
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", sender);
+        const messageText = document.createElement("div");
+        messageText.classList.add("message-text");
+        messageText.innerText = message;
+        messageElement.appendChild(messageText);
+        messageContainer.insertBefore(
+          messageElement,
+          messageContainer.firstChild
+        );
+
+        // Scroll to the bottom to show the latest message
+        messageContainer.scrollTop = messageContainer.scrollHeight;
+      }
+
+      function generateBotResponse(userInput) {
+        // Convert user input to lowercase for easier matching
+        const lowercaseInput = userInput.toLowerCase();
+
+        // Bot's responses based on user input
+        if (lowercaseInput.includes("hello") || lowercaseInput.includes("hi")) {
+          return "Hello! How can I help you today?";
+        } else if (
+          lowercaseInput.includes("website") ||
+          lowercaseInput.includes("web")
+        ) {
+          return "Our website is the best place to learn Data Science!";
+        } else if (lowercaseInput.includes("contact")) {
+          return "You can contact us at abc@gmail.com";
+        } else if (
+          lowercaseInput.includes("product") ||
+          lowercaseInput.includes("services")
+        ) {
+          return "We offer a variety of Data Science courses that provide interactive learning. Please visit our website to explore!";
+        } else {
+          return "I'm sorry, I didn't understand that. Could you please rephrase your question?";
+        }
+      }
+    </script>
+        </div>
+      </div>
+      
       <div class="footer__copyright">
         <small>&copy; Copyright 2023 | <span>Aniket Sinha</span></small>
       </div>
