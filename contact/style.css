@@ -6,12 +6,7 @@ body{
     /* line-height: 1.5; */
     /* text-align: center; */
     /* padding: 5% 15%; */
-
-    background-color: #023055;
-    margin: 0;
-    padding: 0;
     background-color: #033660;
-
 }
 
 
@@ -258,21 +253,6 @@ iframe{
     }
 }
 
-
-@media screen and (max-width: 426px) {
-    
-    .contact-info {
-        margin: 0;
-    }
-}
-@media screen and (max-width: 321px) {
-    .contact-bg h2 {
-        font-size: 2rem;
-    }
-    .contact-info {
-        margin: 0;
-    }
-}
 
 
 
