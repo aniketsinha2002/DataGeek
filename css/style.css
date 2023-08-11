@@ -1363,7 +1363,7 @@ header {
 
 .headingh2 {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .courses__container {
@@ -1417,16 +1417,16 @@ header {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-
 .faq {
-  padding: 2rem;
+  padding: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: 1.2rem;
   height: fit-content;
   background: var(--color-primary);
   cursor: pointer;
   border-radius: 1%/9%;
+  margin: 5px 17px;
 }
 
 .faq:hover {
@@ -1441,12 +1441,12 @@ header {
 }
 
 .faq h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2.2;
 }
 
 .faq__icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   align-items: center;
 }
 
