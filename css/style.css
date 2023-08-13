@@ -1810,4 +1810,11 @@ footer ul li a:hover {
   color: #023055;
 }
 
+/*-----------active tab for navbar------------ ✅✅*/
+.active {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #1b4462;
+}
+
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
