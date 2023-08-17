@@ -1,0 +1,33 @@
+name: Add Comment to Newly Open Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-comment:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Add Comment
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { issue } = context.payload;
+            const author = issue.user.login;
+            const issueNumber = issue.number;
+            const comment = `Hello ${{ github.actor }}, Thanks for opening an issue, your contribution is valuable to us. The maintainers will review this issue and provide feedback as soon as possible.`;
+            const { owner, repo } = context.repo;
+            await github.issues.createComment({
+              owner: owner,
+              repo: repo,
+              issue_number: issueNumber,
+              body: comment
+            });
+            console.log(`Comment added to the Issue #${issueNumber}.`);
