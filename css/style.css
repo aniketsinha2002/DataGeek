@@ -1774,7 +1774,7 @@ footer ul li a:hover {
 
 /* ====================== START OF SCROLL-TO-TOP BUTTON===================== */
 
-#progress {
+.progress {
   background-color: #023055;
   position: fixed;
   bottom: 20px;
@@ -1787,9 +1787,13 @@ footer ul li a:hover {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  z-index: 100;
+  opacity: 0;
 }
-
-#progress:hover {
+.opa{
+  opacity: 1;
+}
+.progress:hover {
   background: transparent;
   background: #03e9f4;
   color: #fff;
@@ -1798,7 +1802,7 @@ footer ul li a:hover {
     0 0 100px #03e9f4;
 }
 
-#progress-value {
+.progress-value {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
@@ -1808,6 +1812,7 @@ footer ul li a:hover {
   place-items: center;
   font-size: 35px;
   color: #023055;
+  z-index: 100;
 }
 
 /*-----------active tab for navbar------------ ✅✅*/
