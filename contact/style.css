@@ -12,8 +12,10 @@ body {
 .container-fluid {
   padding: 5% 15%;
 }
+
 .contact-bg {
-  height: 40vh;
+  margin-top: -7rem;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
   /* , url(images/contact-bg.jpg) */
   /* background-position: 50% 100%;
@@ -37,6 +39,7 @@ body {
   padding: 0.4rem 0;
   letter-spacing: 4px;
 }
+
 .line div {
   margin: 0 0.2rem;
 }
@@ -259,6 +262,8 @@ iframe {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
 
 /* *{
     padding: 0;
@@ -555,9 +560,10 @@ nav {
   /*background: transparent;*/
   width: 20vw;
   height: 5rem;
-  position: fixed;
+  position: absolute;
   top: 0;
-  z-index: 11;
+  /* margin-bottom: 5rem; */
+  z-index: -11;
   text-transform: uppercase;
   margin-top: 30px;
   background: #071f30;
@@ -645,7 +651,7 @@ nav button {
   position: relative;
   top: 0;
   right: 0;
-  margin: -100px;
+  margin: -250px;
 }
 
 .nav__menu a {

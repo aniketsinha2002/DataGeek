@@ -709,8 +709,8 @@
   <!-- FOOTER SECTION END -->
 
   <!-- ====================== START OF SCROLL-TO-TOP BUTTON=====================  -->
-  <div id="progress">
-    <span id="progress-value"><i onclick="scrolltotop()" class="fa fa-arrow-up" aria-hidden="true"></i></span>
+  <div class="progress">
+    <span class="progress-value"><i onclick="scrolltotop()" class="fa fa-arrow-up" aria-hidden="true"></i></span>
   </div>
   <!-- ====================== END OF SCROLL-TO-TOP BUTTON=====================  -->
   </div>
@@ -783,6 +783,10 @@
   <script src="./main.js"></script>
   <script src="./chatbot/script.js"></script>
   <script>
+    let scroll1 = document.querySelector(".progress");
+    window.addEventListener("scroll",function(){
+      scroll1.classList.toggle("opa", window.scrollY > 700)
+    })
     // slides for testimonials section
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
