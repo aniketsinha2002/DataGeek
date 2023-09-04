@@ -1,5 +1,5 @@
-const ownerName = 'aniketsinha2002'; // Replace with the owner's GitHub username
-const repoName = 'DataScienceWebsite.github.io'; // Replace with the name of the GitHub repository
+const ownerName = "aniketsinha2002"; // Replace with the owner's GitHub username
+const repoName = "DataScienceWebsite.github.io"; // Replace with the name of the GitHub repository
 
 // Construct the API URL to get the list of contributors
 const apiUrl = `https://api.github.com/repos/${ownerName}/${repoName}/contributors`;
@@ -16,36 +16,58 @@ async function getContributorCommits(username) {
 fetch(apiUrl)
   .then((response) => {
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
     return response.json();
   })
   .then(async (contributors) => {
     // Render the contributors
-    const contributorsContainer = document.getElementById('contributorsContainer');
+    console.log(contributors);
+    const contributorsContainer = document.getElementById(
+      "contributorsContainer"
+    );
     for (const contributor of contributors) {
-      const isOwner = contributor.login === 'aniketsinha2002';
-      const isContributorXYZ = contributor.login === 'XYZ';
-      const contributorTitle = isOwner ? 'Project Admin' : isContributorXYZ ? '' : 'Contributor';
+      const isOwner = contributor.login === "aniketsinha2002";
+      const isContributorXYZ = contributor.login === "XYZ";
+      const contributorTitle = isOwner
+        ? "Project Admin"
+        : isContributorXYZ
+        ? ""
+        : "Contributor";
 
       // Get the number of commits for this contributor
       const numCommits = await getContributorCommits(contributor.login);
-
+      const gitHubLogo = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
       const contributorHTML = `
-        <div class="mb-6 lg:w-1/3 md:w-1/2 w-full p-2">
+        <div class="mb-6 max-w-[200px] p-2">
           <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-            <div class="relative overflow-hidden bg-cover bg-no-repeat">
+            <div class="relative overflow-hidden bg-cover bg-no-repeat object-contain">
               <a href="${contributor.html_url}">
-                <img src="${contributor.avatar_url}" class="w-full rounded-t-lg" />
+                <img src="${contributor.avatar_url}" class=" rounded-t-lg" />
                 <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"></div>
               </a>
             </div>
-            <div class="p-6 flex flex-col justify-between h-full">
+            <div class="p-6 flex flex-col justify-between h-full items-center gap-2 ">
+             <a href="${contributor.html_url}"
+              > 
+                <img src="${gitHubLogo}" class="logo-img"/> 
+             </a>
               <div>
-                <h3 class="mb-4 text-lg font-bold" style="color: #000;">${contributor.login}</h3>
+                <h3 class="mb-4 text-lg font-bold" style="color: #000;">${
+                  contributor.login
+                }</h3>
                 <!-- Add the Contributor tag to everyone except for XYZ -->
-                ${isContributorXYZ ? '' : '<span class="contributor-tag">' + contributorTitle + '</span>'}
-                <p class="text-sm mt-2">${numCommits} commits</p>
+                ${
+                  isContributorXYZ
+                    ? ""
+                    : '<span class="contributor-tag">' +
+                      contributorTitle +
+                      "</span> "
+                }
+                
+               
+                <p class="text-md mt-2 text-black ">${numCommits} commits</p>
+               
               </div>
             </div>
           </div>
@@ -55,5 +77,5 @@ fetch(apiUrl)
     }
   })
   .catch((error) => {
-    console.error('Error fetching contributors:', error);
+    console.error("Error fetching contributors:", error);
   });
