@@ -1092,6 +1092,27 @@ nav button {
   box-shadow: 5px 5px 5px orange;
 }
 
+.nav-animation{
+  position: relative;
+}
+
+.nav-animation::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.120rem;
+  background: #ff3c78;
+  left: 0;
+  bottom: 0;
+  transform: scale(0,1);
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease;
+}
+
+.nav-animation:hover::after{
+  transform: scale(1,1);
+}
+
 .para1 {
   margin-top: 1rem;
   font-size: 1.5rem;
