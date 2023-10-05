@@ -575,7 +575,7 @@ nav button {
   gap: 5rem;
 }
 
-.about__achievements-right>p {
+.about__achievements-right > p {
   margin: 1.6rem 0 2.5rem;
 }
 
@@ -818,7 +818,7 @@ img {
   border-color: #761142b1;
 }
 
-/* .button a span {
+.button a span {
   position: relative;
   display: block;
   font-size: 18px;
@@ -832,9 +832,9 @@ img {
   letter-spacing: 2px;
   font-weight: 500;
   margin-top: 60px;
-} */
+}
 
-/* .button a span:before {
+.button a span:before {
   content: "";
   position: absolute;
   top: 0;
@@ -845,7 +845,7 @@ img {
   background-color: #ff960b;
   z-index: -1;
   transition: all ease 0.5s;
-} */
+}
 
 .button a span:hover:before {
   width: 100%;
@@ -1090,14 +1090,13 @@ nav button {
   color: var(--color-white);
   border-color: var(--color-white);
   box-shadow: 5px 5px 5px orange;
-
 }
 
-.nav-animation {
+.nav-animation{
   position: relative;
 }
 
-.nav-animation::after {
+.nav-animation::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -1105,13 +1104,13 @@ nav button {
   background: #ff3c78;
   left: 0;
   bottom: 0;
-  transform: scale(0, 1);
+  transform: scale(0,1);
   transform-origin: 0% 100%;
   transition: transform 0.4s ease;
 }
 
-.nav-animation:hover::after {
-  transform: scale(1, 1);
+.nav-animation:hover::after{
+  transform: scale(1,1);
 }
 
 .para1 {
@@ -1440,7 +1439,6 @@ header {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-
 .faq {
   padding: 1.2rem;
   display: flex;
@@ -1512,20 +1510,16 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .footer__1 {
   width: 250px;
 }
-
 .footer__2 {
   width: 250px;
 }
-
 .footer__3 {
   width: 250px;
 }
-
-.footer__container>div h4 {
+.footer__container > div h4 {
   margin-bottom: 1.2rem;
 }
 
@@ -1589,7 +1583,6 @@ footer ul li a:hover {
 .footer__socials {
   transition: 1s;
 }
-
 .footer__socials:hover {
   transform: scale(1.3);
   z-index: 2;
@@ -1745,7 +1738,6 @@ footer ul li a:hover {
     gap: 5rem;
   }
 }
-
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
@@ -1796,7 +1788,6 @@ footer ul li a:hover {
   .testimonial__body {
     padding: 1.2rem;
   }
-
   /*Adding style to chatbot in bot.css*/
 
   /* ====================== FOOTER ===================== */
@@ -1833,11 +1824,9 @@ footer ul li a:hover {
   z-index: 100;
   opacity: 0;
 }
-
 .opa {
   opacity: 1;
 }
-
 .progress:hover {
   background: transparent;
   background: #03e9f4;
@@ -1868,549 +1857,3 @@ footer ul li a:hover {
 }
 
 /* ====================== END OF SCROLL-TO-TOP BUTTON ===================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Gabarito&family=Oswald:wght@500&family=Rubik:wght@500&display=swap');
-
-/* HOVER ANIMATED BUTTON */
-.container1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-}
-
-.hack1 {
-  width: 200px;
-  height: 80px;
-  border: none;
-  color: white;
-  background-color: rgb(130, 15, 126);
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 0 #f8991c;
-  transition: ease-out 0.3s;
-  font-size: 20px;
-  outline: none;
-  margin-bottom: 500px;
-  border-radius: 10% 0% 30%;
-  font-family: bold;
-}
-
-.hack1:hover {
-  box-shadow: inset 300px 0 0 #e9cb04;
-  cursor: pointer;
-  color: black;
-
-}
-
-.hack1 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  color: white;
-  top: 1px;
-  /* font-family: 'Dosis', sans-serif; */
-  font-family: 'Dosis', sans-serif;
-}
-
-.hack1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  color: white;
-}
-
-.hack1:hover span {
-  padding-right: 25px;
-
-}
-
-.hack1:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.hack2 a {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-
-}
-
-.hack2 a span {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  font-size: 15px;
-  font-family: bold;
-  font-family: 'Dosis', sans-serif;
-
-}
-
-a .liquid {
-  position: absolute;
-  left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
-  background: #7211f0;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  overflow: hidden;
-
-}
-
-a .liquid:before,
-a .liquid:after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-
-}
-
-a .liquid:before {
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: zr 5s linear infinite;
-  overflow: hidden;
-}
-
-a .liquid:after {
-  border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
-  animation: zr 10s linear infinite;
-}
-
-@keyframes zr {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
-a:hover .liquid {
-  top: -120px;
-}
-
-.hack2 a {
-  bottom: -50px;
-  left: 70px;
-}
-
-.hack3 a {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-
-}
-
-.hack3 a span {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  font-size: 15px;
-  font-family: bold;
-  font-family: 'Dosis', sans-serif;
-
-
-}
-
-a .liquid3 {
-  position: absolute;
-  left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
-  background: #7211f0;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  overflow: hidden;
-
-}
-
-a .liquid3:before,
-a .liquid3:after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-
-}
-
-a .liquid3:before {
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: zr 5s linear infinite;
-  overflow: hidden;
-}
-
-a .liquid3:after {
-  border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
-  animation: zr3 10s linear infinite;
-}
-
-@keyframes zr3 {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
-a:hover .liquid3 {
-  top: -120px;
-}
-
-.hack3 a {
-  margin-bottom: 60px;
-  bottom: -50px;
-  left: 70px;
-
-}
-
-
-.hack4 a {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-
-}
-
-.hack4 a span {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  font-size: 15px;
-  font-family: bold;
-  font-family: 'Dosis', sans-serif;
-
-
-}
-
-a .liquid4 {
-  position: absolute;
-  left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
-  background: #7211f0;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  overflow: hidden;
-
-}
-
-a .liquid4:before,
-a .liquid4:after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-
-}
-
-a .liquid4:before {
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: zr 5s linear infinite;
-  overflow: hidden;
-}
-
-a .liquid4:after {
-  border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
-  animation: zr4 10s linear infinite;
-}
-
-@keyframes zr4 {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
-a:hover .liquid4 {
-  top: -120px;
-}
-
-.hack4 a {
-  bottom: -50px;
-  left: 70px;
-}
-
-
-.hack5 a {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-
-}
-
-.hack5 a span {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  font-size: 15px;
-  font-family: bold;
-  font-family: 'Dosis', sans-serif;
-
-
-}
-
-a .liquid5 {
-  position: absolute;
-  left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
-  background: #7211f0;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  overflow: hidden;
-
-}
-
-a .liquid5:before,
-a .liquid5:after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-
-}
-
-a .liquid5:before {
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: zr 5s linear infinite;
-  overflow: hidden;
-}
-
-a .liquid5:after {
-  border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
-  animation: zr5 10s linear infinite;
-}
-
-@keyframes zr5 {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
-a:hover .liquid5 {
-  top: -120px;
-}
-
-.hack5 a {
-  bottom: -10px;
-  left: 70px;
-}
-
-
-
-.hack6 a {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-
-}
-
-.hack6 a span {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  font-size: 15px;
-  font-family: bold;
-  font-family: 'Dosis', sans-serif;
-
-
-}
-
-a .liquid6 {
-  position: absolute;
-  left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
-  background: #7211f0;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  overflow: hidden;
-
-}
-
-a .liquid6:before,
-a .liquid6:after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-
-}
-
-a .liquid6:before {
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: zr 5s linear infinite;
-  overflow: hidden;
-}
-
-a .liquid6:after {
-  border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
-  animation: zr6 10s linear infinite;
-}
-
-@keyframes zr6 {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
-a:hover .liquid6 {
-  top: -120px;
-}
-
-.hack6 a {
-  bottom: -10px;
-  left: 70px;
-}
-
-
-.hack7 a {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-
-}
-
-.hack7 a span {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  font-size: 15px;
-  font-family: bold;
-  font-family: 'Dosis', sans-serif;
-
-
-}
-
-a .liquid7 {
-  position: absolute;
-  left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
-  background: #7211f0;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  overflow: hidden;
-
-}
-
-a .liquid7:before,
-a .liquid7:after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-
-}
-
-a .liquid7:before {
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: zr 5s linear infinite;
-  overflow: hidden;
-}
-
-a .liquid7:after {
-  border-radius: 40%;
-  background: rgba(20, 20, 20, 0.5);
-  animation: zr7 10s linear infinite;
-}
-
-@keyframes zr7 {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
-a:hover .liquid7 {
-  top: -120px;
-}
-
-.hack7 a {
-  bottom: -10px;
-  left: 70px;
-}
