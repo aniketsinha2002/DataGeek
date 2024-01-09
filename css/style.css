@@ -1381,6 +1381,7 @@ header {
 
 .courses {
   margin-top: 2rem;
+  transition: transform 0.3s ease;
 }
 
 .headingh2 {
@@ -1416,6 +1417,7 @@ header {
 .course:hover {
   background: var(--color-bg2);
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px) !important;
 }
 
 .course__info {
