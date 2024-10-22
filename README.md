@@ -186,6 +186,28 @@ git push -u origin <your_branch_name>
 </a>
 
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+## Stargazers
+
+<div align='left'>
+
+[![Stargazers repo roster for @aniketsinha2002/DataGeek](https://reporoster.com/stars/aniketsinha2002/DataGeek)](https://github.com/aniketsinha2002/DataGeek/stargazers)
+
+</div>
+
+## Forkers
+
+[![Forkers repo roster for @aniketsinha2002/DataGeek](https://reporoster.com/forks/aniketsinha2002/DataGeek)](https://github.com/aniketsinha2002/DataGeek/network/members)
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+
+
+
 <hr>
 
 ### Show some ❤ by starring ⭐ the <a style="text-decoration:none" href="https://github.com/aniketsinha2002/DataScienceWebsite.github.io" target="_blank">repository.</a>
